@@ -1,3 +1,2 @@
-/data/inputs/*
-/data/latents/*
-/data/reconstructions/*
+/latents/*
+/images/*
