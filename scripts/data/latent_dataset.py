@@ -69,7 +69,7 @@ class LatentOnlyDataset(Dataset):
     # loads a latent tensor from a file and returns it as a tensor
     def _load_latent(self, path: Path) -> torch.Tensor:
         if path.suffix in (".pt", ".pth"):
-            obj = torch.load(path, map_location="cpu")
+            obj = torch.load(path, map_location="cpu").squeeze()
             if isinstance(obj, torch.Tensor):
                 lat = obj
             elif isinstance(obj, dict):
