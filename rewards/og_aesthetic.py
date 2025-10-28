@@ -1,4 +1,6 @@
 import os
+import numpy as np
+from PIL import Image
 from os.path import expanduser
 from urllib.request import urlretrieve
 from typing import List
@@ -53,11 +55,17 @@ class AestheticFromPixels(nn.Module):
     def forward(self, images: torch.Tensor) -> torch.Tensor:
         # images: (B,3,H,W) in [0,1]
         b = images.size(0)
-        items: List[torch.Tensor] = []
+        processed_images = []
         for i in range(b):
-            items.append(self.preprocess(images[i].cpu()))
-        imgs = torch.stack(items, dim=0).to(self.device)
-
+            # Convert tensor back to PIL Image
+            img_tensor = images[i].cpu()
+            # Denormalize from [0,1] to [0,255] and convert to PIL
+            img_array = (img_tensor.permute(1, 2, 0).numpy() * 255).astype(np.uint8)
+            pil_img = Image.fromarray(img_array)
+            # Apply OpenCLIP preprocessing
+            processed_img = self.preprocess(pil_img)
+            processed_images.append(processed_img)
+        imgs = torch.stack(processed_images, dim=0).to(self.device)
         image_features = self.clip.encode_image(imgs)
         image_features = image_features / (image_features.norm(dim=-1, keepdim=True) + 1e-6)
         pred = self.head(image_features).squeeze(-1)

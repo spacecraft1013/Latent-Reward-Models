@@ -124,7 +124,10 @@ class ImageFolderWithIds(Dataset):
     def __getitem__(self, idx: int) -> Tuple[str, torch.Tensor]:
         path = self.files[idx]
         image_id = path.stem
-        tensor = default_image_loader(str(path), self.image_size)
+        try:
+            tensor = default_image_loader(str(path), self.image_size)
+        except Exception as e:
+            raise RuntimeError(f"Error loading image {path}: {e}")
         if self.transform is not None:
             tensor = self.transform(tensor)
         return image_id, tensor

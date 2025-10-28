@@ -5,7 +5,7 @@ from typing import Dict
 
 import torch
 from torch.utils.data import DataLoader
-
+import tqdm
 from scripts.data.latent_dataset import ImageFolderWithIds
 from rewards.og_aesthetic import load_og_aesthetic_model
 
@@ -34,7 +34,8 @@ def main() -> None:
     # run the model and collect the scores for each image
     id_to_score: Dict[str, float] = {}
     with torch.no_grad():
-        for image_ids, images in dl:
+
+        for (image_ids, images) in tqdm.tqdm(dl, desc="Computing scores"):
             images = images.to(device, non_blocking=True)
             preds = model(images).detach().float().cpu()
             for _id, score in zip(image_ids, preds):
@@ -50,5 +51,4 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-
 
