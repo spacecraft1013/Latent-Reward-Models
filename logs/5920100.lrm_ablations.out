@@ -1,0 +1,9 @@
+=== Experiment 1: Baseline ===
+=== Experiment 2: Dropout Regularization ===
+=== Experiment 3: Huber Loss ===
+=== Experiment 4: Smooth L1 Loss ===
+=== Experiment 5: Latent Augmentation ===
+=== Experiment 6: Lower LR + Plateau Scheduler ===
+=== Experiment 7: Higher Weight Decay ===
+=== Experiment 8: Combined Best ===
+All experiments completed!

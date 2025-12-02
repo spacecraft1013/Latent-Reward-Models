@@ -1,2 +1,5 @@
 /latents/*
 /images/*
+data/
+log/
+checkpoints_lrm/

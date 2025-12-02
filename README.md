@@ -18,10 +18,10 @@ python scripts/data/precompute_scores.py \
 
 ### 2) Train latent aesthetic model with MSE(og_pred, latent_pred)
 ```bash
-python train/train_lrm.py \
+python -m train.train_lrm \
   --latents_dir latents \
   --scores_json og_scores.json \
-  --in_channels 4 \
+  --in_channels 16 \
   --clip_model vit_l_14 \
   --batch_size 128 --lr 1e-4 --epochs 10 \
   --mixed_precision bf16 \
@@ -35,3 +35,17 @@ python train/train_lrm.py \
 - Logging prints avg loss every 50 steps; checkpoints saved per epoch.
 
 
+
+
+python -m train.train_lrm \
+  --latents_dir latents \
+  --scores_json og_scores.json \
+  --in_channels 16 \
+  --batch_size 32 \
+  --lr 1e-4 \
+  --epochs 1000 \
+  --clip_model vit_l_14 \
+  --save_dir checkpoints_lrm \
+  --val_size 100 \
+  --split_seed 123 \
+  --best_metric val_pearson

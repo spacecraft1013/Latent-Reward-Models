@@ -1,0 +1,160 @@
+/fs/nexus-projects/mt_sec/cache/wan_imp/lib/python3.11/site-packages/pydantic/_internal/_generate_schema.py:2249: UnsupportedFieldAttributeWarning: The 'repr' attribute with value False was provided to the `Field()` function, which has no effect in the context it was used. 'repr' is field-specific metadata, and can only be attached to a model field using `Annotated` metadata or by assignment. This may have happened because an `Annotated` type alias using the `type` statement was used, or if the `Field()` function was attached to a single member of a union type.
+  warnings.warn(
+/fs/nexus-projects/mt_sec/cache/wan_imp/lib/python3.11/site-packages/pydantic/_internal/_generate_schema.py:2249: UnsupportedFieldAttributeWarning: The 'frozen' attribute with value True was provided to the `Field()` function, which has no effect in the context it was used. 'frozen' is field-specific metadata, and can only be attached to a model field using `Annotated` metadata or by assignment. This may have happened because an `Annotated` type alias using the `type` statement was used, or if the `Field()` function was attached to a single member of a union type.
+  warnings.warn(
+/fs/nexus-projects/mt_sec/Latent-Reward-Models/train/train_lrm.py:441: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = torch.cuda.amp.GradScaler(enabled=(args.mixed_precision == "fp16"))
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/fs/nexus-projects/mt_sec/Latent-Reward-Models/train/train_lrm.py", line 595, in <module>
+    main()
+  File "/fs/nexus-projects/mt_sec/Latent-Reward-Models/train/train_lrm.py", line 545, in main
+    plot_metrics(save_dir)
+  File "/fs/nexus-projects/mt_sec/Latent-Reward-Models/train/train_lrm.py", line 118, in plot_metrics
+    epochs = [int(row["epoch"]) for row in data]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/fs/nexus-projects/mt_sec/Latent-Reward-Models/train/train_lrm.py", line 118, in <listcomp>
+    epochs = [int(row["epoch"]) for row in data]
+                  ~~~^^^^^^^^^
+KeyError: 'epoch'
+/fs/nexus-projects/mt_sec/cache/wan_imp/lib/python3.11/site-packages/pydantic/_internal/_generate_schema.py:2249: UnsupportedFieldAttributeWarning: The 'repr' attribute with value False was provided to the `Field()` function, which has no effect in the context it was used. 'repr' is field-specific metadata, and can only be attached to a model field using `Annotated` metadata or by assignment. This may have happened because an `Annotated` type alias using the `type` statement was used, or if the `Field()` function was attached to a single member of a union type.
+  warnings.warn(
+/fs/nexus-projects/mt_sec/cache/wan_imp/lib/python3.11/site-packages/pydantic/_internal/_generate_schema.py:2249: UnsupportedFieldAttributeWarning: The 'frozen' attribute with value True was provided to the `Field()` function, which has no effect in the context it was used. 'frozen' is field-specific metadata, and can only be attached to a model field using `Annotated` metadata or by assignment. This may have happened because an `Annotated` type alias using the `type` statement was used, or if the `Field()` function was attached to a single member of a union type.
+  warnings.warn(
+/fs/nexus-projects/mt_sec/Latent-Reward-Models/train/train_lrm.py:441: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = torch.cuda.amp.GradScaler(enabled=(args.mixed_precision == "fp16"))
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/fs/nexus-projects/mt_sec/Latent-Reward-Models/train/train_lrm.py", line 595, in <module>
+    main()
+  File "/fs/nexus-projects/mt_sec/Latent-Reward-Models/train/train_lrm.py", line 545, in main
+    plot_metrics(save_dir)
+  File "/fs/nexus-projects/mt_sec/Latent-Reward-Models/train/train_lrm.py", line 118, in plot_metrics
+    epochs = [int(row["epoch"]) for row in data]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/fs/nexus-projects/mt_sec/Latent-Reward-Models/train/train_lrm.py", line 118, in <listcomp>
+    epochs = [int(row["epoch"]) for row in data]
+                  ~~~^^^^^^^^^
+KeyError: 'epoch'
+/fs/nexus-projects/mt_sec/cache/wan_imp/lib/python3.11/site-packages/pydantic/_internal/_generate_schema.py:2249: UnsupportedFieldAttributeWarning: The 'repr' attribute with value False was provided to the `Field()` function, which has no effect in the context it was used. 'repr' is field-specific metadata, and can only be attached to a model field using `Annotated` metadata or by assignment. This may have happened because an `Annotated` type alias using the `type` statement was used, or if the `Field()` function was attached to a single member of a union type.
+  warnings.warn(
+/fs/nexus-projects/mt_sec/cache/wan_imp/lib/python3.11/site-packages/pydantic/_internal/_generate_schema.py:2249: UnsupportedFieldAttributeWarning: The 'frozen' attribute with value True was provided to the `Field()` function, which has no effect in the context it was used. 'frozen' is field-specific metadata, and can only be attached to a model field using `Annotated` metadata or by assignment. This may have happened because an `Annotated` type alias using the `type` statement was used, or if the `Field()` function was attached to a single member of a union type.
+  warnings.warn(
+/fs/nexus-projects/mt_sec/Latent-Reward-Models/train/train_lrm.py:441: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = torch.cuda.amp.GradScaler(enabled=(args.mixed_precision == "fp16"))
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/fs/nexus-projects/mt_sec/Latent-Reward-Models/train/train_lrm.py", line 595, in <module>
+    main()
+  File "/fs/nexus-projects/mt_sec/Latent-Reward-Models/train/train_lrm.py", line 545, in main
+    plot_metrics(save_dir)
+  File "/fs/nexus-projects/mt_sec/Latent-Reward-Models/train/train_lrm.py", line 118, in plot_metrics
+    epochs = [int(row["epoch"]) for row in data]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/fs/nexus-projects/mt_sec/Latent-Reward-Models/train/train_lrm.py", line 118, in <listcomp>
+    epochs = [int(row["epoch"]) for row in data]
+                  ~~~^^^^^^^^^
+KeyError: 'epoch'
+/fs/nexus-projects/mt_sec/cache/wan_imp/lib/python3.11/site-packages/pydantic/_internal/_generate_schema.py:2249: UnsupportedFieldAttributeWarning: The 'repr' attribute with value False was provided to the `Field()` function, which has no effect in the context it was used. 'repr' is field-specific metadata, and can only be attached to a model field using `Annotated` metadata or by assignment. This may have happened because an `Annotated` type alias using the `type` statement was used, or if the `Field()` function was attached to a single member of a union type.
+  warnings.warn(
+/fs/nexus-projects/mt_sec/cache/wan_imp/lib/python3.11/site-packages/pydantic/_internal/_generate_schema.py:2249: UnsupportedFieldAttributeWarning: The 'frozen' attribute with value True was provided to the `Field()` function, which has no effect in the context it was used. 'frozen' is field-specific metadata, and can only be attached to a model field using `Annotated` metadata or by assignment. This may have happened because an `Annotated` type alias using the `type` statement was used, or if the `Field()` function was attached to a single member of a union type.
+  warnings.warn(
+/fs/nexus-projects/mt_sec/Latent-Reward-Models/train/train_lrm.py:441: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = torch.cuda.amp.GradScaler(enabled=(args.mixed_precision == "fp16"))
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/fs/nexus-projects/mt_sec/Latent-Reward-Models/train/train_lrm.py", line 595, in <module>
+    main()
+  File "/fs/nexus-projects/mt_sec/Latent-Reward-Models/train/train_lrm.py", line 545, in main
+    plot_metrics(save_dir)
+  File "/fs/nexus-projects/mt_sec/Latent-Reward-Models/train/train_lrm.py", line 118, in plot_metrics
+    epochs = [int(row["epoch"]) for row in data]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/fs/nexus-projects/mt_sec/Latent-Reward-Models/train/train_lrm.py", line 118, in <listcomp>
+    epochs = [int(row["epoch"]) for row in data]
+                  ~~~^^^^^^^^^
+KeyError: 'epoch'
+/fs/nexus-projects/mt_sec/cache/wan_imp/lib/python3.11/site-packages/pydantic/_internal/_generate_schema.py:2249: UnsupportedFieldAttributeWarning: The 'repr' attribute with value False was provided to the `Field()` function, which has no effect in the context it was used. 'repr' is field-specific metadata, and can only be attached to a model field using `Annotated` metadata or by assignment. This may have happened because an `Annotated` type alias using the `type` statement was used, or if the `Field()` function was attached to a single member of a union type.
+  warnings.warn(
+/fs/nexus-projects/mt_sec/cache/wan_imp/lib/python3.11/site-packages/pydantic/_internal/_generate_schema.py:2249: UnsupportedFieldAttributeWarning: The 'frozen' attribute with value True was provided to the `Field()` function, which has no effect in the context it was used. 'frozen' is field-specific metadata, and can only be attached to a model field using `Annotated` metadata or by assignment. This may have happened because an `Annotated` type alias using the `type` statement was used, or if the `Field()` function was attached to a single member of a union type.
+  warnings.warn(
+/fs/nexus-projects/mt_sec/Latent-Reward-Models/train/train_lrm.py:441: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = torch.cuda.amp.GradScaler(enabled=(args.mixed_precision == "fp16"))
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/fs/nexus-projects/mt_sec/Latent-Reward-Models/train/train_lrm.py", line 595, in <module>
+    main()
+  File "/fs/nexus-projects/mt_sec/Latent-Reward-Models/train/train_lrm.py", line 545, in main
+    plot_metrics(save_dir)
+  File "/fs/nexus-projects/mt_sec/Latent-Reward-Models/train/train_lrm.py", line 118, in plot_metrics
+    epochs = [int(row["epoch"]) for row in data]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/fs/nexus-projects/mt_sec/Latent-Reward-Models/train/train_lrm.py", line 118, in <listcomp>
+    epochs = [int(row["epoch"]) for row in data]
+                  ~~~^^^^^^^^^
+KeyError: 'epoch'
+/fs/nexus-projects/mt_sec/cache/wan_imp/lib/python3.11/site-packages/pydantic/_internal/_generate_schema.py:2249: UnsupportedFieldAttributeWarning: The 'repr' attribute with value False was provided to the `Field()` function, which has no effect in the context it was used. 'repr' is field-specific metadata, and can only be attached to a model field using `Annotated` metadata or by assignment. This may have happened because an `Annotated` type alias using the `type` statement was used, or if the `Field()` function was attached to a single member of a union type.
+  warnings.warn(
+/fs/nexus-projects/mt_sec/cache/wan_imp/lib/python3.11/site-packages/pydantic/_internal/_generate_schema.py:2249: UnsupportedFieldAttributeWarning: The 'frozen' attribute with value True was provided to the `Field()` function, which has no effect in the context it was used. 'frozen' is field-specific metadata, and can only be attached to a model field using `Annotated` metadata or by assignment. This may have happened because an `Annotated` type alias using the `type` statement was used, or if the `Field()` function was attached to a single member of a union type.
+  warnings.warn(
+/fs/nexus-projects/mt_sec/Latent-Reward-Models/train/train_lrm.py:441: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = torch.cuda.amp.GradScaler(enabled=(args.mixed_precision == "fp16"))
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/fs/nexus-projects/mt_sec/Latent-Reward-Models/train/train_lrm.py", line 595, in <module>
+    main()
+  File "/fs/nexus-projects/mt_sec/Latent-Reward-Models/train/train_lrm.py", line 545, in main
+    plot_metrics(save_dir)
+  File "/fs/nexus-projects/mt_sec/Latent-Reward-Models/train/train_lrm.py", line 118, in plot_metrics
+    epochs = [int(row["epoch"]) for row in data]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/fs/nexus-projects/mt_sec/Latent-Reward-Models/train/train_lrm.py", line 118, in <listcomp>
+    epochs = [int(row["epoch"]) for row in data]
+                  ~~~^^^^^^^^^
+KeyError: 'epoch'
+/fs/nexus-projects/mt_sec/cache/wan_imp/lib/python3.11/site-packages/pydantic/_internal/_generate_schema.py:2249: UnsupportedFieldAttributeWarning: The 'repr' attribute with value False was provided to the `Field()` function, which has no effect in the context it was used. 'repr' is field-specific metadata, and can only be attached to a model field using `Annotated` metadata or by assignment. This may have happened because an `Annotated` type alias using the `type` statement was used, or if the `Field()` function was attached to a single member of a union type.
+  warnings.warn(
+/fs/nexus-projects/mt_sec/cache/wan_imp/lib/python3.11/site-packages/pydantic/_internal/_generate_schema.py:2249: UnsupportedFieldAttributeWarning: The 'frozen' attribute with value True was provided to the `Field()` function, which has no effect in the context it was used. 'frozen' is field-specific metadata, and can only be attached to a model field using `Annotated` metadata or by assignment. This may have happened because an `Annotated` type alias using the `type` statement was used, or if the `Field()` function was attached to a single member of a union type.
+  warnings.warn(
+/fs/nexus-projects/mt_sec/Latent-Reward-Models/train/train_lrm.py:441: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = torch.cuda.amp.GradScaler(enabled=(args.mixed_precision == "fp16"))
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/fs/nexus-projects/mt_sec/Latent-Reward-Models/train/train_lrm.py", line 595, in <module>
+    main()
+  File "/fs/nexus-projects/mt_sec/Latent-Reward-Models/train/train_lrm.py", line 545, in main
+    plot_metrics(save_dir)
+  File "/fs/nexus-projects/mt_sec/Latent-Reward-Models/train/train_lrm.py", line 118, in plot_metrics
+    epochs = [int(row["epoch"]) for row in data]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/fs/nexus-projects/mt_sec/Latent-Reward-Models/train/train_lrm.py", line 118, in <listcomp>
+    epochs = [int(row["epoch"]) for row in data]
+                  ~~~^^^^^^^^^
+KeyError: 'epoch'
+/fs/nexus-projects/mt_sec/cache/wan_imp/lib/python3.11/site-packages/pydantic/_internal/_generate_schema.py:2249: UnsupportedFieldAttributeWarning: The 'repr' attribute with value False was provided to the `Field()` function, which has no effect in the context it was used. 'repr' is field-specific metadata, and can only be attached to a model field using `Annotated` metadata or by assignment. This may have happened because an `Annotated` type alias using the `type` statement was used, or if the `Field()` function was attached to a single member of a union type.
+  warnings.warn(
+/fs/nexus-projects/mt_sec/cache/wan_imp/lib/python3.11/site-packages/pydantic/_internal/_generate_schema.py:2249: UnsupportedFieldAttributeWarning: The 'frozen' attribute with value True was provided to the `Field()` function, which has no effect in the context it was used. 'frozen' is field-specific metadata, and can only be attached to a model field using `Annotated` metadata or by assignment. This may have happened because an `Annotated` type alias using the `type` statement was used, or if the `Field()` function was attached to a single member of a union type.
+  warnings.warn(
+/fs/nexus-projects/mt_sec/Latent-Reward-Models/train/train_lrm.py:441: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = torch.cuda.amp.GradScaler(enabled=(args.mixed_precision == "fp16"))
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/fs/nexus-projects/mt_sec/Latent-Reward-Models/train/train_lrm.py", line 595, in <module>
+    main()
+  File "/fs/nexus-projects/mt_sec/Latent-Reward-Models/train/train_lrm.py", line 545, in main
+    plot_metrics(save_dir)
+  File "/fs/nexus-projects/mt_sec/Latent-Reward-Models/train/train_lrm.py", line 118, in plot_metrics
+    epochs = [int(row["epoch"]) for row in data]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/fs/nexus-projects/mt_sec/Latent-Reward-Models/train/train_lrm.py", line 118, in <listcomp>
+    epochs = [int(row["epoch"]) for row in data]
+                  ~~~^^^^^^^^^
+KeyError: 'epoch'
