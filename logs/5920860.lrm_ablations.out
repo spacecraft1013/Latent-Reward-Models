@@ -1,0 +1,3578 @@
+=== Experiment 5: Latent Augmentation ===
+Loading scores from data/scores.json...
+Total samples found: 21300. Training on 19300, Val on 2000
+Using MSE Loss
+Using Cosine Annealing LR Scheduler
+Starting training...
+Epoch 0 [0/604] Loss: 5.2514, LR: 1.00e-04
+Epoch 0 [100/604] Loss: 0.8657, LR: 1.00e-04
+Epoch 0 [200/604] Loss: 1.1373, LR: 1.00e-04
+Epoch 0 [300/604] Loss: 0.7903, LR: 1.00e-04
+Epoch 0 [400/604] Loss: 0.9207, LR: 1.00e-04
+Epoch 0 [500/604] Loss: 1.4892, LR: 1.00e-04
+Epoch 0 [600/604] Loss: 1.3909, LR: 1.00e-04
+Epoch 0 Done. Train Loss: 1.3347 | Train Pearson: 0.2623 | Val MSE: 1.1350 | Val Pearson: 0.3666
+  ✓ New best val_pearson: 0.3666
+Epoch 1 [0/604] Loss: 0.7289, LR: 1.00e-04
+Epoch 1 [100/604] Loss: 0.9630, LR: 1.00e-04
+Epoch 1 [200/604] Loss: 0.7287, LR: 1.00e-04
+Epoch 1 [300/604] Loss: 1.2712, LR: 1.00e-04
+Epoch 1 [400/604] Loss: 0.8361, LR: 1.00e-04
+Epoch 1 [500/604] Loss: 0.9607, LR: 1.00e-04
+Epoch 1 [600/604] Loss: 1.1199, LR: 1.00e-04
+Epoch 1 Done. Train Loss: 1.0277 | Train Pearson: 0.3741 | Val MSE: 1.1021 | Val Pearson: 0.3720
+  ✓ New best val_pearson: 0.3720
+Epoch 2 [0/604] Loss: 0.6409, LR: 1.00e-04
+Epoch 2 [100/604] Loss: 0.6907, LR: 1.00e-04
+Epoch 2 [200/604] Loss: 0.7899, LR: 1.00e-04
+Epoch 2 [300/604] Loss: 1.0032, LR: 1.00e-04
+Epoch 2 [400/604] Loss: 0.8979, LR: 1.00e-04
+Epoch 2 [500/604] Loss: 0.9077, LR: 1.00e-04
+Epoch 2 [600/604] Loss: 0.9957, LR: 9.99e-05
+Epoch 2 Done. Train Loss: 0.9672 | Train Pearson: 0.4107 | Val MSE: 0.9707 | Val Pearson: 0.4326
+  ✓ New best val_pearson: 0.4326
+Epoch 3 [0/604] Loss: 0.5943, LR: 9.99e-05
+Epoch 3 [100/604] Loss: 1.1841, LR: 9.99e-05
+Epoch 3 [200/604] Loss: 1.0652, LR: 9.99e-05
+Epoch 3 [300/604] Loss: 0.6276, LR: 9.99e-05
+Epoch 3 [400/604] Loss: 0.7903, LR: 9.99e-05
+Epoch 3 [500/604] Loss: 1.5815, LR: 9.99e-05
+Epoch 3 [600/604] Loss: 0.8683, LR: 9.99e-05
+Epoch 3 Done. Train Loss: 0.9308 | Train Pearson: 0.4368 | Val MSE: 1.1189 | Val Pearson: 0.3556
+Epoch 4 [0/604] Loss: 1.7541, LR: 9.99e-05
+Epoch 4 [100/604] Loss: 1.6731, LR: 9.99e-05
+Epoch 4 [200/604] Loss: 0.8638, LR: 9.99e-05
+Epoch 4 [300/604] Loss: 0.7711, LR: 9.99e-05
+Epoch 4 [400/604] Loss: 0.9439, LR: 9.99e-05
+Epoch 4 [500/604] Loss: 0.9717, LR: 9.99e-05
+Epoch 4 [600/604] Loss: 1.0564, LR: 9.98e-05
+Epoch 4 Done. Train Loss: 0.9141 | Train Pearson: 0.4508 | Val MSE: 1.0244 | Val Pearson: 0.4226
+Epoch 5 [0/604] Loss: 1.2344, LR: 9.98e-05
+Epoch 5 [100/604] Loss: 0.7899, LR: 9.98e-05
+Epoch 5 [200/604] Loss: 0.9963, LR: 9.98e-05
+Epoch 5 [300/604] Loss: 0.9409, LR: 9.98e-05
+Epoch 5 [400/604] Loss: 0.7685, LR: 9.98e-05
+Epoch 5 [500/604] Loss: 0.7964, LR: 9.98e-05
+Epoch 5 [600/604] Loss: 1.0332, LR: 9.98e-05
+Epoch 5 Done. Train Loss: 0.9004 | Train Pearson: 0.4617 | Val MSE: 1.0635 | Val Pearson: 0.4212
+Epoch 6 [0/604] Loss: 1.5714, LR: 9.98e-05
+Epoch 6 [100/604] Loss: 0.5827, LR: 9.98e-05
+Epoch 6 [200/604] Loss: 0.8311, LR: 9.98e-05
+Epoch 6 [300/604] Loss: 0.9785, LR: 9.97e-05
+Epoch 6 [400/604] Loss: 0.6572, LR: 9.97e-05
+Epoch 6 [500/604] Loss: 0.7050, LR: 9.97e-05
+Epoch 6 [600/604] Loss: 1.1097, LR: 9.97e-05
+Epoch 6 Done. Train Loss: 0.8746 | Train Pearson: 0.4832 | Val MSE: 0.9545 | Val Pearson: 0.4601
+  ✓ New best val_pearson: 0.4601
+Epoch 7 [0/604] Loss: 0.8811, LR: 9.97e-05
+Epoch 7 [100/604] Loss: 0.6427, LR: 9.97e-05
+Epoch 7 [200/604] Loss: 0.4191, LR: 9.97e-05
+Epoch 7 [300/604] Loss: 1.2176, LR: 9.97e-05
+Epoch 7 [400/604] Loss: 0.7773, LR: 9.96e-05
+Epoch 7 [500/604] Loss: 0.9706, LR: 9.96e-05
+Epoch 7 [600/604] Loss: 1.0099, LR: 9.96e-05
+Epoch 7 Done. Train Loss: 0.8650 | Train Pearson: 0.4907 | Val MSE: 0.8827 | Val Pearson: 0.5211
+  ✓ New best val_pearson: 0.5211
+Epoch 8 [0/604] Loss: 0.9911, LR: 9.96e-05
+Epoch 8 [100/604] Loss: 0.8232, LR: 9.96e-05
+Epoch 8 [200/604] Loss: 1.2726, LR: 9.96e-05
+Epoch 8 [300/604] Loss: 0.5358, LR: 9.96e-05
+Epoch 8 [400/604] Loss: 0.7995, LR: 9.95e-05
+Epoch 8 [500/604] Loss: 0.8428, LR: 9.95e-05
+Epoch 8 [600/604] Loss: 1.1007, LR: 9.95e-05
+Epoch 8 Done. Train Loss: 0.8608 | Train Pearson: 0.4959 | Val MSE: 0.9174 | Val Pearson: 0.4844
+Epoch 9 [0/604] Loss: 1.2794, LR: 9.95e-05
+Epoch 9 [100/604] Loss: 1.0872, LR: 9.95e-05
+Epoch 9 [200/604] Loss: 1.2514, LR: 9.95e-05
+Epoch 9 [300/604] Loss: 1.0451, LR: 9.94e-05
+Epoch 9 [400/604] Loss: 0.5141, LR: 9.94e-05
+Epoch 9 [500/604] Loss: 1.0312, LR: 9.94e-05
+Epoch 9 [600/604] Loss: 0.5047, LR: 9.94e-05
+Epoch 9 Done. Train Loss: 0.8392 | Train Pearson: 0.5116 | Val MSE: 0.8515 | Val Pearson: 0.5369
+  ✓ New best val_pearson: 0.5369
+Epoch 10 [0/604] Loss: 0.5773, LR: 9.94e-05
+Epoch 10 [100/604] Loss: 0.7859, LR: 9.94e-05
+Epoch 10 [200/604] Loss: 0.9113, LR: 9.93e-05
+Epoch 10 [300/604] Loss: 0.4318, LR: 9.93e-05
+Epoch 10 [400/604] Loss: 0.8248, LR: 9.93e-05
+Epoch 10 [500/604] Loss: 0.8197, LR: 9.93e-05
+Epoch 10 [600/604] Loss: 0.4867, LR: 9.93e-05
+Epoch 10 Done. Train Loss: 0.8225 | Train Pearson: 0.5246 | Val MSE: 0.8317 | Val Pearson: 0.5495
+  ✓ New best val_pearson: 0.5495
+Epoch 11 [0/604] Loss: 0.5460, LR: 9.93e-05
+Epoch 11 [100/604] Loss: 0.6187, LR: 9.92e-05
+Epoch 11 [200/604] Loss: 0.6997, LR: 9.92e-05
+Epoch 11 [300/604] Loss: 0.6049, LR: 9.92e-05
+Epoch 11 [400/604] Loss: 0.8990, LR: 9.92e-05
+Epoch 11 [500/604] Loss: 0.5830, LR: 9.91e-05
+Epoch 11 [600/604] Loss: 1.0626, LR: 9.91e-05
+Epoch 11 Done. Train Loss: 0.8090 | Train Pearson: 0.5363 | Val MSE: 0.8598 | Val Pearson: 0.5322
+Epoch 12 [0/604] Loss: 0.6089, LR: 9.91e-05
+Epoch 12 [100/604] Loss: 0.9327, LR: 9.91e-05
+Epoch 12 [200/604] Loss: 0.9537, LR: 9.91e-05
+Epoch 12 [300/604] Loss: 0.9179, LR: 9.90e-05
+Epoch 12 [400/604] Loss: 0.5983, LR: 9.90e-05
+Epoch 12 [500/604] Loss: 0.8709, LR: 9.90e-05
+Epoch 12 [600/604] Loss: 0.9437, LR: 9.90e-05
+Epoch 12 Done. Train Loss: 0.8007 | Train Pearson: 0.5424 | Val MSE: 0.8361 | Val Pearson: 0.5587
+  ✓ New best val_pearson: 0.5587
+Epoch 13 [0/604] Loss: 1.0166, LR: 9.90e-05
+Epoch 13 [100/604] Loss: 1.0679, LR: 9.89e-05
+Epoch 13 [200/604] Loss: 1.2771, LR: 9.89e-05
+Epoch 13 [300/604] Loss: 1.0522, LR: 9.89e-05
+Epoch 13 [400/604] Loss: 0.6302, LR: 9.89e-05
+Epoch 13 [500/604] Loss: 0.8356, LR: 9.88e-05
+Epoch 13 [600/604] Loss: 0.7796, LR: 9.88e-05
+Epoch 13 Done. Train Loss: 0.7868 | Train Pearson: 0.5533 | Val MSE: 0.8124 | Val Pearson: 0.5653
+  ✓ New best val_pearson: 0.5653
+Epoch 14 [0/604] Loss: 1.1927, LR: 9.88e-05
+Epoch 14 [100/604] Loss: 0.6697, LR: 9.88e-05
+Epoch 14 [200/604] Loss: 0.6935, LR: 9.87e-05
+Epoch 14 [300/604] Loss: 1.1125, LR: 9.87e-05
+Epoch 14 [400/604] Loss: 0.6711, LR: 9.87e-05
+Epoch 14 [500/604] Loss: 0.7967, LR: 9.86e-05
+Epoch 14 [600/604] Loss: 0.7381, LR: 9.86e-05
+Epoch 14 Done. Train Loss: 0.7798 | Train Pearson: 0.5581 | Val MSE: 0.8610 | Val Pearson: 0.5263
+Epoch 15 [0/604] Loss: 0.7164, LR: 9.86e-05
+Epoch 15 [100/604] Loss: 0.7214, LR: 9.86e-05
+Epoch 15 [200/604] Loss: 0.3968, LR: 9.86e-05
+Epoch 15 [300/604] Loss: 0.6103, LR: 9.85e-05
+Epoch 15 [400/604] Loss: 0.5935, LR: 9.85e-05
+Epoch 15 [500/604] Loss: 0.5978, LR: 9.85e-05
+Epoch 15 [600/604] Loss: 0.6497, LR: 9.84e-05
+Epoch 15 Done. Train Loss: 0.7804 | Train Pearson: 0.5591 | Val MSE: 0.7913 | Val Pearson: 0.5806
+  ✓ New best val_pearson: 0.5806
+Epoch 16 [0/604] Loss: 0.7953, LR: 9.84e-05
+Epoch 16 [100/604] Loss: 1.0323, LR: 9.84e-05
+Epoch 16 [200/604] Loss: 0.4976, LR: 9.84e-05
+Epoch 16 [300/604] Loss: 0.8020, LR: 9.83e-05
+Epoch 16 [400/604] Loss: 0.9241, LR: 9.83e-05
+Epoch 16 [500/604] Loss: 0.6502, LR: 9.83e-05
+Epoch 16 [600/604] Loss: 0.7916, LR: 9.82e-05
+Epoch 16 Done. Train Loss: 0.7632 | Train Pearson: 0.5708 | Val MSE: 0.7892 | Val Pearson: 0.5846
+  ✓ New best val_pearson: 0.5846
+Epoch 17 [0/604] Loss: 0.6999, LR: 9.82e-05
+Epoch 17 [100/604] Loss: 0.6295, LR: 9.82e-05
+Epoch 17 [200/604] Loss: 0.9576, LR: 9.82e-05
+Epoch 17 [300/604] Loss: 0.8394, LR: 9.81e-05
+Epoch 17 [400/604] Loss: 0.6895, LR: 9.81e-05
+Epoch 17 [500/604] Loss: 0.5484, LR: 9.81e-05
+Epoch 17 [600/604] Loss: 0.8634, LR: 9.80e-05
+Epoch 17 Done. Train Loss: 0.7541 | Train Pearson: 0.5773 | Val MSE: 0.7782 | Val Pearson: 0.5894
+  ✓ New best val_pearson: 0.5894
+Epoch 18 [0/604] Loss: 0.6277, LR: 9.80e-05
+Epoch 18 [100/604] Loss: 0.9374, LR: 9.80e-05
+Epoch 18 [200/604] Loss: 0.8608, LR: 9.79e-05
+Epoch 18 [300/604] Loss: 0.7373, LR: 9.79e-05
+Epoch 18 [400/604] Loss: 0.7141, LR: 9.79e-05
+Epoch 18 [500/604] Loss: 0.9454, LR: 9.78e-05
+Epoch 18 [600/604] Loss: 0.8673, LR: 9.78e-05
+Epoch 18 Done. Train Loss: 0.7500 | Train Pearson: 0.5809 | Val MSE: 0.7778 | Val Pearson: 0.5941
+  ✓ New best val_pearson: 0.5941
+Epoch 19 [0/604] Loss: 0.5568, LR: 9.78e-05
+Epoch 19 [100/604] Loss: 0.7359, LR: 9.78e-05
+Epoch 19 [200/604] Loss: 0.8822, LR: 9.77e-05
+Epoch 19 [300/604] Loss: 0.7655, LR: 9.77e-05
+Epoch 19 [400/604] Loss: 0.5613, LR: 9.76e-05
+Epoch 19 [500/604] Loss: 0.6944, LR: 9.76e-05
+Epoch 19 [600/604] Loss: 0.9881, LR: 9.76e-05
+Epoch 19 Done. Train Loss: 0.7510 | Train Pearson: 0.5839 | Val MSE: 0.8096 | Val Pearson: 0.5820
+Epoch 20 [0/604] Loss: 0.3451, LR: 9.76e-05
+Epoch 20 [100/604] Loss: 0.5543, LR: 9.75e-05
+Epoch 20 [200/604] Loss: 0.7259, LR: 9.75e-05
+Epoch 20 [300/604] Loss: 0.6277, LR: 9.74e-05
+Epoch 20 [400/604] Loss: 0.8270, LR: 9.74e-05
+Epoch 20 [500/604] Loss: 0.8158, LR: 9.73e-05
+Epoch 20 [600/604] Loss: 0.7458, LR: 9.73e-05
+Epoch 20 Done. Train Loss: 0.7418 | Train Pearson: 0.5879 | Val MSE: 0.7788 | Val Pearson: 0.6122
+  ✓ New best val_pearson: 0.6122
+Epoch 21 [0/604] Loss: 0.8132, LR: 9.73e-05
+Epoch 21 [100/604] Loss: 0.7362, LR: 9.73e-05
+Epoch 21 [200/604] Loss: 0.6785, LR: 9.72e-05
+Epoch 21 [300/604] Loss: 0.9744, LR: 9.72e-05
+Epoch 21 [400/604] Loss: 0.7214, LR: 9.71e-05
+Epoch 21 [500/604] Loss: 0.5733, LR: 9.71e-05
+Epoch 21 [600/604] Loss: 0.8474, LR: 9.70e-05
+Epoch 21 Done. Train Loss: 0.7292 | Train Pearson: 0.5963 | Val MSE: 0.7492 | Val Pearson: 0.6111
+Epoch 22 [0/604] Loss: 0.5786, LR: 9.70e-05
+Epoch 22 [100/604] Loss: 0.6352, LR: 9.70e-05
+Epoch 22 [200/604] Loss: 0.5818, LR: 9.70e-05
+Epoch 22 [300/604] Loss: 0.9546, LR: 9.69e-05
+Epoch 22 [400/604] Loss: 0.7501, LR: 9.69e-05
+Epoch 22 [500/604] Loss: 0.6956, LR: 9.68e-05
+Epoch 22 [600/604] Loss: 0.7025, LR: 9.68e-05
+Epoch 22 Done. Train Loss: 0.7255 | Train Pearson: 0.5987 | Val MSE: 0.7657 | Val Pearson: 0.6112
+Epoch 23 [0/604] Loss: 0.7043, LR: 9.68e-05
+Epoch 23 [100/604] Loss: 0.5571, LR: 9.67e-05
+Epoch 23 [200/604] Loss: 0.7075, LR: 9.67e-05
+Epoch 23 [300/604] Loss: 0.7723, LR: 9.66e-05
+Epoch 23 [400/604] Loss: 0.7907, LR: 9.66e-05
+Epoch 23 [500/604] Loss: 0.5482, LR: 9.65e-05
+Epoch 23 [600/604] Loss: 0.3824, LR: 9.65e-05
+Epoch 23 Done. Train Loss: 0.7198 | Train Pearson: 0.6036 | Val MSE: 0.7835 | Val Pearson: 0.6063
+Epoch 24 [0/604] Loss: 0.7533, LR: 9.65e-05
+Epoch 24 [100/604] Loss: 0.7034, LR: 9.64e-05
+Epoch 24 [200/604] Loss: 0.7146, LR: 9.64e-05
+Epoch 24 [300/604] Loss: 0.6452, LR: 9.63e-05
+Epoch 24 [400/604] Loss: 0.3732, LR: 9.63e-05
+Epoch 24 [500/604] Loss: 0.6817, LR: 9.62e-05
+Epoch 24 [600/604] Loss: 0.8498, LR: 9.62e-05
+Epoch 24 Done. Train Loss: 0.7170 | Train Pearson: 0.6049 | Val MSE: 0.7681 | Val Pearson: 0.6003
+Epoch 25 [0/604] Loss: 0.8770, LR: 9.62e-05
+Epoch 25 [100/604] Loss: 0.8868, LR: 9.61e-05
+Epoch 25 [200/604] Loss: 0.9441, LR: 9.61e-05
+Epoch 25 [300/604] Loss: 0.5241, LR: 9.60e-05
+Epoch 25 [400/604] Loss: 0.9071, LR: 9.60e-05
+Epoch 25 [500/604] Loss: 0.7263, LR: 9.59e-05
+Epoch 25 [600/604] Loss: 1.1265, LR: 9.59e-05
+Epoch 25 Done. Train Loss: 0.7067 | Train Pearson: 0.6123 | Val MSE: 0.7598 | Val Pearson: 0.6089
+Epoch 26 [0/604] Loss: 0.7292, LR: 9.59e-05
+Epoch 26 [100/604] Loss: 0.8029, LR: 9.58e-05
+Epoch 26 [200/604] Loss: 0.4888, LR: 9.58e-05
+Epoch 26 [300/604] Loss: 0.6163, LR: 9.57e-05
+Epoch 26 [400/604] Loss: 0.5299, LR: 9.57e-05
+Epoch 26 [500/604] Loss: 0.6554, LR: 9.56e-05
+Epoch 26 [600/604] Loss: 0.6694, LR: 9.56e-05
+Epoch 26 Done. Train Loss: 0.7030 | Train Pearson: 0.6149 | Val MSE: 0.7449 | Val Pearson: 0.6194
+  ✓ New best val_pearson: 0.6194
+Epoch 27 [0/604] Loss: 0.7035, LR: 9.56e-05
+Epoch 27 [100/604] Loss: 0.6097, LR: 9.55e-05
+Epoch 27 [200/604] Loss: 0.6792, LR: 9.55e-05
+Epoch 27 [300/604] Loss: 0.8132, LR: 9.54e-05
+Epoch 27 [400/604] Loss: 0.5602, LR: 9.54e-05
+Epoch 27 [500/604] Loss: 0.7823, LR: 9.53e-05
+Epoch 27 [600/604] Loss: 0.8283, LR: 9.52e-05
+Epoch 27 Done. Train Loss: 0.6994 | Train Pearson: 0.6196 | Val MSE: 0.7798 | Val Pearson: 0.5998
+Epoch 28 [0/604] Loss: 0.8274, LR: 9.52e-05
+Epoch 28 [100/604] Loss: 0.6308, LR: 9.52e-05
+Epoch 28 [200/604] Loss: 0.5384, LR: 9.51e-05
+Epoch 28 [300/604] Loss: 0.5189, LR: 9.51e-05
+Epoch 28 [400/604] Loss: 0.5723, LR: 9.50e-05
+Epoch 28 [500/604] Loss: 0.8895, LR: 9.50e-05
+Epoch 28 [600/604] Loss: 0.5449, LR: 9.49e-05
+Epoch 28 Done. Train Loss: 0.6966 | Train Pearson: 0.6215 | Val MSE: 0.7388 | Val Pearson: 0.6192
+Epoch 29 [0/604] Loss: 0.9423, LR: 9.49e-05
+Epoch 29 [100/604] Loss: 0.7547, LR: 9.48e-05
+Epoch 29 [200/604] Loss: 0.7730, LR: 9.48e-05
+Epoch 29 [300/604] Loss: 0.6939, LR: 9.47e-05
+Epoch 29 [400/604] Loss: 0.5048, LR: 9.47e-05
+Epoch 29 [500/604] Loss: 0.6919, LR: 9.46e-05
+Epoch 29 [600/604] Loss: 0.7002, LR: 9.46e-05
+Epoch 29 Done. Train Loss: 0.6960 | Train Pearson: 0.6202 | Val MSE: 0.7528 | Val Pearson: 0.6067
+Epoch 30 [0/604] Loss: 1.1761, LR: 9.45e-05
+Epoch 30 [100/604] Loss: 0.6701, LR: 9.45e-05
+Epoch 30 [200/604] Loss: 0.5900, LR: 9.44e-05
+Epoch 30 [300/604] Loss: 0.6536, LR: 9.44e-05
+Epoch 30 [400/604] Loss: 0.8170, LR: 9.43e-05
+Epoch 30 [500/604] Loss: 1.0081, LR: 9.43e-05
+Epoch 30 [600/604] Loss: 0.7788, LR: 9.42e-05
+Epoch 30 Done. Train Loss: 0.6836 | Train Pearson: 0.6286 | Val MSE: 0.7463 | Val Pearson: 0.6180
+Epoch 31 [0/604] Loss: 0.9084, LR: 9.42e-05
+Epoch 31 [100/604] Loss: 0.7431, LR: 9.41e-05
+Epoch 31 [200/604] Loss: 0.6830, LR: 9.41e-05
+Epoch 31 [300/604] Loss: 0.8012, LR: 9.40e-05
+Epoch 31 [400/604] Loss: 0.8928, LR: 9.39e-05
+Epoch 31 [500/604] Loss: 1.1041, LR: 9.39e-05
+Epoch 31 [600/604] Loss: 0.6406, LR: 9.38e-05
+Epoch 31 Done. Train Loss: 0.6825 | Train Pearson: 0.6295 | Val MSE: 0.7323 | Val Pearson: 0.6232
+  ✓ New best val_pearson: 0.6232
+Epoch 32 [0/604] Loss: 0.7918, LR: 9.38e-05
+Epoch 32 [100/604] Loss: 0.7580, LR: 9.38e-05
+Epoch 32 [200/604] Loss: 0.3773, LR: 9.37e-05
+Epoch 32 [300/604] Loss: 0.5544, LR: 9.36e-05
+Epoch 32 [400/604] Loss: 0.5268, LR: 9.36e-05
+Epoch 32 [500/604] Loss: 0.7750, LR: 9.35e-05
+Epoch 32 [600/604] Loss: 0.5795, LR: 9.34e-05
+Epoch 32 Done. Train Loss: 0.6753 | Train Pearson: 0.6347 | Val MSE: 0.7156 | Val Pearson: 0.6343
+  ✓ New best val_pearson: 0.6343
+Epoch 33 [0/604] Loss: 0.4465, LR: 9.34e-05
+Epoch 33 [100/604] Loss: 0.7892, LR: 9.34e-05
+Epoch 33 [200/604] Loss: 0.4412, LR: 9.33e-05
+Epoch 33 [300/604] Loss: 0.7023, LR: 9.32e-05
+Epoch 33 [400/604] Loss: 0.6258, LR: 9.32e-05
+Epoch 33 [500/604] Loss: 0.7130, LR: 9.31e-05
+Epoch 33 [600/604] Loss: 0.5468, LR: 9.30e-05
+Epoch 33 Done. Train Loss: 0.6721 | Train Pearson: 0.6375 | Val MSE: 0.7363 | Val Pearson: 0.6319
+Epoch 34 [0/604] Loss: 0.8184, LR: 9.30e-05
+Epoch 34 [100/604] Loss: 0.7269, LR: 9.30e-05
+Epoch 34 [200/604] Loss: 0.4915, LR: 9.29e-05
+Epoch 34 [300/604] Loss: 0.3799, LR: 9.28e-05
+Epoch 34 [400/604] Loss: 0.6697, LR: 9.28e-05
+Epoch 34 [500/604] Loss: 0.4277, LR: 9.27e-05
+Epoch 34 [600/604] Loss: 0.5549, LR: 9.26e-05
+Epoch 34 Done. Train Loss: 0.6758 | Train Pearson: 0.6341 | Val MSE: 0.7347 | Val Pearson: 0.6204
+Epoch 35 [0/604] Loss: 0.6332, LR: 9.26e-05
+Epoch 35 [100/604] Loss: 0.4828, LR: 9.26e-05
+Epoch 35 [200/604] Loss: 0.5995, LR: 9.25e-05
+Epoch 35 [300/604] Loss: 0.5343, LR: 9.24e-05
+Epoch 35 [400/604] Loss: 0.6168, LR: 9.24e-05
+Epoch 35 [500/604] Loss: 0.6386, LR: 9.23e-05
+Epoch 35 [600/604] Loss: 0.6778, LR: 9.22e-05
+Epoch 35 Done. Train Loss: 0.6682 | Train Pearson: 0.6413 | Val MSE: 0.7208 | Val Pearson: 0.6292
+Epoch 36 [0/604] Loss: 0.6409, LR: 9.22e-05
+Epoch 36 [100/604] Loss: 0.7292, LR: 9.21e-05
+Epoch 36 [200/604] Loss: 0.9691, LR: 9.21e-05
+Epoch 36 [300/604] Loss: 0.9371, LR: 9.20e-05
+Epoch 36 [400/604] Loss: 0.7213, LR: 9.19e-05
+Epoch 36 [500/604] Loss: 0.8391, LR: 9.19e-05
+Epoch 36 [600/604] Loss: 0.5403, LR: 9.18e-05
+Epoch 36 Done. Train Loss: 0.6670 | Train Pearson: 0.6407 | Val MSE: 0.7230 | Val Pearson: 0.6291
+Epoch 37 [0/604] Loss: 0.6845, LR: 9.18e-05
+Epoch 37 [100/604] Loss: 0.5065, LR: 9.17e-05
+Epoch 37 [200/604] Loss: 0.6403, LR: 9.16e-05
+Epoch 37 [300/604] Loss: 0.4608, LR: 9.16e-05
+Epoch 37 [400/604] Loss: 0.5714, LR: 9.15e-05
+Epoch 37 [500/604] Loss: 0.6283, LR: 9.14e-05
+Epoch 37 [600/604] Loss: 0.5727, LR: 9.14e-05
+Epoch 37 Done. Train Loss: 0.6586 | Train Pearson: 0.6457 | Val MSE: 0.7048 | Val Pearson: 0.6411
+  ✓ New best val_pearson: 0.6411
+Epoch 38 [0/604] Loss: 0.7653, LR: 9.14e-05
+Epoch 38 [100/604] Loss: 0.3825, LR: 9.13e-05
+Epoch 38 [200/604] Loss: 0.8163, LR: 9.12e-05
+Epoch 38 [300/604] Loss: 0.5065, LR: 9.11e-05
+Epoch 38 [400/604] Loss: 0.5738, LR: 9.11e-05
+Epoch 38 [500/604] Loss: 0.3967, LR: 9.10e-05
+Epoch 38 [600/604] Loss: 0.5794, LR: 9.09e-05
+Epoch 38 Done. Train Loss: 0.6533 | Train Pearson: 0.6502 | Val MSE: 0.7163 | Val Pearson: 0.6364
+Epoch 39 [0/604] Loss: 0.7909, LR: 9.09e-05
+Epoch 39 [100/604] Loss: 0.8648, LR: 9.08e-05
+Epoch 39 [200/604] Loss: 0.6775, LR: 9.08e-05
+Epoch 39 [300/604] Loss: 0.5215, LR: 9.07e-05
+Epoch 39 [400/604] Loss: 0.5900, LR: 9.06e-05
+Epoch 39 [500/604] Loss: 0.6421, LR: 9.05e-05
+Epoch 39 [600/604] Loss: 0.6431, LR: 9.05e-05
+Epoch 39 Done. Train Loss: 0.6515 | Train Pearson: 0.6521 | Val MSE: 0.7148 | Val Pearson: 0.6341
+Epoch 40 [0/604] Loss: 0.5974, LR: 9.05e-05
+Epoch 40 [100/604] Loss: 0.8933, LR: 9.04e-05
+Epoch 40 [200/604] Loss: 0.5186, LR: 9.03e-05
+Epoch 40 [300/604] Loss: 0.6720, LR: 9.02e-05
+Epoch 40 [400/604] Loss: 0.6601, LR: 9.01e-05
+Epoch 40 [500/604] Loss: 0.4206, LR: 9.01e-05
+Epoch 40 [600/604] Loss: 0.8714, LR: 9.00e-05
+Epoch 40 Done. Train Loss: 0.6484 | Train Pearson: 0.6530 | Val MSE: 0.6954 | Val Pearson: 0.6483
+  ✓ New best val_pearson: 0.6483
+Epoch 41 [0/604] Loss: 0.4598, LR: 9.00e-05
+Epoch 41 [100/604] Loss: 0.7033, LR: 8.99e-05
+Epoch 41 [200/604] Loss: 0.7086, LR: 8.98e-05
+Epoch 41 [300/604] Loss: 0.3855, LR: 8.97e-05
+Epoch 41 [400/604] Loss: 0.5027, LR: 8.97e-05
+Epoch 41 [500/604] Loss: 0.5552, LR: 8.96e-05
+Epoch 41 [600/604] Loss: 0.9419, LR: 8.95e-05
+Epoch 41 Done. Train Loss: 0.6421 | Train Pearson: 0.6574 | Val MSE: 0.7090 | Val Pearson: 0.6377
+Epoch 42 [0/604] Loss: 0.6946, LR: 8.95e-05
+Epoch 42 [100/604] Loss: 0.5917, LR: 8.94e-05
+Epoch 42 [200/604] Loss: 0.6374, LR: 8.93e-05
+Epoch 42 [300/604] Loss: 0.6432, LR: 8.93e-05
+Epoch 42 [400/604] Loss: 0.6101, LR: 8.92e-05
+Epoch 42 [500/604] Loss: 0.9452, LR: 8.91e-05
+Epoch 42 [600/604] Loss: 0.6646, LR: 8.90e-05
+Epoch 42 Done. Train Loss: 0.6367 | Train Pearson: 0.6609 | Val MSE: 0.7041 | Val Pearson: 0.6394
+Epoch 43 [0/604] Loss: 0.6905, LR: 8.90e-05
+Epoch 43 [100/604] Loss: 0.9451, LR: 8.89e-05
+Epoch 43 [200/604] Loss: 0.7146, LR: 8.89e-05
+Epoch 43 [300/604] Loss: 0.6773, LR: 8.88e-05
+Epoch 43 [400/604] Loss: 0.4375, LR: 8.87e-05
+Epoch 43 [500/604] Loss: 0.7870, LR: 8.86e-05
+Epoch 43 [600/604] Loss: 0.7286, LR: 8.85e-05
+Epoch 43 Done. Train Loss: 0.6350 | Train Pearson: 0.6620 | Val MSE: 0.6985 | Val Pearson: 0.6511
+  ✓ New best val_pearson: 0.6511
+Epoch 44 [0/604] Loss: 0.4840, LR: 8.85e-05
+Epoch 44 [100/604] Loss: 0.7961, LR: 8.84e-05
+Epoch 44 [200/604] Loss: 0.6014, LR: 8.84e-05
+Epoch 44 [300/604] Loss: 0.4384, LR: 8.83e-05
+Epoch 44 [400/604] Loss: 0.4790, LR: 8.82e-05
+Epoch 44 [500/604] Loss: 0.3489, LR: 8.81e-05
+Epoch 44 [600/604] Loss: 0.7071, LR: 8.80e-05
+Epoch 44 Done. Train Loss: 0.6397 | Train Pearson: 0.6587 | Val MSE: 0.6942 | Val Pearson: 0.6513
+  ✓ New best val_pearson: 0.6513
+Epoch 45 [0/604] Loss: 0.4444, LR: 8.80e-05
+Epoch 45 [100/604] Loss: 0.4918, LR: 8.79e-05
+Epoch 45 [200/604] Loss: 0.9312, LR: 8.79e-05
+Epoch 45 [300/604] Loss: 0.7216, LR: 8.78e-05
+Epoch 45 [400/604] Loss: 1.1036, LR: 8.77e-05
+Epoch 45 [500/604] Loss: 0.5886, LR: 8.76e-05
+Epoch 45 [600/604] Loss: 0.8882, LR: 8.75e-05
+Epoch 45 Done. Train Loss: 0.6317 | Train Pearson: 0.6656 | Val MSE: 0.6806 | Val Pearson: 0.6547
+  ✓ New best val_pearson: 0.6547
+Epoch 46 [0/604] Loss: 0.3697, LR: 8.75e-05
+Epoch 46 [100/604] Loss: 0.5690, LR: 8.74e-05
+Epoch 46 [200/604] Loss: 0.4767, LR: 8.73e-05
+Epoch 46 [300/604] Loss: 0.5493, LR: 8.72e-05
+Epoch 46 [400/604] Loss: 0.5923, LR: 8.72e-05
+Epoch 46 [500/604] Loss: 0.7834, LR: 8.71e-05
+Epoch 46 [600/604] Loss: 0.5848, LR: 8.70e-05
+Epoch 46 Done. Train Loss: 0.6258 | Train Pearson: 0.6680 | Val MSE: 0.6853 | Val Pearson: 0.6539
+Epoch 47 [0/604] Loss: 0.5022, LR: 8.70e-05
+Epoch 47 [100/604] Loss: 0.5402, LR: 8.69e-05
+Epoch 47 [200/604] Loss: 0.3873, LR: 8.68e-05
+Epoch 47 [300/604] Loss: 0.6868, LR: 8.67e-05
+Epoch 47 [400/604] Loss: 0.4537, LR: 8.66e-05
+Epoch 47 [500/604] Loss: 0.7450, LR: 8.65e-05
+Epoch 47 [600/604] Loss: 0.4303, LR: 8.65e-05
+Epoch 47 Done. Train Loss: 0.6263 | Train Pearson: 0.6677 | Val MSE: 0.6984 | Val Pearson: 0.6433
+Epoch 48 [0/604] Loss: 0.5389, LR: 8.64e-05
+Epoch 48 [100/604] Loss: 0.5004, LR: 8.64e-05
+Epoch 48 [200/604] Loss: 0.5944, LR: 8.63e-05
+Epoch 48 [300/604] Loss: 0.5618, LR: 8.62e-05
+Epoch 48 [400/604] Loss: 0.3855, LR: 8.61e-05
+Epoch 48 [500/604] Loss: 0.5888, LR: 8.60e-05
+Epoch 48 [600/604] Loss: 0.3727, LR: 8.59e-05
+Epoch 48 Done. Train Loss: 0.6196 | Train Pearson: 0.6733 | Val MSE: 0.7024 | Val Pearson: 0.6449
+Epoch 49 [0/604] Loss: 0.8867, LR: 8.59e-05
+Epoch 49 [100/604] Loss: 0.4304, LR: 8.58e-05
+Epoch 49 [200/604] Loss: 0.6848, LR: 8.57e-05
+Epoch 49 [300/604] Loss: 0.6162, LR: 8.56e-05
+Epoch 49 [400/604] Loss: 0.6706, LR: 8.55e-05
+Epoch 49 [500/604] Loss: 0.8091, LR: 8.54e-05
+Epoch 49 [600/604] Loss: 0.5465, LR: 8.54e-05
+Epoch 49 Done. Train Loss: 0.6147 | Train Pearson: 0.6752 | Val MSE: 0.7074 | Val Pearson: 0.6381
+Epoch 50 [0/604] Loss: 0.5922, LR: 8.54e-05
+Epoch 50 [100/604] Loss: 0.8927, LR: 8.53e-05
+Epoch 50 [200/604] Loss: 0.5959, LR: 8.52e-05
+Epoch 50 [300/604] Loss: 0.7811, LR: 8.51e-05
+Epoch 50 [400/604] Loss: 0.5244, LR: 8.50e-05
+Epoch 50 [500/604] Loss: 0.5889, LR: 8.49e-05
+Epoch 50 [600/604] Loss: 0.6884, LR: 8.48e-05
+Epoch 50 Done. Train Loss: 0.6163 | Train Pearson: 0.6743 | Val MSE: 0.6899 | Val Pearson: 0.6505
+Epoch 51 [0/604] Loss: 0.5868, LR: 8.48e-05
+Epoch 51 [100/604] Loss: 0.5306, LR: 8.47e-05
+Epoch 51 [200/604] Loss: 0.7701, LR: 8.46e-05
+Epoch 51 [300/604] Loss: 0.5722, LR: 8.45e-05
+Epoch 51 [400/604] Loss: 0.6672, LR: 8.44e-05
+Epoch 51 [500/604] Loss: 0.4496, LR: 8.43e-05
+Epoch 51 [600/604] Loss: 0.3625, LR: 8.42e-05
+Epoch 51 Done. Train Loss: 0.6099 | Train Pearson: 0.6783 | Val MSE: 0.6839 | Val Pearson: 0.6531
+Epoch 52 [0/604] Loss: 0.6900, LR: 8.42e-05
+Epoch 52 [100/604] Loss: 0.5494, LR: 8.41e-05
+Epoch 52 [200/604] Loss: 0.6434, LR: 8.40e-05
+Epoch 52 [300/604] Loss: 0.4255, LR: 8.39e-05
+Epoch 52 [400/604] Loss: 0.5777, LR: 8.38e-05
+Epoch 52 [500/604] Loss: 0.4941, LR: 8.37e-05
+Epoch 52 [600/604] Loss: 0.5029, LR: 8.37e-05
+Epoch 52 Done. Train Loss: 0.6083 | Train Pearson: 0.6796 | Val MSE: 0.7043 | Val Pearson: 0.6443
+Epoch 53 [0/604] Loss: 0.5451, LR: 8.36e-05
+Epoch 53 [100/604] Loss: 0.6244, LR: 8.36e-05
+Epoch 53 [200/604] Loss: 0.5121, LR: 8.35e-05
+Epoch 53 [300/604] Loss: 0.4380, LR: 8.34e-05
+Epoch 53 [400/604] Loss: 0.4060, LR: 8.33e-05
+Epoch 53 [500/604] Loss: 0.7220, LR: 8.32e-05
+Epoch 53 [600/604] Loss: 0.6534, LR: 8.31e-05
+Epoch 53 Done. Train Loss: 0.6081 | Train Pearson: 0.6797 | Val MSE: 0.6908 | Val Pearson: 0.6561
+  ✓ New best val_pearson: 0.6561
+Epoch 54 [0/604] Loss: 0.3851, LR: 8.31e-05
+Epoch 54 [100/604] Loss: 0.4507, LR: 8.30e-05
+Epoch 54 [200/604] Loss: 0.5713, LR: 8.29e-05
+Epoch 54 [300/604] Loss: 0.5189, LR: 8.28e-05
+Epoch 54 [400/604] Loss: 0.7007, LR: 8.27e-05
+Epoch 54 [500/604] Loss: 0.6335, LR: 8.26e-05
+Epoch 54 [600/604] Loss: 0.7545, LR: 8.25e-05
+Epoch 54 Done. Train Loss: 0.6030 | Train Pearson: 0.6835 | Val MSE: 0.6853 | Val Pearson: 0.6525
+Epoch 55 [0/604] Loss: 0.7173, LR: 8.25e-05
+Epoch 55 [100/604] Loss: 0.3487, LR: 8.24e-05
+Epoch 55 [200/604] Loss: 0.9516, LR: 8.23e-05
+Epoch 55 [300/604] Loss: 0.7452, LR: 8.22e-05
+Epoch 55 [400/604] Loss: 0.4829, LR: 8.21e-05
+Epoch 55 [500/604] Loss: 0.7282, LR: 8.20e-05
+Epoch 55 [600/604] Loss: 0.5928, LR: 8.19e-05
+Epoch 55 Done. Train Loss: 0.5972 | Train Pearson: 0.6866 | Val MSE: 0.6880 | Val Pearson: 0.6520
+Epoch 56 [0/604] Loss: 0.5231, LR: 8.19e-05
+Epoch 56 [100/604] Loss: 0.6778, LR: 8.18e-05
+Epoch 56 [200/604] Loss: 0.8237, LR: 8.17e-05
+Epoch 56 [300/604] Loss: 0.3970, LR: 8.16e-05
+Epoch 56 [400/604] Loss: 0.6185, LR: 8.15e-05
+Epoch 56 [500/604] Loss: 0.6670, LR: 8.14e-05
+Epoch 56 [600/604] Loss: 0.3007, LR: 8.13e-05
+Epoch 56 Done. Train Loss: 0.5990 | Train Pearson: 0.6873 | Val MSE: 0.6987 | Val Pearson: 0.6435
+Epoch 57 [0/604] Loss: 0.6613, LR: 8.13e-05
+Epoch 57 [100/604] Loss: 0.6536, LR: 8.12e-05
+Epoch 57 [200/604] Loss: 0.6879, LR: 8.11e-05
+Epoch 57 [300/604] Loss: 0.4981, LR: 8.10e-05
+Epoch 57 [400/604] Loss: 0.4813, LR: 8.09e-05
+Epoch 57 [500/604] Loss: 0.5154, LR: 8.08e-05
+Epoch 57 [600/604] Loss: 0.7049, LR: 8.06e-05
+Epoch 57 Done. Train Loss: 0.5946 | Train Pearson: 0.6885 | Val MSE: 0.7005 | Val Pearson: 0.6462
+Epoch 58 [0/604] Loss: 0.5263, LR: 8.06e-05
+Epoch 58 [100/604] Loss: 0.8329, LR: 8.05e-05
+Epoch 58 [200/604] Loss: 0.4147, LR: 8.04e-05
+Epoch 58 [300/604] Loss: 0.4035, LR: 8.03e-05
+Epoch 58 [400/604] Loss: 0.4578, LR: 8.02e-05
+Epoch 58 [500/604] Loss: 0.7170, LR: 8.01e-05
+Epoch 58 [600/604] Loss: 0.5433, LR: 8.00e-05
+Epoch 58 Done. Train Loss: 0.5919 | Train Pearson: 0.6910 | Val MSE: 0.6704 | Val Pearson: 0.6629
+  ✓ New best val_pearson: 0.6629
+Epoch 59 [0/604] Loss: 0.4930, LR: 8.00e-05
+Epoch 59 [100/604] Loss: 0.5630, LR: 7.99e-05
+Epoch 59 [200/604] Loss: 1.0662, LR: 7.98e-05
+Epoch 59 [300/604] Loss: 0.6186, LR: 7.97e-05
+Epoch 59 [400/604] Loss: 0.6604, LR: 7.96e-05
+Epoch 59 [500/604] Loss: 0.5818, LR: 7.95e-05
+Epoch 59 [600/604] Loss: 0.4722, LR: 7.94e-05
+Epoch 59 Done. Train Loss: 0.5929 | Train Pearson: 0.6907 | Val MSE: 0.6738 | Val Pearson: 0.6612
+Epoch 60 [0/604] Loss: 0.5116, LR: 7.94e-05
+Epoch 60 [100/604] Loss: 0.4150, LR: 7.93e-05
+Epoch 60 [200/604] Loss: 0.5899, LR: 7.92e-05
+Epoch 60 [300/604] Loss: 0.3654, LR: 7.91e-05
+Epoch 60 [400/604] Loss: 0.7022, LR: 7.90e-05
+Epoch 60 [500/604] Loss: 0.6299, LR: 7.89e-05
+Epoch 60 [600/604] Loss: 0.6208, LR: 7.88e-05
+Epoch 60 Done. Train Loss: 0.5869 | Train Pearson: 0.6932 | Val MSE: 0.6819 | Val Pearson: 0.6555
+Epoch 61 [0/604] Loss: 0.5895, LR: 7.87e-05
+Epoch 61 [100/604] Loss: 0.8147, LR: 7.86e-05
+Epoch 61 [200/604] Loss: 0.4309, LR: 7.85e-05
+Epoch 61 [300/604] Loss: 0.6625, LR: 7.84e-05
+Epoch 61 [400/604] Loss: 0.8503, LR: 7.83e-05
+Epoch 61 [500/604] Loss: 0.6083, LR: 7.82e-05
+Epoch 61 [600/604] Loss: 0.5940, LR: 7.81e-05
+Epoch 61 Done. Train Loss: 0.5852 | Train Pearson: 0.6950 | Val MSE: 0.6741 | Val Pearson: 0.6606
+Epoch 62 [0/604] Loss: 0.9212, LR: 7.81e-05
+Epoch 62 [100/604] Loss: 0.7883, LR: 7.80e-05
+Epoch 62 [200/604] Loss: 0.4347, LR: 7.79e-05
+Epoch 62 [300/604] Loss: 1.0491, LR: 7.78e-05
+Epoch 62 [400/604] Loss: 0.7682, LR: 7.77e-05
+Epoch 62 [500/604] Loss: 0.7035, LR: 7.76e-05
+Epoch 62 [600/604] Loss: 0.6963, LR: 7.75e-05
+Epoch 62 Done. Train Loss: 0.5854 | Train Pearson: 0.6947 | Val MSE: 0.6863 | Val Pearson: 0.6537
+Epoch 63 [0/604] Loss: 0.4191, LR: 7.75e-05
+Epoch 63 [100/604] Loss: 0.6013, LR: 7.73e-05
+Epoch 63 [200/604] Loss: 0.3848, LR: 7.72e-05
+Epoch 63 [300/604] Loss: 0.7558, LR: 7.71e-05
+Epoch 63 [400/604] Loss: 0.6829, LR: 7.70e-05
+Epoch 63 [500/604] Loss: 0.5705, LR: 7.69e-05
+Epoch 63 [600/604] Loss: 0.7036, LR: 7.68e-05
+Epoch 63 Done. Train Loss: 0.5793 | Train Pearson: 0.6990 | Val MSE: 0.6752 | Val Pearson: 0.6583
+Epoch 64 [0/604] Loss: 0.5416, LR: 7.68e-05
+Epoch 64 [100/604] Loss: 0.3414, LR: 7.67e-05
+Epoch 64 [200/604] Loss: 0.6551, LR: 7.66e-05
+Epoch 64 [300/604] Loss: 0.6667, LR: 7.65e-05
+Epoch 64 [400/604] Loss: 0.5648, LR: 7.63e-05
+Epoch 64 [500/604] Loss: 0.7388, LR: 7.62e-05
+Epoch 64 [600/604] Loss: 0.6042, LR: 7.61e-05
+Epoch 64 Done. Train Loss: 0.5747 | Train Pearson: 0.7011 | Val MSE: 0.6688 | Val Pearson: 0.6628
+Epoch 65 [0/604] Loss: 0.5630, LR: 7.61e-05
+Epoch 65 [100/604] Loss: 0.6298, LR: 7.60e-05
+Epoch 65 [200/604] Loss: 1.1027, LR: 7.59e-05
+Epoch 65 [300/604] Loss: 0.4581, LR: 7.58e-05
+Epoch 65 [400/604] Loss: 0.6378, LR: 7.57e-05
+Epoch 65 [500/604] Loss: 0.4764, LR: 7.56e-05
+Epoch 65 [600/604] Loss: 0.5383, LR: 7.55e-05
+Epoch 65 Done. Train Loss: 0.5784 | Train Pearson: 0.7027 | Val MSE: 0.6868 | Val Pearson: 0.6520
+Epoch 66 [0/604] Loss: 0.5196, LR: 7.55e-05
+Epoch 66 [100/604] Loss: 0.7960, LR: 7.53e-05
+Epoch 66 [200/604] Loss: 0.6779, LR: 7.52e-05
+Epoch 66 [300/604] Loss: 0.6081, LR: 7.51e-05
+Epoch 66 [400/604] Loss: 0.7116, LR: 7.50e-05
+Epoch 66 [500/604] Loss: 0.6805, LR: 7.49e-05
+Epoch 66 [600/604] Loss: 0.7963, LR: 7.48e-05
+Epoch 66 Done. Train Loss: 0.5788 | Train Pearson: 0.6985 | Val MSE: 0.6814 | Val Pearson: 0.6569
+Epoch 67 [0/604] Loss: 0.4920, LR: 7.48e-05
+Epoch 67 [100/604] Loss: 0.5923, LR: 7.47e-05
+Epoch 67 [200/604] Loss: 0.4702, LR: 7.45e-05
+Epoch 67 [300/604] Loss: 0.3260, LR: 7.44e-05
+Epoch 67 [400/604] Loss: 0.4668, LR: 7.43e-05
+Epoch 67 [500/604] Loss: 0.5749, LR: 7.42e-05
+Epoch 67 [600/604] Loss: 0.4466, LR: 7.41e-05
+Epoch 67 Done. Train Loss: 0.5646 | Train Pearson: 0.7074 | Val MSE: 0.6975 | Val Pearson: 0.6437
+Epoch 68 [0/604] Loss: 0.5218, LR: 7.41e-05
+Epoch 68 [100/604] Loss: 0.4266, LR: 7.40e-05
+Epoch 68 [200/604] Loss: 0.7593, LR: 7.39e-05
+Epoch 68 [300/604] Loss: 0.3462, LR: 7.37e-05
+Epoch 68 [400/604] Loss: 0.3689, LR: 7.36e-05
+Epoch 68 [500/604] Loss: 0.3684, LR: 7.35e-05
+Epoch 68 [600/604] Loss: 0.4255, LR: 7.34e-05
+Epoch 68 Done. Train Loss: 0.5633 | Train Pearson: 0.7089 | Val MSE: 0.6860 | Val Pearson: 0.6517
+Epoch 69 [0/604] Loss: 0.4382, LR: 7.34e-05
+Epoch 69 [100/604] Loss: 0.3967, LR: 7.33e-05
+Epoch 69 [200/604] Loss: 0.5306, LR: 7.32e-05
+Epoch 69 [300/604] Loss: 0.3949, LR: 7.30e-05
+Epoch 69 [400/604] Loss: 0.7031, LR: 7.29e-05
+Epoch 69 [500/604] Loss: 0.4326, LR: 7.28e-05
+Epoch 69 [600/604] Loss: 0.4664, LR: 7.27e-05
+Epoch 69 Done. Train Loss: 0.5546 | Train Pearson: 0.7133 | Val MSE: 0.7416 | Val Pearson: 0.6548
+Epoch 70 [0/604] Loss: 0.7261, LR: 7.27e-05
+Epoch 70 [100/604] Loss: 0.4641, LR: 7.26e-05
+Epoch 70 [200/604] Loss: 0.4552, LR: 7.25e-05
+Epoch 70 [300/604] Loss: 0.6458, LR: 7.24e-05
+Epoch 70 [400/604] Loss: 0.5582, LR: 7.22e-05
+Epoch 70 [500/604] Loss: 0.6580, LR: 7.21e-05
+Epoch 70 [600/604] Loss: 0.6008, LR: 7.20e-05
+Epoch 70 Done. Train Loss: 0.5573 | Train Pearson: 0.7121 | Val MSE: 0.6744 | Val Pearson: 0.6603
+Epoch 71 [0/604] Loss: 0.3925, LR: 7.20e-05
+Epoch 71 [100/604] Loss: 0.4790, LR: 7.19e-05
+Epoch 71 [200/604] Loss: 0.7244, LR: 7.18e-05
+Epoch 71 [300/604] Loss: 0.5843, LR: 7.16e-05
+Epoch 71 [400/604] Loss: 0.6110, LR: 7.15e-05
+Epoch 71 [500/604] Loss: 0.5261, LR: 7.14e-05
+Epoch 71 [600/604] Loss: 0.7216, LR: 7.13e-05
+Epoch 71 Done. Train Loss: 0.5572 | Train Pearson: 0.7119 | Val MSE: 0.6830 | Val Pearson: 0.6546
+Epoch 72 [0/604] Loss: 0.7689, LR: 7.13e-05
+Epoch 72 [100/604] Loss: 0.5383, LR: 7.12e-05
+Epoch 72 [200/604] Loss: 0.5042, LR: 7.11e-05
+Epoch 72 [300/604] Loss: 0.5728, LR: 7.09e-05
+Epoch 72 [400/604] Loss: 0.6646, LR: 7.08e-05
+Epoch 72 [500/604] Loss: 0.6976, LR: 7.07e-05
+Epoch 72 [600/604] Loss: 0.5694, LR: 7.06e-05
+Epoch 72 Done. Train Loss: 0.5565 | Train Pearson: 0.7137 | Val MSE: 0.6876 | Val Pearson: 0.6518
+Epoch 73 [0/604] Loss: 0.9190, LR: 7.06e-05
+Epoch 73 [100/604] Loss: 0.7268, LR: 7.05e-05
+Epoch 73 [200/604] Loss: 0.5238, LR: 7.03e-05
+Epoch 73 [300/604] Loss: 0.5000, LR: 7.02e-05
+Epoch 73 [400/604] Loss: 0.7052, LR: 7.01e-05
+Epoch 73 [500/604] Loss: 0.4851, LR: 7.00e-05
+Epoch 73 [600/604] Loss: 0.5385, LR: 6.99e-05
+Epoch 73 Done. Train Loss: 0.5516 | Train Pearson: 0.7156 | Val MSE: 0.6660 | Val Pearson: 0.6646
+  ✓ New best val_pearson: 0.6646
+Epoch 74 [0/604] Loss: 0.3909, LR: 6.99e-05
+Epoch 74 [100/604] Loss: 0.7230, LR: 6.97e-05
+Epoch 74 [200/604] Loss: 0.7834, LR: 6.96e-05
+Epoch 74 [300/604] Loss: 0.3220, LR: 6.95e-05
+Epoch 74 [400/604] Loss: 0.6556, LR: 6.94e-05
+Epoch 74 [500/604] Loss: 0.5518, LR: 6.93e-05
+Epoch 74 [600/604] Loss: 0.7759, LR: 6.91e-05
+Epoch 74 Done. Train Loss: 0.5478 | Train Pearson: 0.7185 | Val MSE: 0.6764 | Val Pearson: 0.6605
+Epoch 75 [0/604] Loss: 0.3891, LR: 6.91e-05
+Epoch 75 [100/604] Loss: 0.5506, LR: 6.90e-05
+Epoch 75 [200/604] Loss: 0.5417, LR: 6.89e-05
+Epoch 75 [300/604] Loss: 0.5810, LR: 6.88e-05
+Epoch 75 [400/604] Loss: 0.6104, LR: 6.87e-05
+Epoch 75 [500/604] Loss: 0.3045, LR: 6.85e-05
+Epoch 75 [600/604] Loss: 0.4540, LR: 6.84e-05
+Epoch 75 Done. Train Loss: 0.5441 | Train Pearson: 0.7207 | Val MSE: 0.6884 | Val Pearson: 0.6542
+Epoch 76 [0/604] Loss: 0.4179, LR: 6.84e-05
+Epoch 76 [100/604] Loss: 0.3902, LR: 6.83e-05
+Epoch 76 [200/604] Loss: 0.3787, LR: 6.82e-05
+Epoch 76 [300/604] Loss: 0.5305, LR: 6.80e-05
+Epoch 76 [400/604] Loss: 0.5010, LR: 6.79e-05
+Epoch 76 [500/604] Loss: 0.4411, LR: 6.78e-05
+Epoch 76 [600/604] Loss: 0.4584, LR: 6.77e-05
+Epoch 76 Done. Train Loss: 0.5470 | Train Pearson: 0.7210 | Val MSE: 0.6757 | Val Pearson: 0.6643
+Epoch 77 [0/604] Loss: 0.7183, LR: 6.77e-05
+Epoch 77 [100/604] Loss: 0.4729, LR: 6.76e-05
+Epoch 77 [200/604] Loss: 0.3868, LR: 6.74e-05
+Epoch 77 [300/604] Loss: 0.4149, LR: 6.73e-05
+Epoch 77 [400/604] Loss: 0.4410, LR: 6.72e-05
+Epoch 77 [500/604] Loss: 0.6050, LR: 6.71e-05
+Epoch 77 [600/604] Loss: 0.3387, LR: 6.69e-05
+Epoch 77 Done. Train Loss: 0.5376 | Train Pearson: 0.7246 | Val MSE: 0.6733 | Val Pearson: 0.6604
+Epoch 78 [0/604] Loss: 0.3338, LR: 6.69e-05
+Epoch 78 [100/604] Loss: 0.8823, LR: 6.68e-05
+Epoch 78 [200/604] Loss: 0.4865, LR: 6.67e-05
+Epoch 78 [300/604] Loss: 0.5254, LR: 6.66e-05
+Epoch 78 [400/604] Loss: 0.5834, LR: 6.64e-05
+Epoch 78 [500/604] Loss: 0.4649, LR: 6.63e-05
+Epoch 78 [600/604] Loss: 0.3912, LR: 6.62e-05
+Epoch 78 Done. Train Loss: 0.5361 | Train Pearson: 0.7253 | Val MSE: 0.6895 | Val Pearson: 0.6506
+Epoch 79 [0/604] Loss: 0.5800, LR: 6.62e-05
+Epoch 79 [100/604] Loss: 0.7799, LR: 6.61e-05
+Epoch 79 [200/604] Loss: 0.7518, LR: 6.59e-05
+Epoch 79 [300/604] Loss: 0.6330, LR: 6.58e-05
+Epoch 79 [400/604] Loss: 0.3589, LR: 6.57e-05
+Epoch 79 [500/604] Loss: 0.4292, LR: 6.56e-05
+Epoch 79 [600/604] Loss: 0.5499, LR: 6.55e-05
+Epoch 79 Done. Train Loss: 0.5308 | Train Pearson: 0.7288 | Val MSE: 0.6879 | Val Pearson: 0.6606
+Epoch 80 [0/604] Loss: 0.4868, LR: 6.54e-05
+Epoch 80 [100/604] Loss: 0.5628, LR: 6.53e-05
+Epoch 80 [200/604] Loss: 0.3096, LR: 6.52e-05
+Epoch 80 [300/604] Loss: 0.2698, LR: 6.51e-05
+Epoch 80 [400/604] Loss: 0.4404, LR: 6.50e-05
+Epoch 80 [500/604] Loss: 0.4670, LR: 6.48e-05
+Epoch 80 [600/604] Loss: 0.3820, LR: 6.47e-05
+Epoch 80 Done. Train Loss: 0.5272 | Train Pearson: 0.7302 | Val MSE: 0.6837 | Val Pearson: 0.6671
+  ✓ New best val_pearson: 0.6671
+Epoch 81 [0/604] Loss: 0.5240, LR: 6.47e-05
+Epoch 81 [100/604] Loss: 0.5716, LR: 6.46e-05
+Epoch 81 [200/604] Loss: 0.4790, LR: 6.45e-05
+Epoch 81 [300/604] Loss: 0.7054, LR: 6.43e-05
+Epoch 81 [400/604] Loss: 0.5415, LR: 6.42e-05
+Epoch 81 [500/604] Loss: 0.6110, LR: 6.41e-05
+Epoch 81 [600/604] Loss: 0.5407, LR: 6.40e-05
+Epoch 81 Done. Train Loss: 0.5324 | Train Pearson: 0.7289 | Val MSE: 0.6741 | Val Pearson: 0.6616
+Epoch 82 [0/604] Loss: 0.3328, LR: 6.39e-05
+Epoch 82 [100/604] Loss: 0.4242, LR: 6.38e-05
+Epoch 82 [200/604] Loss: 0.4083, LR: 6.37e-05
+Epoch 82 [300/604] Loss: 0.7857, LR: 6.36e-05
+Epoch 82 [400/604] Loss: 0.6416, LR: 6.34e-05
+Epoch 82 [500/604] Loss: 0.8161, LR: 6.33e-05
+Epoch 82 [600/604] Loss: 0.5403, LR: 6.32e-05
+Epoch 82 Done. Train Loss: 0.5235 | Train Pearson: 0.7334 | Val MSE: 0.6717 | Val Pearson: 0.6632
+Epoch 83 [0/604] Loss: 0.5693, LR: 6.32e-05
+Epoch 83 [100/604] Loss: 0.4129, LR: 6.31e-05
+Epoch 83 [200/604] Loss: 0.4742, LR: 6.29e-05
+Epoch 83 [300/604] Loss: 0.5094, LR: 6.28e-05
+Epoch 83 [400/604] Loss: 0.4069, LR: 6.27e-05
+Epoch 83 [500/604] Loss: 0.3864, LR: 6.26e-05
+Epoch 83 [600/604] Loss: 0.4338, LR: 6.24e-05
+Epoch 83 Done. Train Loss: 0.5252 | Train Pearson: 0.7322 | Val MSE: 0.6837 | Val Pearson: 0.6559
+Epoch 84 [0/604] Loss: 0.9125, LR: 6.24e-05
+Epoch 84 [100/604] Loss: 0.6430, LR: 6.23e-05
+Epoch 84 [200/604] Loss: 0.6110, LR: 6.22e-05
+Epoch 84 [300/604] Loss: 0.3534, LR: 6.21e-05
+Epoch 84 [400/604] Loss: 0.4013, LR: 6.19e-05
+Epoch 84 [500/604] Loss: 0.4706, LR: 6.18e-05
+Epoch 84 [600/604] Loss: 0.7538, LR: 6.17e-05
+Epoch 84 Done. Train Loss: 0.5149 | Train Pearson: 0.7383 | Val MSE: 0.6646 | Val Pearson: 0.6659
+Epoch 85 [0/604] Loss: 0.4456, LR: 6.17e-05
+Epoch 85 [100/604] Loss: 0.4335, LR: 6.15e-05
+Epoch 85 [200/604] Loss: 0.5453, LR: 6.14e-05
+Epoch 85 [300/604] Loss: 0.5143, LR: 6.13e-05
+Epoch 85 [400/604] Loss: 0.5998, LR: 6.12e-05
+Epoch 85 [500/604] Loss: 0.7668, LR: 6.10e-05
+Epoch 85 [600/604] Loss: 0.4640, LR: 6.09e-05
+Epoch 85 Done. Train Loss: 0.5144 | Train Pearson: 0.7382 | Val MSE: 0.6860 | Val Pearson: 0.6548
+Epoch 86 [0/604] Loss: 1.0434, LR: 6.09e-05
+Epoch 86 [100/604] Loss: 0.5610, LR: 6.08e-05
+Epoch 86 [200/604] Loss: 0.6275, LR: 6.07e-05
+Epoch 86 [300/604] Loss: 0.3849, LR: 6.05e-05
+Epoch 86 [400/604] Loss: 0.4736, LR: 6.04e-05
+Epoch 86 [500/604] Loss: 0.3965, LR: 6.03e-05
+Epoch 86 [600/604] Loss: 0.5636, LR: 6.01e-05
+Epoch 86 Done. Train Loss: 0.5128 | Train Pearson: 0.7392 | Val MSE: 0.6810 | Val Pearson: 0.6596
+Epoch 87 [0/604] Loss: 0.5873, LR: 6.01e-05
+Epoch 87 [100/604] Loss: 0.7235, LR: 6.00e-05
+Epoch 87 [200/604] Loss: 0.5609, LR: 5.99e-05
+Epoch 87 [300/604] Loss: 0.5983, LR: 5.98e-05
+Epoch 87 [400/604] Loss: 0.7549, LR: 5.96e-05
+Epoch 87 [500/604] Loss: 0.3864, LR: 5.95e-05
+Epoch 87 [600/604] Loss: 0.9340, LR: 5.94e-05
+Epoch 87 Done. Train Loss: 0.5111 | Train Pearson: 0.7402 | Val MSE: 0.6930 | Val Pearson: 0.6584
+Epoch 88 [0/604] Loss: 0.7087, LR: 5.94e-05
+Epoch 88 [100/604] Loss: 0.4346, LR: 5.92e-05
+Epoch 88 [200/604] Loss: 0.5906, LR: 5.91e-05
+Epoch 88 [300/604] Loss: 0.5629, LR: 5.90e-05
+Epoch 88 [400/604] Loss: 0.4233, LR: 5.89e-05
+Epoch 88 [500/604] Loss: 0.3007, LR: 5.87e-05
+Epoch 88 [600/604] Loss: 0.5935, LR: 5.86e-05
+Epoch 88 Done. Train Loss: 0.5135 | Train Pearson: 0.7394 | Val MSE: 0.6852 | Val Pearson: 0.6538
+Epoch 89 [0/604] Loss: 0.4385, LR: 5.86e-05
+Epoch 89 [100/604] Loss: 0.5861, LR: 5.85e-05
+Epoch 89 [200/604] Loss: 0.4558, LR: 5.83e-05
+Epoch 89 [300/604] Loss: 0.4400, LR: 5.82e-05
+Epoch 89 [400/604] Loss: 0.4569, LR: 5.81e-05
+Epoch 89 [500/604] Loss: 0.4733, LR: 5.80e-05
+Epoch 89 [600/604] Loss: 0.4012, LR: 5.78e-05
+Epoch 89 Done. Train Loss: 0.5088 | Train Pearson: 0.7417 | Val MSE: 0.6811 | Val Pearson: 0.6594
+Epoch 90 [0/604] Loss: 0.5367, LR: 5.78e-05
+Epoch 90 [100/604] Loss: 0.5350, LR: 5.77e-05
+Epoch 90 [200/604] Loss: 0.6268, LR: 5.76e-05
+Epoch 90 [300/604] Loss: 0.7212, LR: 5.74e-05
+Epoch 90 [400/604] Loss: 0.6751, LR: 5.73e-05
+Epoch 90 [500/604] Loss: 0.4679, LR: 5.72e-05
+Epoch 90 [600/604] Loss: 0.7243, LR: 5.70e-05
+Epoch 90 Done. Train Loss: 0.5015 | Train Pearson: 0.7466 | Val MSE: 0.6921 | Val Pearson: 0.6587
+Epoch 91 [0/604] Loss: 0.6275, LR: 5.70e-05
+Epoch 91 [100/604] Loss: 0.4186, LR: 5.69e-05
+Epoch 91 [200/604] Loss: 0.5558, LR: 5.68e-05
+Epoch 91 [300/604] Loss: 0.4717, LR: 5.67e-05
+Epoch 91 [400/604] Loss: 0.5426, LR: 5.65e-05
+Epoch 91 [500/604] Loss: 0.3945, LR: 5.64e-05
+Epoch 91 [600/604] Loss: 0.3425, LR: 5.63e-05
+Epoch 91 Done. Train Loss: 0.5011 | Train Pearson: 0.7461 | Val MSE: 0.6936 | Val Pearson: 0.6512
+Epoch 92 [0/604] Loss: 0.3443, LR: 5.63e-05
+Epoch 92 [100/604] Loss: 0.3892, LR: 5.61e-05
+Epoch 92 [200/604] Loss: 0.4571, LR: 5.60e-05
+Epoch 92 [300/604] Loss: 0.5127, LR: 5.59e-05
+Epoch 92 [400/604] Loss: 0.4375, LR: 5.57e-05
+Epoch 92 [500/604] Loss: 0.6904, LR: 5.56e-05
+Epoch 92 [600/604] Loss: 0.2997, LR: 5.55e-05
+Epoch 92 Done. Train Loss: 0.4952 | Train Pearson: 0.7500 | Val MSE: 0.6765 | Val Pearson: 0.6599
+Epoch 93 [0/604] Loss: 0.2894, LR: 5.55e-05
+Epoch 93 [100/604] Loss: 0.4443, LR: 5.54e-05
+Epoch 93 [200/604] Loss: 0.4197, LR: 5.52e-05
+Epoch 93 [300/604] Loss: 0.5848, LR: 5.51e-05
+Epoch 93 [400/604] Loss: 0.6575, LR: 5.50e-05
+Epoch 93 [500/604] Loss: 0.5479, LR: 5.48e-05
+Epoch 93 [600/604] Loss: 0.6024, LR: 5.47e-05
+Epoch 93 Done. Train Loss: 0.4975 | Train Pearson: 0.7492 | Val MSE: 0.6844 | Val Pearson: 0.6583
+Epoch 94 [0/604] Loss: 0.3197, LR: 5.47e-05
+Epoch 94 [100/604] Loss: 0.5110, LR: 5.46e-05
+Epoch 94 [200/604] Loss: 0.3463, LR: 5.44e-05
+Epoch 94 [300/604] Loss: 0.4532, LR: 5.43e-05
+Epoch 94 [400/604] Loss: 0.5725, LR: 5.42e-05
+Epoch 94 [500/604] Loss: 0.6350, LR: 5.41e-05
+Epoch 94 [600/604] Loss: 0.4595, LR: 5.39e-05
+Epoch 94 Done. Train Loss: 0.4949 | Train Pearson: 0.7510 | Val MSE: 0.6995 | Val Pearson: 0.6500
+Epoch 95 [0/604] Loss: 0.4701, LR: 5.39e-05
+Epoch 95 [100/604] Loss: 0.5188, LR: 5.38e-05
+Epoch 95 [200/604] Loss: 0.4626, LR: 5.37e-05
+Epoch 95 [300/604] Loss: 0.4268, LR: 5.35e-05
+Epoch 95 [400/604] Loss: 0.6181, LR: 5.34e-05
+Epoch 95 [500/604] Loss: 0.5116, LR: 5.33e-05
+Epoch 95 [600/604] Loss: 0.4713, LR: 5.31e-05
+Epoch 95 Done. Train Loss: 0.4953 | Train Pearson: 0.7496 | Val MSE: 0.6703 | Val Pearson: 0.6621
+Epoch 96 [0/604] Loss: 0.4781, LR: 5.31e-05
+Epoch 96 [100/604] Loss: 0.4689, LR: 5.30e-05
+Epoch 96 [200/604] Loss: 0.5181, LR: 5.29e-05
+Epoch 96 [300/604] Loss: 0.3257, LR: 5.27e-05
+Epoch 96 [400/604] Loss: 0.5725, LR: 5.26e-05
+Epoch 96 [500/604] Loss: 0.3832, LR: 5.25e-05
+Epoch 96 [600/604] Loss: 0.6810, LR: 5.24e-05
+Epoch 96 Done. Train Loss: 0.4859 | Train Pearson: 0.7548 | Val MSE: 0.6690 | Val Pearson: 0.6684
+  ✓ New best val_pearson: 0.6684
+Epoch 97 [0/604] Loss: 0.3118, LR: 5.24e-05
+Epoch 97 [100/604] Loss: 0.3089, LR: 5.22e-05
+Epoch 97 [200/604] Loss: 0.4652, LR: 5.21e-05
+Epoch 97 [300/604] Loss: 0.4311, LR: 5.20e-05
+Epoch 97 [400/604] Loss: 0.5555, LR: 5.18e-05
+Epoch 97 [500/604] Loss: 0.4828, LR: 5.17e-05
+Epoch 97 [600/604] Loss: 0.4749, LR: 5.16e-05
+Epoch 97 Done. Train Loss: 0.4817 | Train Pearson: 0.7575 | Val MSE: 0.6916 | Val Pearson: 0.6606
+Epoch 98 [0/604] Loss: 0.3458, LR: 5.16e-05
+Epoch 98 [100/604] Loss: 0.7334, LR: 5.14e-05
+Epoch 98 [200/604] Loss: 0.3711, LR: 5.13e-05
+Epoch 98 [300/604] Loss: 0.4175, LR: 5.12e-05
+Epoch 98 [400/604] Loss: 0.4965, LR: 5.10e-05
+Epoch 98 [500/604] Loss: 0.4505, LR: 5.09e-05
+Epoch 98 [600/604] Loss: 0.5822, LR: 5.08e-05
+Epoch 98 Done. Train Loss: 0.4858 | Train Pearson: 0.7548 | Val MSE: 0.7040 | Val Pearson: 0.6477
+Epoch 99 [0/604] Loss: 0.3044, LR: 5.08e-05
+Epoch 99 [100/604] Loss: 0.7483, LR: 5.07e-05
+Epoch 99 [200/604] Loss: 0.5743, LR: 5.05e-05
+Epoch 99 [300/604] Loss: 0.4570, LR: 5.04e-05
+Epoch 99 [400/604] Loss: 0.3891, LR: 5.03e-05
+Epoch 99 [500/604] Loss: 0.4634, LR: 5.01e-05
+Epoch 99 [600/604] Loss: 0.4140, LR: 5.00e-05
+Epoch 99 Done. Train Loss: 0.4800 | Train Pearson: 0.7593 | Val MSE: 0.7071 | Val Pearson: 0.6568
+Epoch 100 [0/604] Loss: 0.5482, LR: 5.00e-05
+Epoch 100 [100/604] Loss: 0.4770, LR: 4.99e-05
+Epoch 100 [200/604] Loss: 0.5284, LR: 4.97e-05
+Epoch 100 [300/604] Loss: 0.3959, LR: 4.96e-05
+Epoch 100 [400/604] Loss: 0.4659, LR: 4.95e-05
+Epoch 100 [500/604] Loss: 0.6173, LR: 4.93e-05
+Epoch 100 [600/604] Loss: 0.4177, LR: 4.92e-05
+Epoch 100 Done. Train Loss: 0.4802 | Train Pearson: 0.7595 | Val MSE: 0.6673 | Val Pearson: 0.6648
+Epoch 101 [0/604] Loss: 0.3655, LR: 4.92e-05
+Epoch 101 [100/604] Loss: 0.5158, LR: 4.91e-05
+Epoch 101 [200/604] Loss: 0.3071, LR: 4.90e-05
+Epoch 101 [300/604] Loss: 0.4752, LR: 4.88e-05
+Epoch 101 [400/604] Loss: 0.5692, LR: 4.87e-05
+Epoch 101 [500/604] Loss: 0.4583, LR: 4.86e-05
+Epoch 101 [600/604] Loss: 0.5608, LR: 4.84e-05
+Epoch 101 Done. Train Loss: 0.4761 | Train Pearson: 0.7607 | Val MSE: 0.7099 | Val Pearson: 0.6481
+Epoch 102 [0/604] Loss: 0.4871, LR: 4.84e-05
+Epoch 102 [100/604] Loss: 0.5373, LR: 4.83e-05
+Epoch 102 [200/604] Loss: 0.5447, LR: 4.82e-05
+Epoch 102 [300/604] Loss: 0.5608, LR: 4.80e-05
+Epoch 102 [400/604] Loss: 0.6135, LR: 4.79e-05
+Epoch 102 [500/604] Loss: 0.5699, LR: 4.78e-05
+Epoch 102 [600/604] Loss: 0.6956, LR: 4.76e-05
+Epoch 102 Done. Train Loss: 0.4758 | Train Pearson: 0.7617 | Val MSE: 0.6941 | Val Pearson: 0.6522
+Epoch 103 [0/604] Loss: 0.3947, LR: 4.76e-05
+Epoch 103 [100/604] Loss: 0.4551, LR: 4.75e-05
+Epoch 103 [200/604] Loss: 0.3926, LR: 4.74e-05
+Epoch 103 [300/604] Loss: 0.4023, LR: 4.73e-05
+Epoch 103 [400/604] Loss: 0.4526, LR: 4.71e-05
+Epoch 103 [500/604] Loss: 0.2801, LR: 4.70e-05
+Epoch 103 [600/604] Loss: 0.4637, LR: 4.69e-05
+Epoch 103 Done. Train Loss: 0.4696 | Train Pearson: 0.7646 | Val MSE: 0.7238 | Val Pearson: 0.6515
+Epoch 104 [0/604] Loss: 0.4044, LR: 4.69e-05
+Epoch 104 [100/604] Loss: 0.2717, LR: 4.67e-05
+Epoch 104 [200/604] Loss: 0.3356, LR: 4.66e-05
+Epoch 104 [300/604] Loss: 0.5404, LR: 4.65e-05
+Epoch 104 [400/604] Loss: 0.3072, LR: 4.63e-05
+Epoch 104 [500/604] Loss: 0.3817, LR: 4.62e-05
+Epoch 104 [600/604] Loss: 0.6215, LR: 4.61e-05
+Epoch 104 Done. Train Loss: 0.4628 | Train Pearson: 0.7688 | Val MSE: 0.6860 | Val Pearson: 0.6562
+Epoch 105 [0/604] Loss: 0.4957, LR: 4.61e-05
+Epoch 105 [100/604] Loss: 0.3651, LR: 4.59e-05
+Epoch 105 [200/604] Loss: 0.5395, LR: 4.58e-05
+Epoch 105 [300/604] Loss: 0.6872, LR: 4.57e-05
+Epoch 105 [400/604] Loss: 0.3572, LR: 4.56e-05
+Epoch 105 [500/604] Loss: 0.8875, LR: 4.54e-05
+Epoch 105 [600/604] Loss: 0.4541, LR: 4.53e-05
+Epoch 105 Done. Train Loss: 0.4672 | Train Pearson: 0.7658 | Val MSE: 0.6909 | Val Pearson: 0.6526
+Epoch 106 [0/604] Loss: 0.7467, LR: 4.53e-05
+Epoch 106 [100/604] Loss: 0.3138, LR: 4.52e-05
+Epoch 106 [200/604] Loss: 0.6054, LR: 4.50e-05
+Epoch 106 [300/604] Loss: 0.3986, LR: 4.49e-05
+Epoch 106 [400/604] Loss: 0.3696, LR: 4.48e-05
+Epoch 106 [500/604] Loss: 0.3931, LR: 4.46e-05
+Epoch 106 [600/604] Loss: 0.5300, LR: 4.45e-05
+Epoch 106 Done. Train Loss: 0.4587 | Train Pearson: 0.7708 | Val MSE: 0.6958 | Val Pearson: 0.6544
+Epoch 107 [0/604] Loss: 0.4090, LR: 4.45e-05
+Epoch 107 [100/604] Loss: 0.4272, LR: 4.44e-05
+Epoch 107 [200/604] Loss: 0.4674, LR: 4.43e-05
+Epoch 107 [300/604] Loss: 0.4581, LR: 4.41e-05
+Epoch 107 [400/604] Loss: 0.3582, LR: 4.40e-05
+Epoch 107 [500/604] Loss: 0.3626, LR: 4.39e-05
+Epoch 107 [600/604] Loss: 0.4140, LR: 4.37e-05
+Epoch 107 Done. Train Loss: 0.4584 | Train Pearson: 0.7708 | Val MSE: 0.6954 | Val Pearson: 0.6617
+Epoch 108 [0/604] Loss: 0.4818, LR: 4.37e-05
+Epoch 108 [100/604] Loss: 0.3325, LR: 4.36e-05
+Epoch 108 [200/604] Loss: 0.4000, LR: 4.35e-05
+Epoch 108 [300/604] Loss: 0.6837, LR: 4.33e-05
+Epoch 108 [400/604] Loss: 0.4425, LR: 4.32e-05
+Epoch 108 [500/604] Loss: 0.3705, LR: 4.31e-05
+Epoch 108 [600/604] Loss: 0.5929, LR: 4.30e-05
+Epoch 108 Done. Train Loss: 0.4581 | Train Pearson: 0.7709 | Val MSE: 0.6938 | Val Pearson: 0.6542
+Epoch 109 [0/604] Loss: 0.4149, LR: 4.30e-05
+Epoch 109 [100/604] Loss: 0.8202, LR: 4.28e-05
+Epoch 109 [200/604] Loss: 0.6265, LR: 4.27e-05
+Epoch 109 [300/604] Loss: 0.3215, LR: 4.26e-05
+Epoch 109 [400/604] Loss: 0.3036, LR: 4.24e-05
+Epoch 109 [500/604] Loss: 0.3178, LR: 4.23e-05
+Epoch 109 [600/604] Loss: 0.4418, LR: 4.22e-05
+Epoch 109 Done. Train Loss: 0.4600 | Train Pearson: 0.7713 | Val MSE: 0.6754 | Val Pearson: 0.6657
+Epoch 110 [0/604] Loss: 0.6452, LR: 4.22e-05
+Epoch 110 [100/604] Loss: 0.5030, LR: 4.20e-05
+Epoch 110 [200/604] Loss: 0.3255, LR: 4.19e-05
+Epoch 110 [300/604] Loss: 0.4028, LR: 4.18e-05
+Epoch 110 [400/604] Loss: 0.4437, LR: 4.17e-05
+Epoch 110 [500/604] Loss: 0.5169, LR: 4.15e-05
+Epoch 110 [600/604] Loss: 0.4846, LR: 4.14e-05
+Epoch 110 Done. Train Loss: 0.4467 | Train Pearson: 0.7775 | Val MSE: 0.6975 | Val Pearson: 0.6471
+Epoch 111 [0/604] Loss: 0.4356, LR: 4.14e-05
+Epoch 111 [100/604] Loss: 0.3718, LR: 4.13e-05
+Epoch 111 [200/604] Loss: 0.2911, LR: 4.11e-05
+Epoch 111 [300/604] Loss: 0.6076, LR: 4.10e-05
+Epoch 111 [400/604] Loss: 0.3778, LR: 4.09e-05
+Epoch 111 [500/604] Loss: 0.4915, LR: 4.08e-05
+Epoch 111 [600/604] Loss: 0.5851, LR: 4.06e-05
+Epoch 111 Done. Train Loss: 0.4470 | Train Pearson: 0.7774 | Val MSE: 0.6762 | Val Pearson: 0.6677
+Epoch 112 [0/604] Loss: 0.3449, LR: 4.06e-05
+Epoch 112 [100/604] Loss: 0.2900, LR: 4.05e-05
+Epoch 112 [200/604] Loss: 0.6798, LR: 4.04e-05
+Epoch 112 [300/604] Loss: 0.3147, LR: 4.02e-05
+Epoch 112 [400/604] Loss: 0.3915, LR: 4.01e-05
+Epoch 112 [500/604] Loss: 0.4710, LR: 4.00e-05
+Epoch 112 [600/604] Loss: 0.3510, LR: 3.99e-05
+Epoch 112 Done. Train Loss: 0.4518 | Train Pearson: 0.7747 | Val MSE: 0.7192 | Val Pearson: 0.6593
+Epoch 113 [0/604] Loss: 0.3782, LR: 3.99e-05
+Epoch 113 [100/604] Loss: 0.2469, LR: 3.97e-05
+Epoch 113 [200/604] Loss: 0.4264, LR: 3.96e-05
+Epoch 113 [300/604] Loss: 0.4219, LR: 3.95e-05
+Epoch 113 [400/604] Loss: 0.6297, LR: 3.94e-05
+Epoch 113 [500/604] Loss: 0.3734, LR: 3.92e-05
+Epoch 113 [600/604] Loss: 0.4125, LR: 3.91e-05
+Epoch 113 Done. Train Loss: 0.4470 | Train Pearson: 0.7776 | Val MSE: 0.6751 | Val Pearson: 0.6631
+Epoch 114 [0/604] Loss: 0.3427, LR: 3.91e-05
+Epoch 114 [100/604] Loss: 0.5332, LR: 3.90e-05
+Epoch 114 [200/604] Loss: 0.4116, LR: 3.88e-05
+Epoch 114 [300/604] Loss: 0.3772, LR: 3.87e-05
+Epoch 114 [400/604] Loss: 0.4046, LR: 3.86e-05
+Epoch 114 [500/604] Loss: 0.5402, LR: 3.85e-05
+Epoch 114 [600/604] Loss: 0.3273, LR: 3.83e-05
+Epoch 114 Done. Train Loss: 0.4471 | Train Pearson: 0.7779 | Val MSE: 0.6877 | Val Pearson: 0.6606
+Epoch 115 [0/604] Loss: 0.3170, LR: 3.83e-05
+Epoch 115 [100/604] Loss: 0.3052, LR: 3.82e-05
+Epoch 115 [200/604] Loss: 0.4850, LR: 3.81e-05
+Epoch 115 [300/604] Loss: 0.5456, LR: 3.79e-05
+Epoch 115 [400/604] Loss: 0.6468, LR: 3.78e-05
+Epoch 115 [500/604] Loss: 0.6309, LR: 3.77e-05
+Epoch 115 [600/604] Loss: 0.2908, LR: 3.76e-05
+Epoch 115 Done. Train Loss: 0.4442 | Train Pearson: 0.7792 | Val MSE: 0.7011 | Val Pearson: 0.6608
+Epoch 116 [0/604] Loss: 0.4991, LR: 3.76e-05
+Epoch 116 [100/604] Loss: 0.4053, LR: 3.74e-05
+Epoch 116 [200/604] Loss: 0.4057, LR: 3.73e-05
+Epoch 116 [300/604] Loss: 0.5272, LR: 3.72e-05
+Epoch 116 [400/604] Loss: 0.4116, LR: 3.71e-05
+Epoch 116 [500/604] Loss: 0.5125, LR: 3.69e-05
+Epoch 116 [600/604] Loss: 0.4707, LR: 3.68e-05
+Epoch 116 Done. Train Loss: 0.4394 | Train Pearson: 0.7820 | Val MSE: 0.6855 | Val Pearson: 0.6609
+Epoch 117 [0/604] Loss: 0.5565, LR: 3.68e-05
+Epoch 117 [100/604] Loss: 0.5568, LR: 3.67e-05
+Epoch 117 [200/604] Loss: 0.4005, LR: 3.66e-05
+Epoch 117 [300/604] Loss: 0.3414, LR: 3.64e-05
+Epoch 117 [400/604] Loss: 0.5032, LR: 3.63e-05
+Epoch 117 [500/604] Loss: 0.6070, LR: 3.62e-05
+Epoch 117 [600/604] Loss: 0.5144, LR: 3.61e-05
+Epoch 117 Done. Train Loss: 0.4377 | Train Pearson: 0.7827 | Val MSE: 0.7014 | Val Pearson: 0.6543
+Epoch 118 [0/604] Loss: 0.4914, LR: 3.60e-05
+Epoch 118 [100/604] Loss: 0.6124, LR: 3.59e-05
+Epoch 118 [200/604] Loss: 0.2669, LR: 3.58e-05
+Epoch 118 [300/604] Loss: 0.3542, LR: 3.57e-05
+Epoch 118 [400/604] Loss: 0.2653, LR: 3.56e-05
+Epoch 118 [500/604] Loss: 0.3864, LR: 3.54e-05
+Epoch 118 [600/604] Loss: 0.7891, LR: 3.53e-05
+Epoch 118 Done. Train Loss: 0.4382 | Train Pearson: 0.7825 | Val MSE: 0.6759 | Val Pearson: 0.6598
+Epoch 119 [0/604] Loss: 0.3430, LR: 3.53e-05
+Epoch 119 [100/604] Loss: 0.3661, LR: 3.52e-05
+Epoch 119 [200/604] Loss: 0.3107, LR: 3.50e-05
+Epoch 119 [300/604] Loss: 0.3201, LR: 3.49e-05
+Epoch 119 [400/604] Loss: 0.6450, LR: 3.48e-05
+Epoch 119 [500/604] Loss: 0.4408, LR: 3.47e-05
+Epoch 119 [600/604] Loss: 0.2416, LR: 3.46e-05
+Epoch 119 Done. Train Loss: 0.4359 | Train Pearson: 0.7836 | Val MSE: 0.6981 | Val Pearson: 0.6517
+Epoch 120 [0/604] Loss: 0.2514, LR: 3.45e-05
+Epoch 120 [100/604] Loss: 0.4009, LR: 3.44e-05
+Epoch 120 [200/604] Loss: 0.3808, LR: 3.43e-05
+Epoch 120 [300/604] Loss: 0.4144, LR: 3.42e-05
+Epoch 120 [400/604] Loss: 0.3380, LR: 3.41e-05
+Epoch 120 [500/604] Loss: 0.4056, LR: 3.39e-05
+Epoch 120 [600/604] Loss: 0.5046, LR: 3.38e-05
+Epoch 120 Done. Train Loss: 0.4344 | Train Pearson: 0.7848 | Val MSE: 0.6895 | Val Pearson: 0.6577
+Epoch 121 [0/604] Loss: 0.4389, LR: 3.38e-05
+Epoch 121 [100/604] Loss: 0.2845, LR: 3.37e-05
+Epoch 121 [200/604] Loss: 0.3115, LR: 3.36e-05
+Epoch 121 [300/604] Loss: 0.4628, LR: 3.34e-05
+Epoch 121 [400/604] Loss: 0.3742, LR: 3.33e-05
+Epoch 121 [500/604] Loss: 0.5262, LR: 3.32e-05
+Epoch 121 [600/604] Loss: 0.4459, LR: 3.31e-05
+Epoch 121 Done. Train Loss: 0.4250 | Train Pearson: 0.7909 | Val MSE: 0.6947 | Val Pearson: 0.6548
+Epoch 122 [0/604] Loss: 0.4731, LR: 3.31e-05
+Epoch 122 [100/604] Loss: 0.1853, LR: 3.29e-05
+Epoch 122 [200/604] Loss: 0.5371, LR: 3.28e-05
+Epoch 122 [300/604] Loss: 0.3392, LR: 3.27e-05
+Epoch 122 [400/604] Loss: 0.3377, LR: 3.26e-05
+Epoch 122 [500/604] Loss: 0.7240, LR: 3.25e-05
+Epoch 122 [600/604] Loss: 0.2683, LR: 3.23e-05
+Epoch 122 Done. Train Loss: 0.4310 | Train Pearson: 0.7865 | Val MSE: 0.7014 | Val Pearson: 0.6529
+Epoch 123 [0/604] Loss: 0.5336, LR: 3.23e-05
+Epoch 123 [100/604] Loss: 0.3841, LR: 3.22e-05
+Epoch 123 [200/604] Loss: 0.5773, LR: 3.21e-05
+Epoch 123 [300/604] Loss: 0.4883, LR: 3.20e-05
+Epoch 123 [400/604] Loss: 0.2892, LR: 3.18e-05
+Epoch 123 [500/604] Loss: 0.5408, LR: 3.17e-05
+Epoch 123 [600/604] Loss: 0.5751, LR: 3.16e-05
+Epoch 123 Done. Train Loss: 0.4262 | Train Pearson: 0.7894 | Val MSE: 0.6825 | Val Pearson: 0.6591
+Epoch 124 [0/604] Loss: 0.3193, LR: 3.16e-05
+Epoch 124 [100/604] Loss: 0.4603, LR: 3.15e-05
+Epoch 124 [200/604] Loss: 0.3114, LR: 3.14e-05
+Epoch 124 [300/604] Loss: 0.6145, LR: 3.12e-05
+Epoch 124 [400/604] Loss: 0.4293, LR: 3.11e-05
+Epoch 124 [500/604] Loss: 0.3232, LR: 3.10e-05
+Epoch 124 [600/604] Loss: 0.3326, LR: 3.09e-05
+Epoch 124 Done. Train Loss: 0.4220 | Train Pearson: 0.7913 | Val MSE: 0.6954 | Val Pearson: 0.6540
+Epoch 125 [0/604] Loss: 0.2992, LR: 3.09e-05
+Epoch 125 [100/604] Loss: 0.6501, LR: 3.07e-05
+Epoch 125 [200/604] Loss: 0.3526, LR: 3.06e-05
+Epoch 125 [300/604] Loss: 0.3963, LR: 3.05e-05
+Epoch 125 [400/604] Loss: 0.6808, LR: 3.04e-05
+Epoch 125 [500/604] Loss: 0.3244, LR: 3.03e-05
+Epoch 125 [600/604] Loss: 0.6645, LR: 3.01e-05
+Epoch 125 Done. Train Loss: 0.4224 | Train Pearson: 0.7912 | Val MSE: 0.7053 | Val Pearson: 0.6593
+Epoch 126 [0/604] Loss: 0.7847, LR: 3.01e-05
+Epoch 126 [100/604] Loss: 0.2580, LR: 3.00e-05
+Epoch 126 [200/604] Loss: 0.3628, LR: 2.99e-05
+Epoch 126 [300/604] Loss: 0.5349, LR: 2.98e-05
+Epoch 126 [400/604] Loss: 0.3383, LR: 2.97e-05
+Epoch 126 [500/604] Loss: 0.3559, LR: 2.95e-05
+Epoch 126 [600/604] Loss: 0.3295, LR: 2.94e-05
+Epoch 126 Done. Train Loss: 0.4198 | Train Pearson: 0.7935 | Val MSE: 0.6881 | Val Pearson: 0.6616
+
+Early stopping triggered after 127 epochs!
+Best val_pearson: 0.6684
+
+============================================================
+Training complete!
+=== Experiment 6: Lower LR + Plateau Scheduler ===
+Loading scores from data/scores.json...
+Total samples found: 21300. Training on 19300, Val on 2000
+Using MSE Loss
+Using ReduceLROnPlateau Scheduler
+Starting training...
+Epoch 0 [0/604] Loss: 5.3545, LR: 5.00e-05
+Epoch 0 [100/604] Loss: 1.0968, LR: 5.00e-05
+Epoch 0 [200/604] Loss: 1.4053, LR: 5.00e-05
+Epoch 0 [300/604] Loss: 0.9675, LR: 5.00e-05
+Epoch 0 [400/604] Loss: 0.9786, LR: 5.00e-05
+Epoch 0 [500/604] Loss: 1.4755, LR: 5.00e-05
+Epoch 0 [600/604] Loss: 1.6565, LR: 5.00e-05
+Epoch 0 Done. Train Loss: 1.3109 | Train Pearson: 0.2788 | Val MSE: 1.0437 | Val Pearson: 0.4252
+  ✓ New best val_pearson: 0.4252
+Epoch 1 [0/604] Loss: 0.7781, LR: 5.00e-05
+Epoch 1 [100/604] Loss: 1.0550, LR: 5.00e-05
+Epoch 1 [200/604] Loss: 0.8291, LR: 5.00e-05
+Epoch 1 [300/604] Loss: 1.0134, LR: 5.00e-05
+Epoch 1 [400/604] Loss: 0.8989, LR: 5.00e-05
+Epoch 1 [500/604] Loss: 0.9510, LR: 5.00e-05
+Epoch 1 [600/604] Loss: 1.1382, LR: 5.00e-05
+Epoch 1 Done. Train Loss: 0.9948 | Train Pearson: 0.4011 | Val MSE: 1.0318 | Val Pearson: 0.4240
+Epoch 2 [0/604] Loss: 0.6436, LR: 5.00e-05
+Epoch 2 [100/604] Loss: 0.7511, LR: 5.00e-05
+Epoch 2 [200/604] Loss: 0.7543, LR: 5.00e-05
+Epoch 2 [300/604] Loss: 1.0044, LR: 5.00e-05
+Epoch 2 [400/604] Loss: 0.8684, LR: 5.00e-05
+Epoch 2 [500/604] Loss: 0.9323, LR: 5.00e-05
+Epoch 2 [600/604] Loss: 0.9265, LR: 5.00e-05
+Epoch 2 Done. Train Loss: 0.9460 | Train Pearson: 0.4310 | Val MSE: 0.9750 | Val Pearson: 0.4733
+  ✓ New best val_pearson: 0.4733
+Epoch 3 [0/604] Loss: 0.5952, LR: 5.00e-05
+Epoch 3 [100/604] Loss: 1.1568, LR: 5.00e-05
+Epoch 3 [200/604] Loss: 1.0846, LR: 5.00e-05
+Epoch 3 [300/604] Loss: 0.7380, LR: 5.00e-05
+Epoch 3 [400/604] Loss: 0.7873, LR: 5.00e-05
+Epoch 3 [500/604] Loss: 1.6460, LR: 5.00e-05
+Epoch 3 [600/604] Loss: 0.8778, LR: 5.00e-05
+Epoch 3 Done. Train Loss: 0.9037 | Train Pearson: 0.4621 | Val MSE: 1.0504 | Val Pearson: 0.4500
+Epoch 4 [0/604] Loss: 1.6627, LR: 5.00e-05
+Epoch 4 [100/604] Loss: 1.8018, LR: 5.00e-05
+Epoch 4 [200/604] Loss: 0.6795, LR: 5.00e-05
+Epoch 4 [300/604] Loss: 0.8078, LR: 5.00e-05
+Epoch 4 [400/604] Loss: 1.1019, LR: 5.00e-05
+Epoch 4 [500/604] Loss: 1.2166, LR: 5.00e-05
+Epoch 4 [600/604] Loss: 1.0501, LR: 5.00e-05
+Epoch 4 Done. Train Loss: 0.8922 | Train Pearson: 0.4712 | Val MSE: 0.9855 | Val Pearson: 0.4635
+Epoch 5 [0/604] Loss: 1.2227, LR: 5.00e-05
+Epoch 5 [100/604] Loss: 0.6436, LR: 5.00e-05
+Epoch 5 [200/604] Loss: 0.8031, LR: 5.00e-05
+Epoch 5 [300/604] Loss: 1.0608, LR: 5.00e-05
+Epoch 5 [400/604] Loss: 0.7504, LR: 5.00e-05
+Epoch 5 [500/604] Loss: 0.8115, LR: 5.00e-05
+Epoch 5 [600/604] Loss: 0.9197, LR: 5.00e-05
+Epoch 5 Done. Train Loss: 0.8746 | Train Pearson: 0.4837 | Val MSE: 1.1201 | Val Pearson: 0.4121
+Epoch 6 [0/604] Loss: 1.6568, LR: 5.00e-05
+Epoch 6 [100/604] Loss: 0.6248, LR: 5.00e-05
+Epoch 6 [200/604] Loss: 0.7685, LR: 5.00e-05
+Epoch 6 [300/604] Loss: 1.2614, LR: 5.00e-05
+Epoch 6 [400/604] Loss: 0.5650, LR: 5.00e-05
+Epoch 6 [500/604] Loss: 0.7571, LR: 5.00e-05
+Epoch 6 [600/604] Loss: 1.1494, LR: 5.00e-05
+Epoch 6 Done. Train Loss: 0.8561 | Train Pearson: 0.5003 | Val MSE: 0.8974 | Val Pearson: 0.5055
+  ✓ New best val_pearson: 0.5055
+Epoch 7 [0/604] Loss: 0.7632, LR: 5.00e-05
+Epoch 7 [100/604] Loss: 0.6702, LR: 5.00e-05
+Epoch 7 [200/604] Loss: 0.5585, LR: 5.00e-05
+Epoch 7 [300/604] Loss: 1.1717, LR: 5.00e-05
+Epoch 7 [400/604] Loss: 0.9100, LR: 5.00e-05
+Epoch 7 [500/604] Loss: 0.9815, LR: 5.00e-05
+Epoch 7 [600/604] Loss: 1.0261, LR: 5.00e-05
+Epoch 7 Done. Train Loss: 0.8451 | Train Pearson: 0.5075 | Val MSE: 0.8819 | Val Pearson: 0.5362
+  ✓ New best val_pearson: 0.5362
+Epoch 8 [0/604] Loss: 1.0314, LR: 5.00e-05
+Epoch 8 [100/604] Loss: 0.7740, LR: 5.00e-05
+Epoch 8 [200/604] Loss: 1.0754, LR: 5.00e-05
+Epoch 8 [300/604] Loss: 0.5321, LR: 5.00e-05
+Epoch 8 [400/604] Loss: 0.6230, LR: 5.00e-05
+Epoch 8 [500/604] Loss: 0.9824, LR: 5.00e-05
+Epoch 8 [600/604] Loss: 1.0308, LR: 5.00e-05
+Epoch 8 Done. Train Loss: 0.8398 | Train Pearson: 0.5132 | Val MSE: 0.9127 | Val Pearson: 0.4970
+Epoch 9 [0/604] Loss: 1.2953, LR: 5.00e-05
+Epoch 9 [100/604] Loss: 0.8852, LR: 5.00e-05
+Epoch 9 [200/604] Loss: 1.0781, LR: 5.00e-05
+Epoch 9 [300/604] Loss: 1.0195, LR: 5.00e-05
+Epoch 9 [400/604] Loss: 0.5077, LR: 5.00e-05
+Epoch 9 [500/604] Loss: 1.0170, LR: 5.00e-05
+Epoch 9 [600/604] Loss: 0.5521, LR: 5.00e-05
+Epoch 9 Done. Train Loss: 0.8303 | Train Pearson: 0.5204 | Val MSE: 0.8452 | Val Pearson: 0.5412
+  ✓ New best val_pearson: 0.5412
+Epoch 10 [0/604] Loss: 0.6197, LR: 5.00e-05
+Epoch 10 [100/604] Loss: 0.7823, LR: 5.00e-05
+Epoch 10 [200/604] Loss: 0.8515, LR: 5.00e-05
+Epoch 10 [300/604] Loss: 0.3956, LR: 5.00e-05
+Epoch 10 [400/604] Loss: 0.8388, LR: 5.00e-05
+Epoch 10 [500/604] Loss: 0.8197, LR: 5.00e-05
+Epoch 10 [600/604] Loss: 0.4932, LR: 5.00e-05
+Epoch 10 Done. Train Loss: 0.8074 | Train Pearson: 0.5376 | Val MSE: 0.8465 | Val Pearson: 0.5441
+  ✓ New best val_pearson: 0.5441
+Epoch 11 [0/604] Loss: 0.4912, LR: 5.00e-05
+Epoch 11 [100/604] Loss: 0.5889, LR: 5.00e-05
+Epoch 11 [200/604] Loss: 0.9202, LR: 5.00e-05
+Epoch 11 [300/604] Loss: 0.6067, LR: 5.00e-05
+Epoch 11 [400/604] Loss: 0.7165, LR: 5.00e-05
+Epoch 11 [500/604] Loss: 0.4224, LR: 5.00e-05
+Epoch 11 [600/604] Loss: 1.0593, LR: 5.00e-05
+Epoch 11 Done. Train Loss: 0.8016 | Train Pearson: 0.5432 | Val MSE: 0.8692 | Val Pearson: 0.5241
+Epoch 12 [0/604] Loss: 0.7704, LR: 5.00e-05
+Epoch 12 [100/604] Loss: 0.7911, LR: 5.00e-05
+Epoch 12 [200/604] Loss: 0.8955, LR: 5.00e-05
+Epoch 12 [300/604] Loss: 1.0502, LR: 5.00e-05
+Epoch 12 [400/604] Loss: 0.5957, LR: 5.00e-05
+Epoch 12 [500/604] Loss: 0.7530, LR: 5.00e-05
+Epoch 12 [600/604] Loss: 0.8662, LR: 5.00e-05
+Epoch 12 Done. Train Loss: 0.7973 | Train Pearson: 0.5461 | Val MSE: 0.8195 | Val Pearson: 0.5609
+  ✓ New best val_pearson: 0.5609
+Epoch 13 [0/604] Loss: 0.9067, LR: 5.00e-05
+Epoch 13 [100/604] Loss: 1.0154, LR: 5.00e-05
+Epoch 13 [200/604] Loss: 1.2754, LR: 5.00e-05
+Epoch 13 [300/604] Loss: 0.8535, LR: 5.00e-05
+Epoch 13 [400/604] Loss: 0.7112, LR: 5.00e-05
+Epoch 13 [500/604] Loss: 0.8266, LR: 5.00e-05
+Epoch 13 [600/604] Loss: 0.7457, LR: 5.00e-05
+Epoch 13 Done. Train Loss: 0.7781 | Train Pearson: 0.5609 | Val MSE: 0.8138 | Val Pearson: 0.5724
+  ✓ New best val_pearson: 0.5724
+Epoch 14 [0/604] Loss: 1.0564, LR: 5.00e-05
+Epoch 14 [100/604] Loss: 0.7324, LR: 5.00e-05
+Epoch 14 [200/604] Loss: 0.7782, LR: 5.00e-05
+Epoch 14 [300/604] Loss: 0.8994, LR: 5.00e-05
+Epoch 14 [400/604] Loss: 0.7833, LR: 5.00e-05
+Epoch 14 [500/604] Loss: 0.7102, LR: 5.00e-05
+Epoch 14 [600/604] Loss: 0.8624, LR: 5.00e-05
+Epoch 14 Done. Train Loss: 0.7726 | Train Pearson: 0.5643 | Val MSE: 0.8235 | Val Pearson: 0.5585
+Epoch 15 [0/604] Loss: 0.7015, LR: 5.00e-05
+Epoch 15 [100/604] Loss: 0.7492, LR: 5.00e-05
+Epoch 15 [200/604] Loss: 0.4461, LR: 5.00e-05
+Epoch 15 [300/604] Loss: 0.8121, LR: 5.00e-05
+Epoch 15 [400/604] Loss: 0.6596, LR: 5.00e-05
+Epoch 15 [500/604] Loss: 0.4982, LR: 5.00e-05
+Epoch 15 [600/604] Loss: 0.5868, LR: 5.00e-05
+Epoch 15 Done. Train Loss: 0.7687 | Train Pearson: 0.5688 | Val MSE: 0.7946 | Val Pearson: 0.5824
+  ✓ New best val_pearson: 0.5824
+Epoch 16 [0/604] Loss: 0.8427, LR: 5.00e-05
+Epoch 16 [100/604] Loss: 1.0673, LR: 5.00e-05
+Epoch 16 [200/604] Loss: 0.5812, LR: 5.00e-05
+Epoch 16 [300/604] Loss: 0.8475, LR: 5.00e-05
+Epoch 16 [400/604] Loss: 0.8330, LR: 5.00e-05
+Epoch 16 [500/604] Loss: 0.6588, LR: 5.00e-05
+Epoch 16 [600/604] Loss: 0.7566, LR: 5.00e-05
+Epoch 16 Done. Train Loss: 0.7610 | Train Pearson: 0.5731 | Val MSE: 0.7998 | Val Pearson: 0.5738
+Epoch 17 [0/604] Loss: 0.6615, LR: 5.00e-05
+Epoch 17 [100/604] Loss: 0.7191, LR: 5.00e-05
+Epoch 17 [200/604] Loss: 1.1129, LR: 5.00e-05
+Epoch 17 [300/604] Loss: 0.7851, LR: 5.00e-05
+Epoch 17 [400/604] Loss: 0.6836, LR: 5.00e-05
+Epoch 17 [500/604] Loss: 0.5834, LR: 5.00e-05
+Epoch 17 [600/604] Loss: 1.0442, LR: 5.00e-05
+Epoch 17 Done. Train Loss: 0.7512 | Train Pearson: 0.5800 | Val MSE: 0.7660 | Val Pearson: 0.5989
+  ✓ New best val_pearson: 0.5989
+Epoch 18 [0/604] Loss: 0.4482, LR: 5.00e-05
+Epoch 18 [100/604] Loss: 0.9467, LR: 5.00e-05
+Epoch 18 [200/604] Loss: 0.8744, LR: 5.00e-05
+Epoch 18 [300/604] Loss: 0.5249, LR: 5.00e-05
+Epoch 18 [400/604] Loss: 0.8050, LR: 5.00e-05
+Epoch 18 [500/604] Loss: 0.8499, LR: 5.00e-05
+Epoch 18 [600/604] Loss: 0.9132, LR: 5.00e-05
+Epoch 18 Done. Train Loss: 0.7430 | Train Pearson: 0.5865 | Val MSE: 0.7518 | Val Pearson: 0.6086
+  ✓ New best val_pearson: 0.6086
+Epoch 19 [0/604] Loss: 0.5805, LR: 5.00e-05
+Epoch 19 [100/604] Loss: 0.7334, LR: 5.00e-05
+Epoch 19 [200/604] Loss: 0.8835, LR: 5.00e-05
+Epoch 19 [300/604] Loss: 0.8298, LR: 5.00e-05
+Epoch 19 [400/604] Loss: 0.6925, LR: 5.00e-05
+Epoch 19 [500/604] Loss: 0.7996, LR: 5.00e-05
+Epoch 19 [600/604] Loss: 0.8989, LR: 5.00e-05
+Epoch 19 Done. Train Loss: 0.7469 | Train Pearson: 0.5873 | Val MSE: 0.7740 | Val Pearson: 0.6016
+Epoch 20 [0/604] Loss: 0.3200, LR: 5.00e-05
+Epoch 20 [100/604] Loss: 0.5675, LR: 5.00e-05
+Epoch 20 [200/604] Loss: 0.7706, LR: 5.00e-05
+Epoch 20 [300/604] Loss: 0.6080, LR: 5.00e-05
+Epoch 20 [400/604] Loss: 0.7274, LR: 5.00e-05
+Epoch 20 [500/604] Loss: 0.7956, LR: 5.00e-05
+Epoch 20 [600/604] Loss: 0.6284, LR: 5.00e-05
+Epoch 20 Done. Train Loss: 0.7314 | Train Pearson: 0.5956 | Val MSE: 0.7903 | Val Pearson: 0.5920
+Epoch 21 [0/604] Loss: 0.8578, LR: 5.00e-05
+Epoch 21 [100/604] Loss: 0.7716, LR: 5.00e-05
+Epoch 21 [200/604] Loss: 0.6181, LR: 5.00e-05
+Epoch 21 [300/604] Loss: 0.7710, LR: 5.00e-05
+Epoch 21 [400/604] Loss: 0.7504, LR: 5.00e-05
+Epoch 21 [500/604] Loss: 0.6529, LR: 5.00e-05
+Epoch 21 [600/604] Loss: 0.8130, LR: 5.00e-05
+Epoch 21 Done. Train Loss: 0.7246 | Train Pearson: 0.6000 | Val MSE: 0.7586 | Val Pearson: 0.6029
+Epoch 22 [0/604] Loss: 0.5611, LR: 5.00e-05
+Epoch 22 [100/604] Loss: 0.7019, LR: 5.00e-05
+Epoch 22 [200/604] Loss: 0.6400, LR: 5.00e-05
+Epoch 22 [300/604] Loss: 1.0259, LR: 5.00e-05
+Epoch 22 [400/604] Loss: 0.8642, LR: 5.00e-05
+Epoch 22 [500/604] Loss: 0.6824, LR: 5.00e-05
+Epoch 22 [600/604] Loss: 0.8194, LR: 5.00e-05
+Epoch 22 Done. Train Loss: 0.7228 | Train Pearson: 0.6010 | Val MSE: 0.7404 | Val Pearson: 0.6164
+  ✓ New best val_pearson: 0.6164
+Epoch 23 [0/604] Loss: 0.6090, LR: 5.00e-05
+Epoch 23 [100/604] Loss: 0.6027, LR: 5.00e-05
+Epoch 23 [200/604] Loss: 0.6686, LR: 5.00e-05
+Epoch 23 [300/604] Loss: 0.8363, LR: 5.00e-05
+Epoch 23 [400/604] Loss: 0.8799, LR: 5.00e-05
+Epoch 23 [500/604] Loss: 0.6093, LR: 5.00e-05
+Epoch 23 [600/604] Loss: 0.4689, LR: 5.00e-05
+Epoch 23 Done. Train Loss: 0.7212 | Train Pearson: 0.6036 | Val MSE: 0.7524 | Val Pearson: 0.6173
+  ✓ New best val_pearson: 0.6173
+Epoch 24 [0/604] Loss: 0.6900, LR: 5.00e-05
+Epoch 24 [100/604] Loss: 0.6808, LR: 5.00e-05
+Epoch 24 [200/604] Loss: 0.7375, LR: 5.00e-05
+Epoch 24 [300/604] Loss: 0.6626, LR: 5.00e-05
+Epoch 24 [400/604] Loss: 0.3431, LR: 5.00e-05
+Epoch 24 [500/604] Loss: 0.7116, LR: 5.00e-05
+Epoch 24 [600/604] Loss: 0.7289, LR: 5.00e-05
+Epoch 24 Done. Train Loss: 0.7160 | Train Pearson: 0.6060 | Val MSE: 0.7640 | Val Pearson: 0.6001
+Epoch 25 [0/604] Loss: 0.9271, LR: 5.00e-05
+Epoch 25 [100/604] Loss: 0.8278, LR: 5.00e-05
+Epoch 25 [200/604] Loss: 0.7585, LR: 5.00e-05
+Epoch 25 [300/604] Loss: 0.5501, LR: 5.00e-05
+Epoch 25 [400/604] Loss: 0.8558, LR: 5.00e-05
+Epoch 25 [500/604] Loss: 0.5670, LR: 5.00e-05
+Epoch 25 [600/604] Loss: 1.1389, LR: 5.00e-05
+Epoch 25 Done. Train Loss: 0.7058 | Train Pearson: 0.6134 | Val MSE: 0.7612 | Val Pearson: 0.6079
+Epoch 26 [0/604] Loss: 0.8609, LR: 5.00e-05
+Epoch 26 [100/604] Loss: 0.9725, LR: 5.00e-05
+Epoch 26 [200/604] Loss: 0.4733, LR: 5.00e-05
+Epoch 26 [300/604] Loss: 0.6768, LR: 5.00e-05
+Epoch 26 [400/604] Loss: 0.5376, LR: 5.00e-05
+Epoch 26 [500/604] Loss: 0.5628, LR: 5.00e-05
+Epoch 26 [600/604] Loss: 0.6519, LR: 5.00e-05
+Epoch 26 Done. Train Loss: 0.6999 | Train Pearson: 0.6174 | Val MSE: 0.7541 | Val Pearson: 0.6187
+  ✓ New best val_pearson: 0.6187
+Epoch 27 [0/604] Loss: 0.6127, LR: 5.00e-05
+Epoch 27 [100/604] Loss: 0.5396, LR: 5.00e-05
+Epoch 27 [200/604] Loss: 0.5612, LR: 5.00e-05
+Epoch 27 [300/604] Loss: 0.6371, LR: 5.00e-05
+Epoch 27 [400/604] Loss: 0.5946, LR: 5.00e-05
+Epoch 27 [500/604] Loss: 0.7875, LR: 5.00e-05
+Epoch 27 [600/604] Loss: 0.8316, LR: 5.00e-05
+Epoch 27 Done. Train Loss: 0.7006 | Train Pearson: 0.6198 | Val MSE: 0.7854 | Val Pearson: 0.6023
+Epoch 28 [0/604] Loss: 1.0515, LR: 5.00e-05
+Epoch 28 [100/604] Loss: 0.6695, LR: 5.00e-05
+Epoch 28 [200/604] Loss: 0.5740, LR: 5.00e-05
+Epoch 28 [300/604] Loss: 0.5772, LR: 5.00e-05
+Epoch 28 [400/604] Loss: 0.5054, LR: 5.00e-05
+Epoch 28 [500/604] Loss: 0.9946, LR: 5.00e-05
+Epoch 28 [600/604] Loss: 0.5051, LR: 5.00e-05
+Epoch 28 Done. Train Loss: 0.6962 | Train Pearson: 0.6222 | Val MSE: 0.7511 | Val Pearson: 0.6156
+Epoch 29 [0/604] Loss: 0.8735, LR: 5.00e-05
+Epoch 29 [100/604] Loss: 0.7650, LR: 5.00e-05
+Epoch 29 [200/604] Loss: 0.8251, LR: 5.00e-05
+Epoch 29 [300/604] Loss: 0.7852, LR: 5.00e-05
+Epoch 29 [400/604] Loss: 0.5258, LR: 5.00e-05
+Epoch 29 [500/604] Loss: 0.5936, LR: 5.00e-05
+Epoch 29 [600/604] Loss: 0.7721, LR: 5.00e-05
+Epoch 29 Done. Train Loss: 0.6984 | Train Pearson: 0.6188 | Val MSE: 0.7363 | Val Pearson: 0.6182
+Epoch 30 [0/604] Loss: 1.0332, LR: 5.00e-05
+Epoch 30 [100/604] Loss: 0.5805, LR: 5.00e-05
+Epoch 30 [200/604] Loss: 0.5545, LR: 5.00e-05
+Epoch 30 [300/604] Loss: 0.6417, LR: 5.00e-05
+Epoch 30 [400/604] Loss: 0.9068, LR: 5.00e-05
+Epoch 30 [500/604] Loss: 0.9667, LR: 5.00e-05
+Epoch 30 [600/604] Loss: 0.7730, LR: 5.00e-05
+Epoch 30 Done. Train Loss: 0.6805 | Train Pearson: 0.6309 | Val MSE: 0.7426 | Val Pearson: 0.6150
+Epoch 31 [0/604] Loss: 0.9347, LR: 5.00e-05
+Epoch 31 [100/604] Loss: 0.8264, LR: 5.00e-05
+Epoch 31 [200/604] Loss: 0.6312, LR: 5.00e-05
+Epoch 31 [300/604] Loss: 0.7986, LR: 5.00e-05
+Epoch 31 [400/604] Loss: 0.9782, LR: 5.00e-05
+Epoch 31 [500/604] Loss: 1.2257, LR: 5.00e-05
+Epoch 31 [600/604] Loss: 0.6246, LR: 5.00e-05
+Epoch 31 Done. Train Loss: 0.6819 | Train Pearson: 0.6300 | Val MSE: 0.7281 | Val Pearson: 0.6268
+  ✓ New best val_pearson: 0.6268
+Epoch 32 [0/604] Loss: 0.9213, LR: 5.00e-05
+Epoch 32 [100/604] Loss: 0.7506, LR: 5.00e-05
+Epoch 32 [200/604] Loss: 0.3691, LR: 5.00e-05
+Epoch 32 [300/604] Loss: 0.4833, LR: 5.00e-05
+Epoch 32 [400/604] Loss: 0.4893, LR: 5.00e-05
+Epoch 32 [500/604] Loss: 0.7074, LR: 5.00e-05
+Epoch 32 [600/604] Loss: 0.5777, LR: 5.00e-05
+Epoch 32 Done. Train Loss: 0.6746 | Train Pearson: 0.6357 | Val MSE: 0.7268 | Val Pearson: 0.6275
+  ✓ New best val_pearson: 0.6275
+Epoch 33 [0/604] Loss: 0.4379, LR: 5.00e-05
+Epoch 33 [100/604] Loss: 0.7570, LR: 5.00e-05
+Epoch 33 [200/604] Loss: 0.4870, LR: 5.00e-05
+Epoch 33 [300/604] Loss: 0.7032, LR: 5.00e-05
+Epoch 33 [400/604] Loss: 0.6584, LR: 5.00e-05
+Epoch 33 [500/604] Loss: 0.6988, LR: 5.00e-05
+Epoch 33 [600/604] Loss: 0.5741, LR: 5.00e-05
+Epoch 33 Done. Train Loss: 0.6699 | Train Pearson: 0.6387 | Val MSE: 0.7406 | Val Pearson: 0.6217
+Epoch 34 [0/604] Loss: 0.8223, LR: 5.00e-05
+Epoch 34 [100/604] Loss: 0.7180, LR: 5.00e-05
+Epoch 34 [200/604] Loss: 0.5208, LR: 5.00e-05
+Epoch 34 [300/604] Loss: 0.3485, LR: 5.00e-05
+Epoch 34 [400/604] Loss: 0.5250, LR: 5.00e-05
+Epoch 34 [500/604] Loss: 0.4711, LR: 5.00e-05
+Epoch 34 [600/604] Loss: 0.4639, LR: 5.00e-05
+Epoch 34 Done. Train Loss: 0.6704 | Train Pearson: 0.6380 | Val MSE: 0.7362 | Val Pearson: 0.6216
+Epoch 35 [0/604] Loss: 0.6150, LR: 5.00e-05
+Epoch 35 [100/604] Loss: 0.4661, LR: 5.00e-05
+Epoch 35 [200/604] Loss: 0.5344, LR: 5.00e-05
+Epoch 35 [300/604] Loss: 0.4715, LR: 5.00e-05
+Epoch 35 [400/604] Loss: 0.7266, LR: 5.00e-05
+Epoch 35 [500/604] Loss: 0.6522, LR: 5.00e-05
+Epoch 35 [600/604] Loss: 0.8250, LR: 5.00e-05
+Epoch 35 Done. Train Loss: 0.6656 | Train Pearson: 0.6431 | Val MSE: 0.7387 | Val Pearson: 0.6225
+Epoch 36 [0/604] Loss: 0.7402, LR: 5.00e-05
+Epoch 36 [100/604] Loss: 0.5695, LR: 5.00e-05
+Epoch 36 [200/604] Loss: 0.7913, LR: 5.00e-05
+Epoch 36 [300/604] Loss: 0.9065, LR: 5.00e-05
+Epoch 36 [400/604] Loss: 0.6923, LR: 5.00e-05
+Epoch 36 [500/604] Loss: 0.8451, LR: 5.00e-05
+Epoch 36 [600/604] Loss: 0.6012, LR: 5.00e-05
+Epoch 36 Done. Train Loss: 0.6683 | Train Pearson: 0.6397 | Val MSE: 0.7095 | Val Pearson: 0.6364
+  ✓ New best val_pearson: 0.6364
+Epoch 37 [0/604] Loss: 0.6947, LR: 5.00e-05
+Epoch 37 [100/604] Loss: 0.5864, LR: 5.00e-05
+Epoch 37 [200/604] Loss: 0.6792, LR: 5.00e-05
+Epoch 37 [300/604] Loss: 0.4130, LR: 5.00e-05
+Epoch 37 [400/604] Loss: 0.6843, LR: 5.00e-05
+Epoch 37 [500/604] Loss: 0.6475, LR: 5.00e-05
+Epoch 37 [600/604] Loss: 0.6470, LR: 5.00e-05
+Epoch 37 Done. Train Loss: 0.6606 | Train Pearson: 0.6444 | Val MSE: 0.7033 | Val Pearson: 0.6423
+  ✓ New best val_pearson: 0.6423
+Epoch 38 [0/604] Loss: 0.5867, LR: 5.00e-05
+Epoch 38 [100/604] Loss: 0.4340, LR: 5.00e-05
+Epoch 38 [200/604] Loss: 0.7533, LR: 5.00e-05
+Epoch 38 [300/604] Loss: 0.4755, LR: 5.00e-05
+Epoch 38 [400/604] Loss: 0.7501, LR: 5.00e-05
+Epoch 38 [500/604] Loss: 0.4050, LR: 5.00e-05
+Epoch 38 [600/604] Loss: 0.6984, LR: 5.00e-05
+Epoch 38 Done. Train Loss: 0.6543 | Train Pearson: 0.6496 | Val MSE: 0.7124 | Val Pearson: 0.6369
+Epoch 39 [0/604] Loss: 0.7580, LR: 5.00e-05
+Epoch 39 [100/604] Loss: 0.8443, LR: 5.00e-05
+Epoch 39 [200/604] Loss: 0.5169, LR: 5.00e-05
+Epoch 39 [300/604] Loss: 0.5701, LR: 5.00e-05
+Epoch 39 [400/604] Loss: 0.6313, LR: 5.00e-05
+Epoch 39 [500/604] Loss: 0.6199, LR: 5.00e-05
+Epoch 39 [600/604] Loss: 0.6633, LR: 5.00e-05
+Epoch 39 Done. Train Loss: 0.6522 | Train Pearson: 0.6516 | Val MSE: 0.7230 | Val Pearson: 0.6277
+Epoch 40 [0/604] Loss: 0.4972, LR: 5.00e-05
+Epoch 40 [100/604] Loss: 0.7677, LR: 5.00e-05
+Epoch 40 [200/604] Loss: 0.5614, LR: 5.00e-05
+Epoch 40 [300/604] Loss: 0.7238, LR: 5.00e-05
+Epoch 40 [400/604] Loss: 0.6133, LR: 5.00e-05
+Epoch 40 [500/604] Loss: 0.5960, LR: 5.00e-05
+Epoch 40 [600/604] Loss: 0.9261, LR: 5.00e-05
+Epoch 40 Done. Train Loss: 0.6517 | Train Pearson: 0.6509 | Val MSE: 0.7037 | Val Pearson: 0.6437
+  ✓ New best val_pearson: 0.6437
+Epoch 41 [0/604] Loss: 0.4511, LR: 5.00e-05
+Epoch 41 [100/604] Loss: 0.6895, LR: 5.00e-05
+Epoch 41 [200/604] Loss: 0.6820, LR: 5.00e-05
+Epoch 41 [300/604] Loss: 0.3826, LR: 5.00e-05
+Epoch 41 [400/604] Loss: 0.5120, LR: 5.00e-05
+Epoch 41 [500/604] Loss: 0.6753, LR: 5.00e-05
+Epoch 41 [600/604] Loss: 0.8854, LR: 5.00e-05
+Epoch 41 Done. Train Loss: 0.6468 | Train Pearson: 0.6543 | Val MSE: 0.7218 | Val Pearson: 0.6285
+Epoch 42 [0/604] Loss: 0.6472, LR: 5.00e-05
+Epoch 42 [100/604] Loss: 0.5454, LR: 5.00e-05
+Epoch 42 [200/604] Loss: 0.5103, LR: 5.00e-05
+Epoch 42 [300/604] Loss: 0.6503, LR: 5.00e-05
+Epoch 42 [400/604] Loss: 0.6030, LR: 5.00e-05
+Epoch 42 [500/604] Loss: 0.7676, LR: 5.00e-05
+Epoch 42 [600/604] Loss: 0.6991, LR: 5.00e-05
+Epoch 42 Done. Train Loss: 0.6399 | Train Pearson: 0.6590 | Val MSE: 0.7068 | Val Pearson: 0.6389
+Epoch 43 [0/604] Loss: 0.6492, LR: 5.00e-05
+Epoch 43 [100/604] Loss: 0.8907, LR: 5.00e-05
+Epoch 43 [200/604] Loss: 0.7470, LR: 5.00e-05
+Epoch 43 [300/604] Loss: 0.6475, LR: 5.00e-05
+Epoch 43 [400/604] Loss: 0.4846, LR: 5.00e-05
+Epoch 43 [500/604] Loss: 0.7981, LR: 5.00e-05
+Epoch 43 [600/604] Loss: 0.6736, LR: 5.00e-05
+Epoch 43 Done. Train Loss: 0.6369 | Train Pearson: 0.6610 | Val MSE: 0.6905 | Val Pearson: 0.6536
+  ✓ New best val_pearson: 0.6536
+Epoch 44 [0/604] Loss: 0.5163, LR: 5.00e-05
+Epoch 44 [100/604] Loss: 0.8437, LR: 5.00e-05
+Epoch 44 [200/604] Loss: 0.5734, LR: 5.00e-05
+Epoch 44 [300/604] Loss: 0.4318, LR: 5.00e-05
+Epoch 44 [400/604] Loss: 0.4409, LR: 5.00e-05
+Epoch 44 [500/604] Loss: 0.4631, LR: 5.00e-05
+Epoch 44 [600/604] Loss: 0.6741, LR: 5.00e-05
+Epoch 44 Done. Train Loss: 0.6400 | Train Pearson: 0.6590 | Val MSE: 0.6914 | Val Pearson: 0.6496
+Epoch 45 [0/604] Loss: 0.4760, LR: 5.00e-05
+Epoch 45 [100/604] Loss: 0.4802, LR: 5.00e-05
+Epoch 45 [200/604] Loss: 0.8706, LR: 5.00e-05
+Epoch 45 [300/604] Loss: 0.6996, LR: 5.00e-05
+Epoch 45 [400/604] Loss: 0.9718, LR: 5.00e-05
+Epoch 45 [500/604] Loss: 0.5714, LR: 5.00e-05
+Epoch 45 [600/604] Loss: 0.8550, LR: 5.00e-05
+Epoch 45 Done. Train Loss: 0.6340 | Train Pearson: 0.6638 | Val MSE: 0.6905 | Val Pearson: 0.6482
+Epoch 46 [0/604] Loss: 0.3712, LR: 5.00e-05
+Epoch 46 [100/604] Loss: 0.6374, LR: 5.00e-05
+Epoch 46 [200/604] Loss: 0.4440, LR: 5.00e-05
+Epoch 46 [300/604] Loss: 0.5097, LR: 5.00e-05
+Epoch 46 [400/604] Loss: 0.7077, LR: 5.00e-05
+Epoch 46 [500/604] Loss: 0.6740, LR: 5.00e-05
+Epoch 46 [600/604] Loss: 0.6620, LR: 5.00e-05
+Epoch 46 Done. Train Loss: 0.6311 | Train Pearson: 0.6647 | Val MSE: 0.6876 | Val Pearson: 0.6525
+Epoch 47 [0/604] Loss: 0.5187, LR: 5.00e-05
+Epoch 47 [100/604] Loss: 0.4537, LR: 5.00e-05
+Epoch 47 [200/604] Loss: 0.4332, LR: 5.00e-05
+Epoch 47 [300/604] Loss: 0.6215, LR: 5.00e-05
+Epoch 47 [400/604] Loss: 0.4856, LR: 5.00e-05
+Epoch 47 [500/604] Loss: 0.8255, LR: 5.00e-05
+Epoch 47 [600/604] Loss: 0.4507, LR: 5.00e-05
+Epoch 47 Done. Train Loss: 0.6275 | Train Pearson: 0.6668 | Val MSE: 0.6985 | Val Pearson: 0.6453
+Epoch 48 [0/604] Loss: 0.6099, LR: 5.00e-05
+Epoch 48 [100/604] Loss: 0.5347, LR: 5.00e-05
+Epoch 48 [200/604] Loss: 0.6151, LR: 5.00e-05
+Epoch 48 [300/604] Loss: 0.5174, LR: 5.00e-05
+Epoch 48 [400/604] Loss: 0.3665, LR: 5.00e-05
+Epoch 48 [500/604] Loss: 0.5230, LR: 5.00e-05
+Epoch 48 [600/604] Loss: 0.4081, LR: 5.00e-05
+Epoch 48 Done. Train Loss: 0.6194 | Train Pearson: 0.6738 | Val MSE: 0.7170 | Val Pearson: 0.6408
+Epoch 49 [0/604] Loss: 0.8387, LR: 5.00e-05
+Epoch 49 [100/604] Loss: 0.4068, LR: 5.00e-05
+Epoch 49 [200/604] Loss: 0.7317, LR: 5.00e-05
+Epoch 49 [300/604] Loss: 0.7008, LR: 5.00e-05
+Epoch 49 [400/604] Loss: 0.6948, LR: 5.00e-05
+Epoch 49 [500/604] Loss: 0.7759, LR: 5.00e-05
+Epoch 49 [600/604] Loss: 0.5589, LR: 5.00e-05
+Epoch 49 Done. Train Loss: 0.6160 | Train Pearson: 0.6745 | Val MSE: 0.7394 | Val Pearson: 0.6223
+Epoch 50 [0/604] Loss: 0.5532, LR: 5.00e-05
+Epoch 50 [100/604] Loss: 0.8848, LR: 5.00e-05
+Epoch 50 [200/604] Loss: 0.5569, LR: 5.00e-05
+Epoch 50 [300/604] Loss: 0.7007, LR: 5.00e-05
+Epoch 50 [400/604] Loss: 0.5611, LR: 5.00e-05
+Epoch 50 [500/604] Loss: 0.6749, LR: 5.00e-05
+Epoch 50 [600/604] Loss: 0.6872, LR: 5.00e-05
+Epoch 50 Done. Train Loss: 0.6158 | Train Pearson: 0.6745 | Val MSE: 0.6984 | Val Pearson: 0.6443
+Epoch 51 [0/604] Loss: 0.7679, LR: 5.00e-05
+Epoch 51 [100/604] Loss: 0.3365, LR: 5.00e-05
+Epoch 51 [200/604] Loss: 0.6904, LR: 5.00e-05
+Epoch 51 [300/604] Loss: 0.7017, LR: 5.00e-05
+Epoch 51 [400/604] Loss: 0.7759, LR: 5.00e-05
+Epoch 51 [500/604] Loss: 0.3393, LR: 5.00e-05
+Epoch 51 [600/604] Loss: 0.4215, LR: 5.00e-05
+Epoch 51 Done. Train Loss: 0.6124 | Train Pearson: 0.6767 | Val MSE: 0.6912 | Val Pearson: 0.6512
+Epoch 52 [0/604] Loss: 0.7098, LR: 5.00e-05
+Epoch 52 [100/604] Loss: 0.5243, LR: 5.00e-05
+Epoch 52 [200/604] Loss: 0.6634, LR: 5.00e-05
+Epoch 52 [300/604] Loss: 0.3594, LR: 5.00e-05
+Epoch 52 [400/604] Loss: 0.6222, LR: 5.00e-05
+Epoch 52 [500/604] Loss: 0.5077, LR: 5.00e-05
+Epoch 52 [600/604] Loss: 0.6091, LR: 5.00e-05
+Epoch 52 Done. Train Loss: 0.6118 | Train Pearson: 0.6777 | Val MSE: 0.6921 | Val Pearson: 0.6487
+Epoch 53 [0/604] Loss: 0.4880, LR: 5.00e-05
+Epoch 53 [100/604] Loss: 0.7325, LR: 5.00e-05
+Epoch 53 [200/604] Loss: 0.5230, LR: 5.00e-05
+Epoch 53 [300/604] Loss: 0.4789, LR: 5.00e-05
+Epoch 53 [400/604] Loss: 0.4376, LR: 5.00e-05
+Epoch 53 [500/604] Loss: 0.5776, LR: 5.00e-05
+Epoch 53 [600/604] Loss: 0.5469, LR: 5.00e-05
+Epoch 53 Done. Train Loss: 0.6108 | Train Pearson: 0.6778 | Val MSE: 0.6773 | Val Pearson: 0.6580
+  ✓ New best val_pearson: 0.6580
+Epoch 54 [0/604] Loss: 0.3949, LR: 5.00e-05
+Epoch 54 [100/604] Loss: 0.5829, LR: 5.00e-05
+Epoch 54 [200/604] Loss: 0.5533, LR: 5.00e-05
+Epoch 54 [300/604] Loss: 0.5005, LR: 5.00e-05
+Epoch 54 [400/604] Loss: 0.6629, LR: 5.00e-05
+Epoch 54 [500/604] Loss: 0.5864, LR: 5.00e-05
+Epoch 54 [600/604] Loss: 0.7615, LR: 5.00e-05
+Epoch 54 Done. Train Loss: 0.6117 | Train Pearson: 0.6785 | Val MSE: 0.6857 | Val Pearson: 0.6528
+Epoch 55 [0/604] Loss: 0.6157, LR: 5.00e-05
+Epoch 55 [100/604] Loss: 0.3208, LR: 5.00e-05
+Epoch 55 [200/604] Loss: 0.8597, LR: 5.00e-05
+Epoch 55 [300/604] Loss: 0.7774, LR: 5.00e-05
+Epoch 55 [400/604] Loss: 0.5469, LR: 5.00e-05
+Epoch 55 [500/604] Loss: 0.6228, LR: 5.00e-05
+Epoch 55 [600/604] Loss: 0.6712, LR: 5.00e-05
+Epoch 55 Done. Train Loss: 0.5994 | Train Pearson: 0.6851 | Val MSE: 0.6963 | Val Pearson: 0.6504
+Epoch 56 [0/604] Loss: 0.5228, LR: 5.00e-05
+Epoch 56 [100/604] Loss: 0.6000, LR: 5.00e-05
+Epoch 56 [200/604] Loss: 0.8317, LR: 5.00e-05
+Epoch 56 [300/604] Loss: 0.4407, LR: 5.00e-05
+Epoch 56 [400/604] Loss: 0.4628, LR: 5.00e-05
+Epoch 56 [500/604] Loss: 0.6792, LR: 5.00e-05
+Epoch 56 [600/604] Loss: 0.2864, LR: 5.00e-05
+Epoch 56 Done. Train Loss: 0.6039 | Train Pearson: 0.6842 | Val MSE: 0.7118 | Val Pearson: 0.6357
+Epoch 57 [0/604] Loss: 0.7766, LR: 5.00e-05
+Epoch 57 [100/604] Loss: 0.6657, LR: 5.00e-05
+Epoch 57 [200/604] Loss: 0.5220, LR: 5.00e-05
+Epoch 57 [300/604] Loss: 0.5764, LR: 5.00e-05
+Epoch 57 [400/604] Loss: 0.5373, LR: 5.00e-05
+Epoch 57 [500/604] Loss: 0.5661, LR: 5.00e-05
+Epoch 57 [600/604] Loss: 0.6053, LR: 5.00e-05
+Epoch 57 Done. Train Loss: 0.5969 | Train Pearson: 0.6872 | Val MSE: 0.6834 | Val Pearson: 0.6541
+Epoch 58 [0/604] Loss: 0.5494, LR: 5.00e-05
+Epoch 58 [100/604] Loss: 0.5657, LR: 5.00e-05
+Epoch 58 [200/604] Loss: 0.4472, LR: 5.00e-05
+Epoch 58 [300/604] Loss: 0.4685, LR: 5.00e-05
+Epoch 58 [400/604] Loss: 0.4918, LR: 5.00e-05
+Epoch 58 [500/604] Loss: 0.7015, LR: 5.00e-05
+Epoch 58 [600/604] Loss: 0.4717, LR: 5.00e-05
+Epoch 58 Done. Train Loss: 0.5937 | Train Pearson: 0.6899 | Val MSE: 0.6718 | Val Pearson: 0.6629
+  ✓ New best val_pearson: 0.6629
+Epoch 59 [0/604] Loss: 0.4844, LR: 5.00e-05
+Epoch 59 [100/604] Loss: 0.5129, LR: 5.00e-05
+Epoch 59 [200/604] Loss: 1.0281, LR: 5.00e-05
+Epoch 59 [300/604] Loss: 0.7470, LR: 5.00e-05
+Epoch 59 [400/604] Loss: 0.5974, LR: 5.00e-05
+Epoch 59 [500/604] Loss: 0.6371, LR: 5.00e-05
+Epoch 59 [600/604] Loss: 0.4670, LR: 5.00e-05
+Epoch 59 Done. Train Loss: 0.5958 | Train Pearson: 0.6889 | Val MSE: 0.6755 | Val Pearson: 0.6614
+Epoch 60 [0/604] Loss: 0.6105, LR: 5.00e-05
+Epoch 60 [100/604] Loss: 0.3345, LR: 5.00e-05
+Epoch 60 [200/604] Loss: 0.5735, LR: 5.00e-05
+Epoch 60 [300/604] Loss: 0.4141, LR: 5.00e-05
+Epoch 60 [400/604] Loss: 0.6612, LR: 5.00e-05
+Epoch 60 [500/604] Loss: 0.7676, LR: 5.00e-05
+Epoch 60 [600/604] Loss: 0.5786, LR: 5.00e-05
+Epoch 60 Done. Train Loss: 0.5931 | Train Pearson: 0.6892 | Val MSE: 0.6801 | Val Pearson: 0.6568
+Epoch 61 [0/604] Loss: 0.6067, LR: 5.00e-05
+Epoch 61 [100/604] Loss: 0.8174, LR: 5.00e-05
+Epoch 61 [200/604] Loss: 0.4117, LR: 5.00e-05
+Epoch 61 [300/604] Loss: 0.6562, LR: 5.00e-05
+Epoch 61 [400/604] Loss: 0.9021, LR: 5.00e-05
+Epoch 61 [500/604] Loss: 0.6632, LR: 5.00e-05
+Epoch 61 [600/604] Loss: 0.6786, LR: 5.00e-05
+Epoch 61 Done. Train Loss: 0.5878 | Train Pearson: 0.6934 | Val MSE: 0.6751 | Val Pearson: 0.6600
+Epoch 62 [0/604] Loss: 0.9109, LR: 5.00e-05
+Epoch 62 [100/604] Loss: 0.8374, LR: 5.00e-05
+Epoch 62 [200/604] Loss: 0.5323, LR: 5.00e-05
+Epoch 62 [300/604] Loss: 0.9732, LR: 5.00e-05
+Epoch 62 [400/604] Loss: 0.7007, LR: 5.00e-05
+Epoch 62 [500/604] Loss: 0.7146, LR: 5.00e-05
+Epoch 62 [600/604] Loss: 0.5897, LR: 5.00e-05
+Epoch 62 Done. Train Loss: 0.5895 | Train Pearson: 0.6924 | Val MSE: 0.7017 | Val Pearson: 0.6496
+Epoch 63 [0/604] Loss: 0.5308, LR: 5.00e-05
+Epoch 63 [100/604] Loss: 0.6255, LR: 5.00e-05
+Epoch 63 [200/604] Loss: 0.4450, LR: 5.00e-05
+Epoch 63 [300/604] Loss: 0.6848, LR: 5.00e-05
+Epoch 63 [400/604] Loss: 0.7583, LR: 5.00e-05
+Epoch 63 [500/604] Loss: 0.6512, LR: 5.00e-05
+Epoch 63 [600/604] Loss: 0.6409, LR: 5.00e-05
+Epoch 63 Done. Train Loss: 0.5854 | Train Pearson: 0.6957 | Val MSE: 0.6912 | Val Pearson: 0.6493
+Epoch 64 [0/604] Loss: 0.5964, LR: 5.00e-05
+Epoch 64 [100/604] Loss: 0.4174, LR: 5.00e-05
+Epoch 64 [200/604] Loss: 0.6803, LR: 5.00e-05
+Epoch 64 [300/604] Loss: 0.7169, LR: 5.00e-05
+Epoch 64 [400/604] Loss: 0.5653, LR: 5.00e-05
+Epoch 64 [500/604] Loss: 0.7691, LR: 5.00e-05
+Epoch 64 [600/604] Loss: 0.6914, LR: 5.00e-05
+Epoch 64 Done. Train Loss: 0.5841 | Train Pearson: 0.6949 | Val MSE: 0.6592 | Val Pearson: 0.6681
+  ✓ New best val_pearson: 0.6681
+Epoch 65 [0/604] Loss: 0.5483, LR: 5.00e-05
+Epoch 65 [100/604] Loss: 0.6976, LR: 5.00e-05
+Epoch 65 [200/604] Loss: 1.0320, LR: 5.00e-05
+Epoch 65 [300/604] Loss: 0.5272, LR: 5.00e-05
+Epoch 65 [400/604] Loss: 0.6732, LR: 5.00e-05
+Epoch 65 [500/604] Loss: 0.5714, LR: 5.00e-05
+Epoch 65 [600/604] Loss: 0.5627, LR: 5.00e-05
+Epoch 65 Done. Train Loss: 0.5802 | Train Pearson: 0.7002 | Val MSE: 0.6765 | Val Pearson: 0.6588
+Epoch 66 [0/604] Loss: 0.6298, LR: 5.00e-05
+Epoch 66 [100/604] Loss: 0.6467, LR: 5.00e-05
+Epoch 66 [200/604] Loss: 0.7202, LR: 5.00e-05
+Epoch 66 [300/604] Loss: 0.6021, LR: 5.00e-05
+Epoch 66 [400/604] Loss: 0.5750, LR: 5.00e-05
+Epoch 66 [500/604] Loss: 0.6633, LR: 5.00e-05
+Epoch 66 [600/604] Loss: 0.6487, LR: 5.00e-05
+Epoch 66 Done. Train Loss: 0.5801 | Train Pearson: 0.6980 | Val MSE: 0.6850 | Val Pearson: 0.6554
+Epoch 67 [0/604] Loss: 0.4294, LR: 5.00e-05
+Epoch 67 [100/604] Loss: 0.7091, LR: 5.00e-05
+Epoch 67 [200/604] Loss: 0.4731, LR: 5.00e-05
+Epoch 67 [300/604] Loss: 0.3757, LR: 5.00e-05
+Epoch 67 [400/604] Loss: 0.5386, LR: 5.00e-05
+Epoch 67 [500/604] Loss: 0.5949, LR: 5.00e-05
+Epoch 67 [600/604] Loss: 0.5630, LR: 5.00e-05
+Epoch 67 Done. Train Loss: 0.5745 | Train Pearson: 0.7013 | Val MSE: 0.7045 | Val Pearson: 0.6429
+Epoch 68 [0/604] Loss: 0.3826, LR: 5.00e-05
+Epoch 68 [100/604] Loss: 0.4168, LR: 5.00e-05
+Epoch 68 [200/604] Loss: 0.8151, LR: 5.00e-05
+Epoch 68 [300/604] Loss: 0.4106, LR: 5.00e-05
+Epoch 68 [400/604] Loss: 0.4384, LR: 5.00e-05
+Epoch 68 [500/604] Loss: 0.2833, LR: 5.00e-05
+Epoch 68 [600/604] Loss: 0.4977, LR: 5.00e-05
+Epoch 68 Done. Train Loss: 0.5655 | Train Pearson: 0.7077 | Val MSE: 0.6794 | Val Pearson: 0.6570
+Epoch 69 [0/604] Loss: 0.4441, LR: 5.00e-05
+Epoch 69 [100/604] Loss: 0.4352, LR: 5.00e-05
+Epoch 69 [200/604] Loss: 0.5744, LR: 5.00e-05
+Epoch 69 [300/604] Loss: 0.3871, LR: 5.00e-05
+Epoch 69 [400/604] Loss: 0.6382, LR: 5.00e-05
+Epoch 69 [500/604] Loss: 0.4579, LR: 5.00e-05
+Epoch 69 [600/604] Loss: 0.5568, LR: 5.00e-05
+Epoch 69 Done. Train Loss: 0.5625 | Train Pearson: 0.7086 | Val MSE: 0.7102 | Val Pearson: 0.6555
+Epoch 70 [0/604] Loss: 0.7625, LR: 5.00e-05
+Epoch 70 [100/604] Loss: 0.4859, LR: 5.00e-05
+Epoch 70 [200/604] Loss: 0.6062, LR: 5.00e-05
+Epoch 70 [300/604] Loss: 0.7350, LR: 5.00e-05
+Epoch 70 [400/604] Loss: 0.5250, LR: 5.00e-05
+Epoch 70 [500/604] Loss: 0.6208, LR: 5.00e-05
+Epoch 70 [600/604] Loss: 0.6081, LR: 5.00e-05
+Epoch 70 Done. Train Loss: 0.5671 | Train Pearson: 0.7066 | Val MSE: 0.6740 | Val Pearson: 0.6623
+Epoch 71 [0/604] Loss: 0.5321, LR: 5.00e-05
+Epoch 71 [100/604] Loss: 0.4982, LR: 5.00e-05
+Epoch 71 [200/604] Loss: 0.7974, LR: 5.00e-05
+Epoch 71 [300/604] Loss: 0.6725, LR: 5.00e-05
+Epoch 71 [400/604] Loss: 0.5897, LR: 5.00e-05
+Epoch 71 [500/604] Loss: 0.4819, LR: 5.00e-05
+Epoch 71 [600/604] Loss: 0.7365, LR: 5.00e-05
+Epoch 71 Done. Train Loss: 0.5639 | Train Pearson: 0.7078 | Val MSE: 0.6693 | Val Pearson: 0.6634
+Epoch 72 [0/604] Loss: 0.7569, LR: 5.00e-05
+Epoch 72 [100/604] Loss: 0.5136, LR: 5.00e-05
+Epoch 72 [200/604] Loss: 0.5342, LR: 5.00e-05
+Epoch 72 [300/604] Loss: 0.5517, LR: 5.00e-05
+Epoch 72 [400/604] Loss: 0.6200, LR: 5.00e-05
+Epoch 72 [500/604] Loss: 0.6449, LR: 5.00e-05
+Epoch 72 [600/604] Loss: 0.6063, LR: 5.00e-05
+Epoch 72 Done. Train Loss: 0.5663 | Train Pearson: 0.7071 | Val MSE: 0.6819 | Val Pearson: 0.6569
+Epoch 73 [0/604] Loss: 0.7450, LR: 5.00e-05
+Epoch 73 [100/604] Loss: 0.7607, LR: 5.00e-05
+Epoch 73 [200/604] Loss: 0.5362, LR: 5.00e-05
+Epoch 73 [300/604] Loss: 0.4660, LR: 5.00e-05
+Epoch 73 [400/604] Loss: 0.6946, LR: 5.00e-05
+Epoch 73 [500/604] Loss: 0.4083, LR: 5.00e-05
+Epoch 73 [600/604] Loss: 0.5954, LR: 5.00e-05
+Epoch 73 Done. Train Loss: 0.5574 | Train Pearson: 0.7120 | Val MSE: 0.6750 | Val Pearson: 0.6642
+Epoch 74 [0/604] Loss: 0.4574, LR: 5.00e-05
+Epoch 74 [100/604] Loss: 0.6819, LR: 5.00e-05
+Epoch 74 [200/604] Loss: 0.7515, LR: 5.00e-05
+Epoch 74 [300/604] Loss: 0.3445, LR: 5.00e-05
+Epoch 74 [400/604] Loss: 0.5883, LR: 5.00e-05
+Epoch 74 [500/604] Loss: 0.5387, LR: 5.00e-05
+Epoch 74 [600/604] Loss: 0.6261, LR: 5.00e-05
+Epoch 74 Done. Train Loss: 0.5556 | Train Pearson: 0.7147 | Val MSE: 0.6713 | Val Pearson: 0.6653
+Epoch 75 [0/604] Loss: 0.3356, LR: 5.00e-05
+Epoch 75 [100/604] Loss: 0.6280, LR: 5.00e-05
+Epoch 75 [200/604] Loss: 0.4487, LR: 5.00e-05
+Epoch 75 [300/604] Loss: 0.5708, LR: 5.00e-05
+Epoch 75 [400/604] Loss: 0.5464, LR: 5.00e-05
+Epoch 75 [500/604] Loss: 0.3554, LR: 5.00e-05
+Epoch 75 [600/604] Loss: 0.3512, LR: 5.00e-05
+Epoch 75 Done. Train Loss: 0.5531 | Train Pearson: 0.7149 | Val MSE: 0.7050 | Val Pearson: 0.6462
+Epoch 76 [0/604] Loss: 0.4553, LR: 2.50e-05
+Epoch 76 [100/604] Loss: 0.5082, LR: 2.50e-05
+Epoch 76 [200/604] Loss: 0.3644, LR: 2.50e-05
+Epoch 76 [300/604] Loss: 0.4278, LR: 2.50e-05
+Epoch 76 [400/604] Loss: 0.5000, LR: 2.50e-05
+Epoch 76 [500/604] Loss: 0.3886, LR: 2.50e-05
+Epoch 76 [600/604] Loss: 0.5062, LR: 2.50e-05
+Epoch 76 Done. Train Loss: 0.5251 | Train Pearson: 0.7329 | Val MSE: 0.6637 | Val Pearson: 0.6661
+Epoch 77 [0/604] Loss: 0.6858, LR: 2.50e-05
+Epoch 77 [100/604] Loss: 0.4583, LR: 2.50e-05
+Epoch 77 [200/604] Loss: 0.4362, LR: 2.50e-05
+Epoch 77 [300/604] Loss: 0.4185, LR: 2.50e-05
+Epoch 77 [400/604] Loss: 0.3867, LR: 2.50e-05
+Epoch 77 [500/604] Loss: 0.5377, LR: 2.50e-05
+Epoch 77 [600/604] Loss: 0.3287, LR: 2.50e-05
+Epoch 77 Done. Train Loss: 0.5187 | Train Pearson: 0.7362 | Val MSE: 0.6485 | Val Pearson: 0.6784
+  ✓ New best val_pearson: 0.6784
+Epoch 78 [0/604] Loss: 0.3136, LR: 2.50e-05
+Epoch 78 [100/604] Loss: 0.8678, LR: 2.50e-05
+Epoch 78 [200/604] Loss: 0.4339, LR: 2.50e-05
+Epoch 78 [300/604] Loss: 0.5019, LR: 2.50e-05
+Epoch 78 [400/604] Loss: 0.6430, LR: 2.50e-05
+Epoch 78 [500/604] Loss: 0.3891, LR: 2.50e-05
+Epoch 78 [600/604] Loss: 0.4152, LR: 2.50e-05
+Epoch 78 Done. Train Loss: 0.5176 | Train Pearson: 0.7365 | Val MSE: 0.6614 | Val Pearson: 0.6679
+Epoch 79 [0/604] Loss: 0.6196, LR: 2.50e-05
+Epoch 79 [100/604] Loss: 0.7576, LR: 2.50e-05
+Epoch 79 [200/604] Loss: 0.7267, LR: 2.50e-05
+Epoch 79 [300/604] Loss: 0.4842, LR: 2.50e-05
+Epoch 79 [400/604] Loss: 0.4166, LR: 2.50e-05
+Epoch 79 [500/604] Loss: 0.5073, LR: 2.50e-05
+Epoch 79 [600/604] Loss: 0.5423, LR: 2.50e-05
+Epoch 79 Done. Train Loss: 0.5075 | Train Pearson: 0.7426 | Val MSE: 0.6541 | Val Pearson: 0.6754
+Epoch 80 [0/604] Loss: 0.4824, LR: 2.50e-05
+Epoch 80 [100/604] Loss: 0.4640, LR: 2.50e-05
+Epoch 80 [200/604] Loss: 0.3030, LR: 2.50e-05
+Epoch 80 [300/604] Loss: 0.3016, LR: 2.50e-05
+Epoch 80 [400/604] Loss: 0.5461, LR: 2.50e-05
+Epoch 80 [500/604] Loss: 0.4165, LR: 2.50e-05
+Epoch 80 [600/604] Loss: 0.4920, LR: 2.50e-05
+Epoch 80 Done. Train Loss: 0.5067 | Train Pearson: 0.7430 | Val MSE: 0.6681 | Val Pearson: 0.6751
+Epoch 81 [0/604] Loss: 0.5222, LR: 2.50e-05
+Epoch 81 [100/604] Loss: 0.6164, LR: 2.50e-05
+Epoch 81 [200/604] Loss: 0.4539, LR: 2.50e-05
+Epoch 81 [300/604] Loss: 0.5921, LR: 2.50e-05
+Epoch 81 [400/604] Loss: 0.5457, LR: 2.50e-05
+Epoch 81 [500/604] Loss: 0.5901, LR: 2.50e-05
+Epoch 81 [600/604] Loss: 0.6453, LR: 2.50e-05
+Epoch 81 Done. Train Loss: 0.5058 | Train Pearson: 0.7446 | Val MSE: 0.6397 | Val Pearson: 0.6816
+  ✓ New best val_pearson: 0.6816
+Epoch 82 [0/604] Loss: 0.3546, LR: 2.50e-05
+Epoch 82 [100/604] Loss: 0.3972, LR: 2.50e-05
+Epoch 82 [200/604] Loss: 0.4203, LR: 2.50e-05
+Epoch 82 [300/604] Loss: 0.6540, LR: 2.50e-05
+Epoch 82 [400/604] Loss: 0.6278, LR: 2.50e-05
+Epoch 82 [500/604] Loss: 0.7178, LR: 2.50e-05
+Epoch 82 [600/604] Loss: 0.5253, LR: 2.50e-05
+Epoch 82 Done. Train Loss: 0.5036 | Train Pearson: 0.7455 | Val MSE: 0.6470 | Val Pearson: 0.6798
+Epoch 83 [0/604] Loss: 0.4520, LR: 2.50e-05
+Epoch 83 [100/604] Loss: 0.3951, LR: 2.50e-05
+Epoch 83 [200/604] Loss: 0.4699, LR: 2.50e-05
+Epoch 83 [300/604] Loss: 0.4326, LR: 2.50e-05
+Epoch 83 [400/604] Loss: 0.3600, LR: 2.50e-05
+Epoch 83 [500/604] Loss: 0.3418, LR: 2.50e-05
+Epoch 83 [600/604] Loss: 0.4241, LR: 2.50e-05
+Epoch 83 Done. Train Loss: 0.4976 | Train Pearson: 0.7487 | Val MSE: 0.6525 | Val Pearson: 0.6776
+Epoch 84 [0/604] Loss: 0.7586, LR: 2.50e-05
+Epoch 84 [100/604] Loss: 0.5069, LR: 2.50e-05
+Epoch 84 [200/604] Loss: 0.7259, LR: 2.50e-05
+Epoch 84 [300/604] Loss: 0.3026, LR: 2.50e-05
+Epoch 84 [400/604] Loss: 0.4847, LR: 2.50e-05
+Epoch 84 [500/604] Loss: 0.3961, LR: 2.50e-05
+Epoch 84 [600/604] Loss: 0.5590, LR: 2.50e-05
+Epoch 84 Done. Train Loss: 0.5003 | Train Pearson: 0.7475 | Val MSE: 0.6432 | Val Pearson: 0.6818
+  ✓ New best val_pearson: 0.6818
+Epoch 85 [0/604] Loss: 0.4367, LR: 2.50e-05
+Epoch 85 [100/604] Loss: 0.4639, LR: 2.50e-05
+Epoch 85 [200/604] Loss: 0.4063, LR: 2.50e-05
+Epoch 85 [300/604] Loss: 0.3956, LR: 2.50e-05
+Epoch 85 [400/604] Loss: 0.5874, LR: 2.50e-05
+Epoch 85 [500/604] Loss: 0.5925, LR: 2.50e-05
+Epoch 85 [600/604] Loss: 0.3661, LR: 2.50e-05
+Epoch 85 Done. Train Loss: 0.4946 | Train Pearson: 0.7499 | Val MSE: 0.6625 | Val Pearson: 0.6716
+Epoch 86 [0/604] Loss: 1.0232, LR: 2.50e-05
+Epoch 86 [100/604] Loss: 0.5129, LR: 2.50e-05
+Epoch 86 [200/604] Loss: 0.4389, LR: 2.50e-05
+Epoch 86 [300/604] Loss: 0.2890, LR: 2.50e-05
+Epoch 86 [400/604] Loss: 0.4780, LR: 2.50e-05
+Epoch 86 [500/604] Loss: 0.4541, LR: 2.50e-05
+Epoch 86 [600/604] Loss: 0.3489, LR: 2.50e-05
+Epoch 86 Done. Train Loss: 0.4934 | Train Pearson: 0.7507 | Val MSE: 0.6580 | Val Pearson: 0.6734
+Epoch 87 [0/604] Loss: 0.5570, LR: 2.50e-05
+Epoch 87 [100/604] Loss: 0.4513, LR: 2.50e-05
+Epoch 87 [200/604] Loss: 0.5720, LR: 2.50e-05
+Epoch 87 [300/604] Loss: 0.4984, LR: 2.50e-05
+Epoch 87 [400/604] Loss: 0.4697, LR: 2.50e-05
+Epoch 87 [500/604] Loss: 0.3995, LR: 2.50e-05
+Epoch 87 [600/604] Loss: 0.8582, LR: 2.50e-05
+Epoch 87 Done. Train Loss: 0.4885 | Train Pearson: 0.7535 | Val MSE: 0.6615 | Val Pearson: 0.6717
+Epoch 88 [0/604] Loss: 0.7433, LR: 2.50e-05
+Epoch 88 [100/604] Loss: 0.3782, LR: 2.50e-05
+Epoch 88 [200/604] Loss: 0.5358, LR: 2.50e-05
+Epoch 88 [300/604] Loss: 0.5952, LR: 2.50e-05
+Epoch 88 [400/604] Loss: 0.4401, LR: 2.50e-05
+Epoch 88 [500/604] Loss: 0.3618, LR: 2.50e-05
+Epoch 88 [600/604] Loss: 0.7317, LR: 2.50e-05
+Epoch 88 Done. Train Loss: 0.4932 | Train Pearson: 0.7515 | Val MSE: 0.6441 | Val Pearson: 0.6796
+Epoch 89 [0/604] Loss: 0.3991, LR: 2.50e-05
+Epoch 89 [100/604] Loss: 0.5772, LR: 2.50e-05
+Epoch 89 [200/604] Loss: 0.4176, LR: 2.50e-05
+Epoch 89 [300/604] Loss: 0.5535, LR: 2.50e-05
+Epoch 89 [400/604] Loss: 0.4683, LR: 2.50e-05
+Epoch 89 [500/604] Loss: 0.5174, LR: 2.50e-05
+Epoch 89 [600/604] Loss: 0.4086, LR: 2.50e-05
+Epoch 89 Done. Train Loss: 0.4893 | Train Pearson: 0.7530 | Val MSE: 0.6578 | Val Pearson: 0.6723
+Epoch 90 [0/604] Loss: 0.6241, LR: 2.50e-05
+Epoch 90 [100/604] Loss: 0.4302, LR: 2.50e-05
+Epoch 90 [200/604] Loss: 0.5179, LR: 2.50e-05
+Epoch 90 [300/604] Loss: 0.5886, LR: 2.50e-05
+Epoch 90 [400/604] Loss: 0.6818, LR: 2.50e-05
+Epoch 90 [500/604] Loss: 0.3825, LR: 2.50e-05
+Epoch 90 [600/604] Loss: 0.7130, LR: 2.50e-05
+Epoch 90 Done. Train Loss: 0.4853 | Train Pearson: 0.7559 | Val MSE: 0.6631 | Val Pearson: 0.6769
+Epoch 91 [0/604] Loss: 0.6053, LR: 2.50e-05
+Epoch 91 [100/604] Loss: 0.2673, LR: 2.50e-05
+Epoch 91 [200/604] Loss: 0.4975, LR: 2.50e-05
+Epoch 91 [300/604] Loss: 0.5059, LR: 2.50e-05
+Epoch 91 [400/604] Loss: 0.4643, LR: 2.50e-05
+Epoch 91 [500/604] Loss: 0.3628, LR: 2.50e-05
+Epoch 91 [600/604] Loss: 0.3219, LR: 2.50e-05
+Epoch 91 Done. Train Loss: 0.4803 | Train Pearson: 0.7582 | Val MSE: 0.6640 | Val Pearson: 0.6708
+Epoch 92 [0/604] Loss: 0.3230, LR: 2.50e-05
+Epoch 92 [100/604] Loss: 0.4215, LR: 2.50e-05
+Epoch 92 [200/604] Loss: 0.4503, LR: 2.50e-05
+Epoch 92 [300/604] Loss: 0.4488, LR: 2.50e-05
+Epoch 92 [400/604] Loss: 0.5214, LR: 2.50e-05
+Epoch 92 [500/604] Loss: 0.6554, LR: 2.50e-05
+Epoch 92 [600/604] Loss: 0.3253, LR: 2.50e-05
+Epoch 92 Done. Train Loss: 0.4833 | Train Pearson: 0.7571 | Val MSE: 0.6656 | Val Pearson: 0.6722
+Epoch 93 [0/604] Loss: 0.2039, LR: 2.50e-05
+Epoch 93 [100/604] Loss: 0.3724, LR: 2.50e-05
+Epoch 93 [200/604] Loss: 0.4180, LR: 2.50e-05
+Epoch 93 [300/604] Loss: 0.5364, LR: 2.50e-05
+Epoch 93 [400/604] Loss: 0.5893, LR: 2.50e-05
+Epoch 93 [500/604] Loss: 0.6478, LR: 2.50e-05
+Epoch 93 [600/604] Loss: 0.5766, LR: 2.50e-05
+Epoch 93 Done. Train Loss: 0.4810 | Train Pearson: 0.7592 | Val MSE: 0.6581 | Val Pearson: 0.6746
+Epoch 94 [0/604] Loss: 0.3018, LR: 2.50e-05
+Epoch 94 [100/604] Loss: 0.3620, LR: 2.50e-05
+Epoch 94 [200/604] Loss: 0.4384, LR: 2.50e-05
+Epoch 94 [300/604] Loss: 0.6300, LR: 2.50e-05
+Epoch 94 [400/604] Loss: 0.5691, LR: 2.50e-05
+Epoch 94 [500/604] Loss: 0.4703, LR: 2.50e-05
+Epoch 94 [600/604] Loss: 0.4739, LR: 2.50e-05
+Epoch 94 Done. Train Loss: 0.4862 | Train Pearson: 0.7566 | Val MSE: 0.6617 | Val Pearson: 0.6722
+Epoch 95 [0/604] Loss: 0.4610, LR: 2.50e-05
+Epoch 95 [100/604] Loss: 0.6747, LR: 2.50e-05
+Epoch 95 [200/604] Loss: 0.4510, LR: 2.50e-05
+Epoch 95 [300/604] Loss: 0.5180, LR: 2.50e-05
+Epoch 95 [400/604] Loss: 0.6621, LR: 2.50e-05
+Epoch 95 [500/604] Loss: 0.4656, LR: 2.50e-05
+Epoch 95 [600/604] Loss: 0.4662, LR: 2.50e-05
+Epoch 95 Done. Train Loss: 0.4776 | Train Pearson: 0.7599 | Val MSE: 0.6541 | Val Pearson: 0.6747
+Epoch 96 [0/604] Loss: 0.5495, LR: 1.25e-05
+Epoch 96 [100/604] Loss: 0.5087, LR: 1.25e-05
+Epoch 96 [200/604] Loss: 0.3513, LR: 1.25e-05
+Epoch 96 [300/604] Loss: 0.3098, LR: 1.25e-05
+Epoch 96 [400/604] Loss: 0.4967, LR: 1.25e-05
+Epoch 96 [500/604] Loss: 0.4182, LR: 1.25e-05
+Epoch 96 [600/604] Loss: 0.5722, LR: 1.25e-05
+Epoch 96 Done. Train Loss: 0.4585 | Train Pearson: 0.7708 | Val MSE: 0.6485 | Val Pearson: 0.6794
+Epoch 97 [0/604] Loss: 0.3910, LR: 1.25e-05
+Epoch 97 [100/604] Loss: 0.2545, LR: 1.25e-05
+Epoch 97 [200/604] Loss: 0.3575, LR: 1.25e-05
+Epoch 97 [300/604] Loss: 0.4679, LR: 1.25e-05
+Epoch 97 [400/604] Loss: 0.4885, LR: 1.25e-05
+Epoch 97 [500/604] Loss: 0.4158, LR: 1.25e-05
+Epoch 97 [600/604] Loss: 0.4604, LR: 1.25e-05
+Epoch 97 Done. Train Loss: 0.4519 | Train Pearson: 0.7747 | Val MSE: 0.6518 | Val Pearson: 0.6787
+Epoch 98 [0/604] Loss: 0.3755, LR: 1.25e-05
+Epoch 98 [100/604] Loss: 0.6526, LR: 1.25e-05
+Epoch 98 [200/604] Loss: 0.4490, LR: 1.25e-05
+Epoch 98 [300/604] Loss: 0.3901, LR: 1.25e-05
+Epoch 98 [400/604] Loss: 0.4636, LR: 1.25e-05
+Epoch 98 [500/604] Loss: 0.3954, LR: 1.25e-05
+Epoch 98 [600/604] Loss: 0.4589, LR: 1.25e-05
+Epoch 98 Done. Train Loss: 0.4549 | Train Pearson: 0.7727 | Val MSE: 0.6614 | Val Pearson: 0.6719
+Epoch 99 [0/604] Loss: 0.3312, LR: 1.25e-05
+Epoch 99 [100/604] Loss: 0.6257, LR: 1.25e-05
+Epoch 99 [200/604] Loss: 0.4751, LR: 1.25e-05
+Epoch 99 [300/604] Loss: 0.4981, LR: 1.25e-05
+Epoch 99 [400/604] Loss: 0.2337, LR: 1.25e-05
+Epoch 99 [500/604] Loss: 0.4327, LR: 1.25e-05
+Epoch 99 [600/604] Loss: 0.4297, LR: 1.25e-05
+Epoch 99 Done. Train Loss: 0.4524 | Train Pearson: 0.7751 | Val MSE: 0.6688 | Val Pearson: 0.6769
+Epoch 100 [0/604] Loss: 0.5534, LR: 1.25e-05
+Epoch 100 [100/604] Loss: 0.4852, LR: 1.25e-05
+Epoch 100 [200/604] Loss: 0.5404, LR: 1.25e-05
+Epoch 100 [300/604] Loss: 0.3217, LR: 1.25e-05
+Epoch 100 [400/604] Loss: 0.5002, LR: 1.25e-05
+Epoch 100 [500/604] Loss: 0.4393, LR: 1.25e-05
+Epoch 100 [600/604] Loss: 0.3347, LR: 1.25e-05
+Epoch 100 Done. Train Loss: 0.4567 | Train Pearson: 0.7731 | Val MSE: 0.6493 | Val Pearson: 0.6795
+Epoch 101 [0/604] Loss: 0.4118, LR: 1.25e-05
+Epoch 101 [100/604] Loss: 0.5130, LR: 1.25e-05
+Epoch 101 [200/604] Loss: 0.3956, LR: 1.25e-05
+Epoch 101 [300/604] Loss: 0.4312, LR: 1.25e-05
+Epoch 101 [400/604] Loss: 0.6608, LR: 1.25e-05
+Epoch 101 [500/604] Loss: 0.3908, LR: 1.25e-05
+Epoch 101 [600/604] Loss: 0.5549, LR: 1.25e-05
+Epoch 101 Done. Train Loss: 0.4478 | Train Pearson: 0.7773 | Val MSE: 0.6614 | Val Pearson: 0.6741
+Epoch 102 [0/604] Loss: 0.4305, LR: 1.25e-05
+Epoch 102 [100/604] Loss: 0.4446, LR: 1.25e-05
+Epoch 102 [200/604] Loss: 0.4626, LR: 1.25e-05
+Epoch 102 [300/604] Loss: 0.4625, LR: 1.25e-05
+Epoch 102 [400/604] Loss: 0.5553, LR: 1.25e-05
+Epoch 102 [500/604] Loss: 0.5687, LR: 1.25e-05
+Epoch 102 [600/604] Loss: 0.5124, LR: 1.25e-05
+Epoch 102 Done. Train Loss: 0.4483 | Train Pearson: 0.7784 | Val MSE: 0.6493 | Val Pearson: 0.6780
+Epoch 103 [0/604] Loss: 0.4236, LR: 1.25e-05
+Epoch 103 [100/604] Loss: 0.4757, LR: 1.25e-05
+Epoch 103 [200/604] Loss: 0.5306, LR: 1.25e-05
+Epoch 103 [300/604] Loss: 0.4164, LR: 1.25e-05
+Epoch 103 [400/604] Loss: 0.6047, LR: 1.25e-05
+Epoch 103 [500/604] Loss: 0.2789, LR: 1.25e-05
+Epoch 103 [600/604] Loss: 0.4707, LR: 1.25e-05
+Epoch 103 Done. Train Loss: 0.4459 | Train Pearson: 0.7784 | Val MSE: 0.6720 | Val Pearson: 0.6809
+Epoch 104 [0/604] Loss: 0.3847, LR: 1.25e-05
+Epoch 104 [100/604] Loss: 0.3918, LR: 1.25e-05
+Epoch 104 [200/604] Loss: 0.2857, LR: 1.25e-05
+Epoch 104 [300/604] Loss: 0.6129, LR: 1.25e-05
+Epoch 104 [400/604] Loss: 0.3477, LR: 1.25e-05
+Epoch 104 [500/604] Loss: 0.3560, LR: 1.25e-05
+Epoch 104 [600/604] Loss: 0.5647, LR: 1.25e-05
+Epoch 104 Done. Train Loss: 0.4449 | Train Pearson: 0.7791 | Val MSE: 0.6453 | Val Pearson: 0.6830
+  ✓ New best val_pearson: 0.6830
+Epoch 105 [0/604] Loss: 0.6431, LR: 1.25e-05
+Epoch 105 [100/604] Loss: 0.3527, LR: 1.25e-05
+Epoch 105 [200/604] Loss: 0.4091, LR: 1.25e-05
+Epoch 105 [300/604] Loss: 0.5543, LR: 1.25e-05
+Epoch 105 [400/604] Loss: 0.3661, LR: 1.25e-05
+Epoch 105 [500/604] Loss: 0.8166, LR: 1.25e-05
+Epoch 105 [600/604] Loss: 0.4989, LR: 1.25e-05
+Epoch 105 Done. Train Loss: 0.4445 | Train Pearson: 0.7790 | Val MSE: 0.6507 | Val Pearson: 0.6800
+Epoch 106 [0/604] Loss: 0.5661, LR: 1.25e-05
+Epoch 106 [100/604] Loss: 0.3154, LR: 1.25e-05
+Epoch 106 [200/604] Loss: 0.5015, LR: 1.25e-05
+Epoch 106 [300/604] Loss: 0.4190, LR: 1.25e-05
+Epoch 106 [400/604] Loss: 0.3314, LR: 1.25e-05
+Epoch 106 [500/604] Loss: 0.3584, LR: 1.25e-05
+Epoch 106 [600/604] Loss: 0.4130, LR: 1.25e-05
+Epoch 106 Done. Train Loss: 0.4408 | Train Pearson: 0.7809 | Val MSE: 0.6584 | Val Pearson: 0.6753
+Epoch 107 [0/604] Loss: 0.3148, LR: 1.25e-05
+Epoch 107 [100/604] Loss: 0.5472, LR: 1.25e-05
+Epoch 107 [200/604] Loss: 0.4188, LR: 1.25e-05
+Epoch 107 [300/604] Loss: 0.5395, LR: 1.25e-05
+Epoch 107 [400/604] Loss: 0.4757, LR: 1.25e-05
+Epoch 107 [500/604] Loss: 0.3567, LR: 1.25e-05
+Epoch 107 [600/604] Loss: 0.3671, LR: 1.25e-05
+Epoch 107 Done. Train Loss: 0.4422 | Train Pearson: 0.7801 | Val MSE: 0.6611 | Val Pearson: 0.6808
+Epoch 108 [0/604] Loss: 0.4621, LR: 1.25e-05
+Epoch 108 [100/604] Loss: 0.3666, LR: 1.25e-05
+Epoch 108 [200/604] Loss: 0.3861, LR: 1.25e-05
+Epoch 108 [300/604] Loss: 0.6716, LR: 1.25e-05
+Epoch 108 [400/604] Loss: 0.3911, LR: 1.25e-05
+Epoch 108 [500/604] Loss: 0.5198, LR: 1.25e-05
+Epoch 108 [600/604] Loss: 0.5194, LR: 1.25e-05
+Epoch 108 Done. Train Loss: 0.4373 | Train Pearson: 0.7830 | Val MSE: 0.6599 | Val Pearson: 0.6750
+Epoch 109 [0/604] Loss: 0.2821, LR: 1.25e-05
+Epoch 109 [100/604] Loss: 0.7736, LR: 1.25e-05
+Epoch 109 [200/604] Loss: 0.4923, LR: 1.25e-05
+Epoch 109 [300/604] Loss: 0.3787, LR: 1.25e-05
+Epoch 109 [400/604] Loss: 0.3093, LR: 1.25e-05
+Epoch 109 [500/604] Loss: 0.2782, LR: 1.25e-05
+Epoch 109 [600/604] Loss: 0.5011, LR: 1.25e-05
+Epoch 109 Done. Train Loss: 0.4420 | Train Pearson: 0.7811 | Val MSE: 0.6521 | Val Pearson: 0.6795
+Epoch 110 [0/604] Loss: 0.5146, LR: 1.25e-05
+Epoch 110 [100/604] Loss: 0.3734, LR: 1.25e-05
+Epoch 110 [200/604] Loss: 0.3258, LR: 1.25e-05
+Epoch 110 [300/604] Loss: 0.4307, LR: 1.25e-05
+Epoch 110 [400/604] Loss: 0.5790, LR: 1.25e-05
+Epoch 110 [500/604] Loss: 0.4222, LR: 1.25e-05
+Epoch 110 [600/604] Loss: 0.4999, LR: 1.25e-05
+Epoch 110 Done. Train Loss: 0.4396 | Train Pearson: 0.7814 | Val MSE: 0.6527 | Val Pearson: 0.6756
+Epoch 111 [0/604] Loss: 0.4455, LR: 1.25e-05
+Epoch 111 [100/604] Loss: 0.3558, LR: 1.25e-05
+Epoch 111 [200/604] Loss: 0.3078, LR: 1.25e-05
+Epoch 111 [300/604] Loss: 0.4961, LR: 1.25e-05
+Epoch 111 [400/604] Loss: 0.3994, LR: 1.25e-05
+Epoch 111 [500/604] Loss: 0.5739, LR: 1.25e-05
+Epoch 111 [600/604] Loss: 0.5026, LR: 1.25e-05
+Epoch 111 Done. Train Loss: 0.4372 | Train Pearson: 0.7832 | Val MSE: 0.6450 | Val Pearson: 0.6826
+Epoch 112 [0/604] Loss: 0.2805, LR: 1.25e-05
+Epoch 112 [100/604] Loss: 0.3161, LR: 1.25e-05
+Epoch 112 [200/604] Loss: 0.6235, LR: 1.25e-05
+Epoch 112 [300/604] Loss: 0.4820, LR: 1.25e-05
+Epoch 112 [400/604] Loss: 0.3648, LR: 1.25e-05
+Epoch 112 [500/604] Loss: 0.4557, LR: 1.25e-05
+Epoch 112 [600/604] Loss: 0.4114, LR: 1.25e-05
+Epoch 112 Done. Train Loss: 0.4380 | Train Pearson: 0.7825 | Val MSE: 0.6765 | Val Pearson: 0.6757
+Epoch 113 [0/604] Loss: 0.3661, LR: 1.25e-05
+Epoch 113 [100/604] Loss: 0.4162, LR: 1.25e-05
+Epoch 113 [200/604] Loss: 0.5269, LR: 1.25e-05
+Epoch 113 [300/604] Loss: 0.4576, LR: 1.25e-05
+Epoch 113 [400/604] Loss: 0.5628, LR: 1.25e-05
+Epoch 113 [500/604] Loss: 0.2530, LR: 1.25e-05
+Epoch 113 [600/604] Loss: 0.4487, LR: 1.25e-05
+Epoch 113 Done. Train Loss: 0.4356 | Train Pearson: 0.7840 | Val MSE: 0.6516 | Val Pearson: 0.6781
+Epoch 114 [0/604] Loss: 0.3075, LR: 1.25e-05
+Epoch 114 [100/604] Loss: 0.5226, LR: 1.25e-05
+Epoch 114 [200/604] Loss: 0.3748, LR: 1.25e-05
+Epoch 114 [300/604] Loss: 0.2718, LR: 1.25e-05
+Epoch 114 [400/604] Loss: 0.4417, LR: 1.25e-05
+Epoch 114 [500/604] Loss: 0.4216, LR: 1.25e-05
+Epoch 114 [600/604] Loss: 0.3211, LR: 1.25e-05
+Epoch 114 Done. Train Loss: 0.4348 | Train Pearson: 0.7850 | Val MSE: 0.6559 | Val Pearson: 0.6788
+Epoch 115 [0/604] Loss: 0.3015, LR: 1.25e-05
+Epoch 115 [100/604] Loss: 0.3288, LR: 1.25e-05
+Epoch 115 [200/604] Loss: 0.4426, LR: 1.25e-05
+Epoch 115 [300/604] Loss: 0.4952, LR: 1.25e-05
+Epoch 115 [400/604] Loss: 0.7333, LR: 1.25e-05
+Epoch 115 [500/604] Loss: 0.7274, LR: 1.25e-05
+Epoch 115 [600/604] Loss: 0.4696, LR: 1.25e-05
+Epoch 115 Done. Train Loss: 0.4356 | Train Pearson: 0.7843 | Val MSE: 0.6631 | Val Pearson: 0.6798
+Epoch 116 [0/604] Loss: 0.4021, LR: 6.25e-06
+Epoch 116 [100/604] Loss: 0.3877, LR: 6.25e-06
+Epoch 116 [200/604] Loss: 0.3447, LR: 6.25e-06
+Epoch 116 [300/604] Loss: 0.5923, LR: 6.25e-06
+Epoch 116 [400/604] Loss: 0.4064, LR: 6.25e-06
+Epoch 116 [500/604] Loss: 0.3813, LR: 6.25e-06
+Epoch 116 [600/604] Loss: 0.4179, LR: 6.25e-06
+Epoch 116 Done. Train Loss: 0.4265 | Train Pearson: 0.7889 | Val MSE: 0.6574 | Val Pearson: 0.6813
+Epoch 117 [0/604] Loss: 0.4302, LR: 6.25e-06
+Epoch 117 [100/604] Loss: 0.5541, LR: 6.25e-06
+Epoch 117 [200/604] Loss: 0.3215, LR: 6.25e-06
+Epoch 117 [300/604] Loss: 0.3674, LR: 6.25e-06
+Epoch 117 [400/604] Loss: 0.4234, LR: 6.25e-06
+Epoch 117 [500/604] Loss: 0.4395, LR: 6.25e-06
+Epoch 117 [600/604] Loss: 0.5033, LR: 6.25e-06
+Epoch 117 Done. Train Loss: 0.4208 | Train Pearson: 0.7921 | Val MSE: 0.6554 | Val Pearson: 0.6798
+Epoch 118 [0/604] Loss: 0.6935, LR: 6.25e-06
+Epoch 118 [100/604] Loss: 0.5075, LR: 6.25e-06
+Epoch 118 [200/604] Loss: 0.3573, LR: 6.25e-06
+Epoch 118 [300/604] Loss: 0.3741, LR: 6.25e-06
+Epoch 118 [400/604] Loss: 0.2907, LR: 6.25e-06
+Epoch 118 [500/604] Loss: 0.3359, LR: 6.25e-06
+Epoch 118 [600/604] Loss: 0.7420, LR: 6.25e-06
+Epoch 118 Done. Train Loss: 0.4165 | Train Pearson: 0.7946 | Val MSE: 0.6527 | Val Pearson: 0.6789
+Epoch 119 [0/604] Loss: 0.3653, LR: 6.25e-06
+Epoch 119 [100/604] Loss: 0.2793, LR: 6.25e-06
+Epoch 119 [200/604] Loss: 0.4526, LR: 6.25e-06
+Epoch 119 [300/604] Loss: 0.3172, LR: 6.25e-06
+Epoch 119 [400/604] Loss: 0.5003, LR: 6.25e-06
+Epoch 119 [500/604] Loss: 0.5400, LR: 6.25e-06
+Epoch 119 [600/604] Loss: 0.3167, LR: 6.25e-06
+Epoch 119 Done. Train Loss: 0.4156 | Train Pearson: 0.7954 | Val MSE: 0.6514 | Val Pearson: 0.6797
+Epoch 120 [0/604] Loss: 0.3018, LR: 6.25e-06
+Epoch 120 [100/604] Loss: 0.4199, LR: 6.25e-06
+Epoch 120 [200/604] Loss: 0.3652, LR: 6.25e-06
+Epoch 120 [300/604] Loss: 0.3652, LR: 6.25e-06
+Epoch 120 [400/604] Loss: 0.2726, LR: 6.25e-06
+Epoch 120 [500/604] Loss: 0.5156, LR: 6.25e-06
+Epoch 120 [600/604] Loss: 0.4775, LR: 6.25e-06
+Epoch 120 Done. Train Loss: 0.4207 | Train Pearson: 0.7922 | Val MSE: 0.6561 | Val Pearson: 0.6777
+Epoch 121 [0/604] Loss: 0.5053, LR: 6.25e-06
+Epoch 121 [100/604] Loss: 0.3331, LR: 6.25e-06
+Epoch 121 [200/604] Loss: 0.1620, LR: 6.25e-06
+Epoch 121 [300/604] Loss: 0.4196, LR: 6.25e-06
+Epoch 121 [400/604] Loss: 0.2812, LR: 6.25e-06
+Epoch 121 [500/604] Loss: 0.3981, LR: 6.25e-06
+Epoch 121 [600/604] Loss: 0.4565, LR: 6.25e-06
+Epoch 121 Done. Train Loss: 0.4207 | Train Pearson: 0.7930 | Val MSE: 0.6617 | Val Pearson: 0.6764
+Epoch 122 [0/604] Loss: 0.4484, LR: 6.25e-06
+Epoch 122 [100/604] Loss: 0.2023, LR: 6.25e-06
+Epoch 122 [200/604] Loss: 0.3815, LR: 6.25e-06
+Epoch 122 [300/604] Loss: 0.5052, LR: 6.25e-06
+Epoch 122 [400/604] Loss: 0.3874, LR: 6.25e-06
+Epoch 122 [500/604] Loss: 0.4244, LR: 6.25e-06
+Epoch 122 [600/604] Loss: 0.2978, LR: 6.25e-06
+Epoch 122 Done. Train Loss: 0.4206 | Train Pearson: 0.7922 | Val MSE: 0.6502 | Val Pearson: 0.6807
+Epoch 123 [0/604] Loss: 0.4277, LR: 6.25e-06
+Epoch 123 [100/604] Loss: 0.3323, LR: 6.25e-06
+Epoch 123 [200/604] Loss: 0.4060, LR: 6.25e-06
+Epoch 123 [300/604] Loss: 0.4306, LR: 6.25e-06
+Epoch 123 [400/604] Loss: 0.3748, LR: 6.25e-06
+Epoch 123 [500/604] Loss: 0.5128, LR: 6.25e-06
+Epoch 123 [600/604] Loss: 0.4682, LR: 6.25e-06
+Epoch 123 Done. Train Loss: 0.4204 | Train Pearson: 0.7927 | Val MSE: 0.6595 | Val Pearson: 0.6764
+Epoch 124 [0/604] Loss: 0.3778, LR: 6.25e-06
+Epoch 124 [100/604] Loss: 0.4848, LR: 6.25e-06
+Epoch 124 [200/604] Loss: 0.2694, LR: 6.25e-06
+Epoch 124 [300/604] Loss: 0.5070, LR: 6.25e-06
+Epoch 124 [400/604] Loss: 0.2789, LR: 6.25e-06
+Epoch 124 [500/604] Loss: 0.2981, LR: 6.25e-06
+Epoch 124 [600/604] Loss: 0.3780, LR: 6.25e-06
+Epoch 124 Done. Train Loss: 0.4113 | Train Pearson: 0.7974 | Val MSE: 0.6575 | Val Pearson: 0.6756
+Epoch 125 [0/604] Loss: 0.2431, LR: 6.25e-06
+Epoch 125 [100/604] Loss: 0.5845, LR: 6.25e-06
+Epoch 125 [200/604] Loss: 0.4700, LR: 6.25e-06
+Epoch 125 [300/604] Loss: 0.3258, LR: 6.25e-06
+Epoch 125 [400/604] Loss: 0.5832, LR: 6.25e-06
+Epoch 125 [500/604] Loss: 0.3172, LR: 6.25e-06
+Epoch 125 [600/604] Loss: 0.5606, LR: 6.25e-06
+Epoch 125 Done. Train Loss: 0.4167 | Train Pearson: 0.7943 | Val MSE: 0.6612 | Val Pearson: 0.6769
+Epoch 126 [0/604] Loss: 0.8766, LR: 6.25e-06
+Epoch 126 [100/604] Loss: 0.2941, LR: 6.25e-06
+Epoch 126 [200/604] Loss: 0.3124, LR: 6.25e-06
+Epoch 126 [300/604] Loss: 0.5527, LR: 6.25e-06
+Epoch 126 [400/604] Loss: 0.3896, LR: 6.25e-06
+Epoch 126 [500/604] Loss: 0.3261, LR: 6.25e-06
+Epoch 126 [600/604] Loss: 0.3606, LR: 6.25e-06
+Epoch 126 Done. Train Loss: 0.4153 | Train Pearson: 0.7958 | Val MSE: 0.6679 | Val Pearson: 0.6782
+Epoch 127 [0/604] Loss: 0.5520, LR: 3.13e-06
+Epoch 127 [100/604] Loss: 0.3960, LR: 3.13e-06
+Epoch 127 [200/604] Loss: 0.3900, LR: 3.13e-06
+Epoch 127 [300/604] Loss: 0.5128, LR: 3.13e-06
+Epoch 127 [400/604] Loss: 0.4679, LR: 3.13e-06
+Epoch 127 [500/604] Loss: 0.3601, LR: 3.13e-06
+Epoch 127 [600/604] Loss: 0.3194, LR: 3.13e-06
+Epoch 127 Done. Train Loss: 0.4066 | Train Pearson: 0.8001 | Val MSE: 0.6663 | Val Pearson: 0.6786
+Epoch 128 [0/604] Loss: 0.4642, LR: 3.13e-06
+Epoch 128 [100/604] Loss: 0.3946, LR: 3.13e-06
+Epoch 128 [200/604] Loss: 0.2440, LR: 3.13e-06
+Epoch 128 [300/604] Loss: 0.3557, LR: 3.13e-06
+Epoch 128 [400/604] Loss: 0.5458, LR: 3.13e-06
+Epoch 128 [500/604] Loss: 0.4475, LR: 3.13e-06
+Epoch 128 [600/604] Loss: 0.3563, LR: 3.13e-06
+Epoch 128 Done. Train Loss: 0.4102 | Train Pearson: 0.7983 | Val MSE: 0.6526 | Val Pearson: 0.6779
+Epoch 129 [0/604] Loss: 0.2132, LR: 3.13e-06
+Epoch 129 [100/604] Loss: 0.6160, LR: 3.13e-06
+Epoch 129 [200/604] Loss: 0.3390, LR: 3.13e-06
+Epoch 129 [300/604] Loss: 0.3836, LR: 3.13e-06
+Epoch 129 [400/604] Loss: 0.2358, LR: 3.13e-06
+Epoch 129 [500/604] Loss: 0.5027, LR: 3.13e-06
+Epoch 129 [600/604] Loss: 0.3435, LR: 3.13e-06
+Epoch 129 Done. Train Loss: 0.4099 | Train Pearson: 0.7982 | Val MSE: 0.6543 | Val Pearson: 0.6776
+Epoch 130 [0/604] Loss: 0.3586, LR: 3.13e-06
+Epoch 130 [100/604] Loss: 0.2174, LR: 3.13e-06
+Epoch 130 [200/604] Loss: 0.3713, LR: 3.13e-06
+Epoch 130 [300/604] Loss: 0.4365, LR: 3.13e-06
+Epoch 130 [400/604] Loss: 0.5364, LR: 3.13e-06
+Epoch 130 [500/604] Loss: 0.3918, LR: 3.13e-06
+Epoch 130 [600/604] Loss: 0.3653, LR: 3.13e-06
+Epoch 130 Done. Train Loss: 0.4112 | Train Pearson: 0.7979 | Val MSE: 0.6585 | Val Pearson: 0.6768
+Epoch 131 [0/604] Loss: 0.3776, LR: 3.13e-06
+Epoch 131 [100/604] Loss: 0.4232, LR: 3.13e-06
+Epoch 131 [200/604] Loss: 0.3533, LR: 3.13e-06
+Epoch 131 [300/604] Loss: 0.2650, LR: 3.13e-06
+Epoch 131 [400/604] Loss: 0.5248, LR: 3.13e-06
+Epoch 131 [500/604] Loss: 0.4530, LR: 3.13e-06
+Epoch 131 [600/604] Loss: 0.2063, LR: 3.13e-06
+Epoch 131 Done. Train Loss: 0.4079 | Train Pearson: 0.7996 | Val MSE: 0.6548 | Val Pearson: 0.6798
+Epoch 132 [0/604] Loss: 0.2904, LR: 3.13e-06
+Epoch 132 [100/604] Loss: 0.2916, LR: 3.13e-06
+Epoch 132 [200/604] Loss: 0.2691, LR: 3.13e-06
+Epoch 132 [300/604] Loss: 0.6751, LR: 3.13e-06
+Epoch 132 [400/604] Loss: 0.3852, LR: 3.13e-06
+Epoch 132 [500/604] Loss: 0.4409, LR: 3.13e-06
+Epoch 132 [600/604] Loss: 0.3474, LR: 3.13e-06
+Epoch 132 Done. Train Loss: 0.4066 | Train Pearson: 0.8010 | Val MSE: 0.6538 | Val Pearson: 0.6802
+Epoch 133 [0/604] Loss: 0.3139, LR: 3.13e-06
+Epoch 133 [100/604] Loss: 0.2812, LR: 3.13e-06
+Epoch 133 [200/604] Loss: 0.3295, LR: 3.13e-06
+Epoch 133 [300/604] Loss: 0.4158, LR: 3.13e-06
+Epoch 133 [400/604] Loss: 0.3603, LR: 3.13e-06
+Epoch 133 [500/604] Loss: 0.3180, LR: 3.13e-06
+Epoch 133 [600/604] Loss: 0.4237, LR: 3.13e-06
+Epoch 133 Done. Train Loss: 0.4066 | Train Pearson: 0.8002 | Val MSE: 0.6615 | Val Pearson: 0.6778
+Epoch 134 [0/604] Loss: 0.3885, LR: 3.13e-06
+Epoch 134 [100/604] Loss: 0.2805, LR: 3.13e-06
+Epoch 134 [200/604] Loss: 0.2849, LR: 3.13e-06
+Epoch 134 [300/604] Loss: 0.3667, LR: 3.13e-06
+Epoch 134 [400/604] Loss: 0.3789, LR: 3.13e-06
+Epoch 134 [500/604] Loss: 0.3150, LR: 3.13e-06
+Epoch 134 [600/604] Loss: 0.5255, LR: 3.13e-06
+Epoch 134 Done. Train Loss: 0.4031 | Train Pearson: 0.8025 | Val MSE: 0.6629 | Val Pearson: 0.6773
+
+Early stopping triggered after 135 epochs!
+Best val_pearson: 0.6830
+
+============================================================
+Training complete!
+=== Experiment 7: Higher Weight Decay ===
+Loading scores from data/scores.json...
+Total samples found: 21300. Training on 19300, Val on 2000
+Using MSE Loss
+Using Cosine Annealing LR Scheduler
+Starting training...
+Epoch 0 [0/604] Loss: 5.0230, LR: 1.00e-04
+Epoch 0 [100/604] Loss: 1.1911, LR: 1.00e-04
+Epoch 0 [200/604] Loss: 1.3459, LR: 1.00e-04
+Epoch 0 [300/604] Loss: 0.7525, LR: 1.00e-04
+Epoch 0 [400/604] Loss: 1.1676, LR: 1.00e-04
+Epoch 0 [500/604] Loss: 1.5832, LR: 1.00e-04
+Epoch 0 [600/604] Loss: 1.6173, LR: 1.00e-04
+Epoch 0 Done. Train Loss: 1.3294 | Train Pearson: 0.2605 | Val MSE: 1.2353 | Val Pearson: 0.3460
+  ✓ New best val_pearson: 0.3460
+Epoch 1 [0/604] Loss: 0.8887, LR: 1.00e-04
+Epoch 1 [100/604] Loss: 0.9894, LR: 1.00e-04
+Epoch 1 [200/604] Loss: 0.8026, LR: 1.00e-04
+Epoch 1 [300/604] Loss: 1.3568, LR: 1.00e-04
+Epoch 1 [400/604] Loss: 0.7976, LR: 1.00e-04
+Epoch 1 [500/604] Loss: 1.0223, LR: 1.00e-04
+Epoch 1 [600/604] Loss: 1.2398, LR: 1.00e-04
+Epoch 1 Done. Train Loss: 1.0298 | Train Pearson: 0.3721 | Val MSE: 1.1443 | Val Pearson: 0.3687
+  ✓ New best val_pearson: 0.3687
+Epoch 2 [0/604] Loss: 0.7149, LR: 1.00e-04
+Epoch 2 [100/604] Loss: 0.7831, LR: 1.00e-04
+Epoch 2 [200/604] Loss: 0.6847, LR: 1.00e-04
+Epoch 2 [300/604] Loss: 1.0772, LR: 1.00e-04
+Epoch 2 [400/604] Loss: 0.9919, LR: 1.00e-04
+Epoch 2 [500/604] Loss: 0.9320, LR: 1.00e-04
+Epoch 2 [600/604] Loss: 1.0004, LR: 9.99e-05
+Epoch 2 Done. Train Loss: 0.9800 | Train Pearson: 0.3999 | Val MSE: 0.9536 | Val Pearson: 0.4577
+  ✓ New best val_pearson: 0.4577
+Epoch 3 [0/604] Loss: 0.5966, LR: 9.99e-05
+Epoch 3 [100/604] Loss: 1.1802, LR: 9.99e-05
+Epoch 3 [200/604] Loss: 1.1591, LR: 9.99e-05
+Epoch 3 [300/604] Loss: 0.8515, LR: 9.99e-05
+Epoch 3 [400/604] Loss: 0.8058, LR: 9.99e-05
+Epoch 3 [500/604] Loss: 1.6181, LR: 9.99e-05
+Epoch 3 [600/604] Loss: 0.9334, LR: 9.99e-05
+Epoch 3 Done. Train Loss: 0.9379 | Train Pearson: 0.4312 | Val MSE: 1.1068 | Val Pearson: 0.4025
+Epoch 4 [0/604] Loss: 1.5524, LR: 9.99e-05
+Epoch 4 [100/604] Loss: 2.1016, LR: 9.99e-05
+Epoch 4 [200/604] Loss: 0.7151, LR: 9.99e-05
+Epoch 4 [300/604] Loss: 0.9271, LR: 9.99e-05
+Epoch 4 [400/604] Loss: 1.1759, LR: 9.99e-05
+Epoch 4 [500/604] Loss: 1.2217, LR: 9.99e-05
+Epoch 4 [600/604] Loss: 1.0100, LR: 9.98e-05
+Epoch 4 Done. Train Loss: 0.9259 | Train Pearson: 0.4419 | Val MSE: 1.0049 | Val Pearson: 0.4369
+Epoch 5 [0/604] Loss: 1.2153, LR: 9.98e-05
+Epoch 5 [100/604] Loss: 0.7991, LR: 9.98e-05
+Epoch 5 [200/604] Loss: 0.9085, LR: 9.98e-05
+Epoch 5 [300/604] Loss: 0.8985, LR: 9.98e-05
+Epoch 5 [400/604] Loss: 0.7282, LR: 9.98e-05
+Epoch 5 [500/604] Loss: 0.8412, LR: 9.98e-05
+Epoch 5 [600/604] Loss: 1.0713, LR: 9.98e-05
+Epoch 5 Done. Train Loss: 0.9036 | Train Pearson: 0.4583 | Val MSE: 0.9953 | Val Pearson: 0.4422
+Epoch 6 [0/604] Loss: 1.5482, LR: 9.98e-05
+Epoch 6 [100/604] Loss: 0.6774, LR: 9.98e-05
+Epoch 6 [200/604] Loss: 0.8181, LR: 9.98e-05
+Epoch 6 [300/604] Loss: 1.0950, LR: 9.97e-05
+Epoch 6 [400/604] Loss: 0.7345, LR: 9.97e-05
+Epoch 6 [500/604] Loss: 0.7398, LR: 9.97e-05
+Epoch 6 [600/604] Loss: 0.9181, LR: 9.97e-05
+Epoch 6 Done. Train Loss: 0.8843 | Train Pearson: 0.4756 | Val MSE: 0.9471 | Val Pearson: 0.4727
+  ✓ New best val_pearson: 0.4727
+Epoch 7 [0/604] Loss: 0.8720, LR: 9.97e-05
+Epoch 7 [100/604] Loss: 0.6077, LR: 9.97e-05
+Epoch 7 [200/604] Loss: 0.5675, LR: 9.97e-05
+Epoch 7 [300/604] Loss: 1.3151, LR: 9.97e-05
+Epoch 7 [400/604] Loss: 0.8290, LR: 9.96e-05
+Epoch 7 [500/604] Loss: 0.9009, LR: 9.96e-05
+Epoch 7 [600/604] Loss: 1.3528, LR: 9.96e-05
+Epoch 7 Done. Train Loss: 0.8653 | Train Pearson: 0.4903 | Val MSE: 0.8964 | Val Pearson: 0.5232
+  ✓ New best val_pearson: 0.5232
+Epoch 8 [0/604] Loss: 1.1397, LR: 9.96e-05
+Epoch 8 [100/604] Loss: 0.8007, LR: 9.96e-05
+Epoch 8 [200/604] Loss: 1.1329, LR: 9.96e-05
+Epoch 8 [300/604] Loss: 0.4152, LR: 9.96e-05
+Epoch 8 [400/604] Loss: 0.7154, LR: 9.95e-05
+Epoch 8 [500/604] Loss: 1.0035, LR: 9.95e-05
+Epoch 8 [600/604] Loss: 1.0368, LR: 9.95e-05
+Epoch 8 Done. Train Loss: 0.8623 | Train Pearson: 0.4934 | Val MSE: 0.9706 | Val Pearson: 0.4494
+Epoch 9 [0/604] Loss: 1.4651, LR: 9.95e-05
+Epoch 9 [100/604] Loss: 1.0891, LR: 9.95e-05
+Epoch 9 [200/604] Loss: 1.1800, LR: 9.95e-05
+Epoch 9 [300/604] Loss: 1.0688, LR: 9.94e-05
+Epoch 9 [400/604] Loss: 0.5197, LR: 9.94e-05
+Epoch 9 [500/604] Loss: 0.9992, LR: 9.94e-05
+Epoch 9 [600/604] Loss: 0.5833, LR: 9.94e-05
+Epoch 9 Done. Train Loss: 0.8484 | Train Pearson: 0.5042 | Val MSE: 0.8549 | Val Pearson: 0.5339
+  ✓ New best val_pearson: 0.5339
+Epoch 10 [0/604] Loss: 0.6346, LR: 9.94e-05
+Epoch 10 [100/604] Loss: 0.9234, LR: 9.94e-05
+Epoch 10 [200/604] Loss: 0.8820, LR: 9.93e-05
+Epoch 10 [300/604] Loss: 0.3808, LR: 9.93e-05
+Epoch 10 [400/604] Loss: 0.8588, LR: 9.93e-05
+Epoch 10 [500/604] Loss: 0.8502, LR: 9.93e-05
+Epoch 10 [600/604] Loss: 0.4653, LR: 9.93e-05
+Epoch 10 Done. Train Loss: 0.8266 | Train Pearson: 0.5210 | Val MSE: 0.8461 | Val Pearson: 0.5434
+  ✓ New best val_pearson: 0.5434
+Epoch 11 [0/604] Loss: 0.5143, LR: 9.93e-05
+Epoch 11 [100/604] Loss: 0.6185, LR: 9.92e-05
+Epoch 11 [200/604] Loss: 0.7050, LR: 9.92e-05
+Epoch 11 [300/604] Loss: 0.6213, LR: 9.92e-05
+Epoch 11 [400/604] Loss: 0.7901, LR: 9.92e-05
+Epoch 11 [500/604] Loss: 0.5922, LR: 9.91e-05
+Epoch 11 [600/604] Loss: 1.0649, LR: 9.91e-05
+Epoch 11 Done. Train Loss: 0.8166 | Train Pearson: 0.5301 | Val MSE: 0.8824 | Val Pearson: 0.5166
+Epoch 12 [0/604] Loss: 0.6693, LR: 9.91e-05
+Epoch 12 [100/604] Loss: 0.8601, LR: 9.91e-05
+Epoch 12 [200/604] Loss: 1.0238, LR: 9.91e-05
+Epoch 12 [300/604] Loss: 0.9663, LR: 9.90e-05
+Epoch 12 [400/604] Loss: 0.5756, LR: 9.90e-05
+Epoch 12 [500/604] Loss: 0.7471, LR: 9.90e-05
+Epoch 12 [600/604] Loss: 0.9327, LR: 9.90e-05
+Epoch 12 Done. Train Loss: 0.8102 | Train Pearson: 0.5348 | Val MSE: 0.8232 | Val Pearson: 0.5604
+  ✓ New best val_pearson: 0.5604
+Epoch 13 [0/604] Loss: 0.8870, LR: 9.90e-05
+Epoch 13 [100/604] Loss: 1.0614, LR: 9.89e-05
+Epoch 13 [200/604] Loss: 1.2798, LR: 9.89e-05
+Epoch 13 [300/604] Loss: 0.9459, LR: 9.89e-05
+Epoch 13 [400/604] Loss: 0.6758, LR: 9.89e-05
+Epoch 13 [500/604] Loss: 0.8279, LR: 9.88e-05
+Epoch 13 [600/604] Loss: 0.8626, LR: 9.88e-05
+Epoch 13 Done. Train Loss: 0.7970 | Train Pearson: 0.5448 | Val MSE: 0.8176 | Val Pearson: 0.5612
+  ✓ New best val_pearson: 0.5612
+Epoch 14 [0/604] Loss: 1.2142, LR: 9.88e-05
+Epoch 14 [100/604] Loss: 0.7226, LR: 9.88e-05
+Epoch 14 [200/604] Loss: 0.8477, LR: 9.87e-05
+Epoch 14 [300/604] Loss: 0.9552, LR: 9.87e-05
+Epoch 14 [400/604] Loss: 0.7417, LR: 9.87e-05
+Epoch 14 [500/604] Loss: 0.7288, LR: 9.86e-05
+Epoch 14 [600/604] Loss: 0.7038, LR: 9.86e-05
+Epoch 14 Done. Train Loss: 0.7881 | Train Pearson: 0.5516 | Val MSE: 0.8548 | Val Pearson: 0.5364
+Epoch 15 [0/604] Loss: 0.8096, LR: 9.86e-05
+Epoch 15 [100/604] Loss: 0.8089, LR: 9.86e-05
+Epoch 15 [200/604] Loss: 0.4313, LR: 9.86e-05
+Epoch 15 [300/604] Loss: 0.8042, LR: 9.85e-05
+Epoch 15 [400/604] Loss: 0.8116, LR: 9.85e-05
+Epoch 15 [500/604] Loss: 0.5922, LR: 9.85e-05
+Epoch 15 [600/604] Loss: 0.6768, LR: 9.84e-05
+Epoch 15 Done. Train Loss: 0.7876 | Train Pearson: 0.5538 | Val MSE: 0.7912 | Val Pearson: 0.5816
+  ✓ New best val_pearson: 0.5816
+Epoch 16 [0/604] Loss: 0.9177, LR: 9.84e-05
+Epoch 16 [100/604] Loss: 1.1743, LR: 9.84e-05
+Epoch 16 [200/604] Loss: 0.5937, LR: 9.84e-05
+Epoch 16 [300/604] Loss: 0.8473, LR: 9.83e-05
+Epoch 16 [400/604] Loss: 0.9442, LR: 9.83e-05
+Epoch 16 [500/604] Loss: 0.6946, LR: 9.83e-05
+Epoch 16 [600/604] Loss: 0.7846, LR: 9.82e-05
+Epoch 16 Done. Train Loss: 0.7791 | Train Pearson: 0.5584 | Val MSE: 0.8058 | Val Pearson: 0.5717
+Epoch 17 [0/604] Loss: 0.7158, LR: 9.82e-05
+Epoch 17 [100/604] Loss: 0.6822, LR: 9.82e-05
+Epoch 17 [200/604] Loss: 1.0246, LR: 9.82e-05
+Epoch 17 [300/604] Loss: 0.8016, LR: 9.81e-05
+Epoch 17 [400/604] Loss: 0.6990, LR: 9.81e-05
+Epoch 17 [500/604] Loss: 0.5498, LR: 9.81e-05
+Epoch 17 [600/604] Loss: 1.0728, LR: 9.80e-05
+Epoch 17 Done. Train Loss: 0.7664 | Train Pearson: 0.5678 | Val MSE: 0.7804 | Val Pearson: 0.5907
+  ✓ New best val_pearson: 0.5907
+Epoch 18 [0/604] Loss: 0.5906, LR: 9.80e-05
+Epoch 18 [100/604] Loss: 0.9411, LR: 9.80e-05
+Epoch 18 [200/604] Loss: 0.9345, LR: 9.79e-05
+Epoch 18 [300/604] Loss: 0.6258, LR: 9.79e-05
+Epoch 18 [400/604] Loss: 0.6682, LR: 9.79e-05
+Epoch 18 [500/604] Loss: 1.0187, LR: 9.78e-05
+Epoch 18 [600/604] Loss: 0.7239, LR: 9.78e-05
+Epoch 18 Done. Train Loss: 0.7624 | Train Pearson: 0.5712 | Val MSE: 0.7759 | Val Pearson: 0.5937
+  ✓ New best val_pearson: 0.5937
+Epoch 19 [0/604] Loss: 0.5680, LR: 9.78e-05
+Epoch 19 [100/604] Loss: 0.6849, LR: 9.78e-05
+Epoch 19 [200/604] Loss: 0.9706, LR: 9.77e-05
+Epoch 19 [300/604] Loss: 0.8518, LR: 9.77e-05
+Epoch 19 [400/604] Loss: 0.5763, LR: 9.76e-05
+Epoch 19 [500/604] Loss: 0.7249, LR: 9.76e-05
+Epoch 19 [600/604] Loss: 1.0695, LR: 9.76e-05
+Epoch 19 Done. Train Loss: 0.7621 | Train Pearson: 0.5756 | Val MSE: 0.7907 | Val Pearson: 0.5884
+Epoch 20 [0/604] Loss: 0.3914, LR: 9.76e-05
+Epoch 20 [100/604] Loss: 0.5836, LR: 9.75e-05
+Epoch 20 [200/604] Loss: 0.6944, LR: 9.75e-05
+Epoch 20 [300/604] Loss: 0.7637, LR: 9.74e-05
+Epoch 20 [400/604] Loss: 0.8301, LR: 9.74e-05
+Epoch 20 [500/604] Loss: 0.8286, LR: 9.73e-05
+Epoch 20 [600/604] Loss: 0.7086, LR: 9.73e-05
+Epoch 20 Done. Train Loss: 0.7535 | Train Pearson: 0.5786 | Val MSE: 0.7890 | Val Pearson: 0.5919
+Epoch 21 [0/604] Loss: 0.7906, LR: 9.73e-05
+Epoch 21 [100/604] Loss: 0.6368, LR: 9.73e-05
+Epoch 21 [200/604] Loss: 0.6660, LR: 9.72e-05
+Epoch 21 [300/604] Loss: 0.9635, LR: 9.72e-05
+Epoch 21 [400/604] Loss: 0.7973, LR: 9.71e-05
+Epoch 21 [500/604] Loss: 0.7186, LR: 9.71e-05
+Epoch 21 [600/604] Loss: 0.9105, LR: 9.70e-05
+Epoch 21 Done. Train Loss: 0.7391 | Train Pearson: 0.5888 | Val MSE: 0.7601 | Val Pearson: 0.6022
+  ✓ New best val_pearson: 0.6022
+Epoch 22 [0/604] Loss: 0.5774, LR: 9.70e-05
+Epoch 22 [100/604] Loss: 0.6799, LR: 9.70e-05
+Epoch 22 [200/604] Loss: 0.7309, LR: 9.70e-05
+Epoch 22 [300/604] Loss: 1.0275, LR: 9.69e-05
+Epoch 22 [400/604] Loss: 0.8152, LR: 9.69e-05
+Epoch 22 [500/604] Loss: 0.6921, LR: 9.68e-05
+Epoch 22 [600/604] Loss: 0.7622, LR: 9.68e-05
+Epoch 22 Done. Train Loss: 0.7408 | Train Pearson: 0.5873 | Val MSE: 0.7552 | Val Pearson: 0.6105
+  ✓ New best val_pearson: 0.6105
+Epoch 23 [0/604] Loss: 0.6328, LR: 9.68e-05
+Epoch 23 [100/604] Loss: 0.6293, LR: 9.67e-05
+Epoch 23 [200/604] Loss: 0.7718, LR: 9.67e-05
+Epoch 23 [300/604] Loss: 0.8924, LR: 9.66e-05
+Epoch 23 [400/604] Loss: 0.8286, LR: 9.66e-05
+Epoch 23 [500/604] Loss: 0.5993, LR: 9.65e-05
+Epoch 23 [600/604] Loss: 0.4698, LR: 9.65e-05
+Epoch 23 Done. Train Loss: 0.7371 | Train Pearson: 0.5911 | Val MSE: 0.7508 | Val Pearson: 0.6179
+  ✓ New best val_pearson: 0.6179
+Epoch 24 [0/604] Loss: 0.8064, LR: 9.65e-05
+Epoch 24 [100/604] Loss: 0.6951, LR: 9.64e-05
+Epoch 24 [200/604] Loss: 0.7156, LR: 9.64e-05
+Epoch 24 [300/604] Loss: 0.7302, LR: 9.63e-05
+Epoch 24 [400/604] Loss: 0.3867, LR: 9.63e-05
+Epoch 24 [500/604] Loss: 0.7584, LR: 9.62e-05
+Epoch 24 [600/604] Loss: 0.8254, LR: 9.62e-05
+Epoch 24 Done. Train Loss: 0.7302 | Train Pearson: 0.5951 | Val MSE: 0.7692 | Val Pearson: 0.6034
+Epoch 25 [0/604] Loss: 0.8653, LR: 9.62e-05
+Epoch 25 [100/604] Loss: 0.9588, LR: 9.61e-05
+Epoch 25 [200/604] Loss: 0.8150, LR: 9.61e-05
+Epoch 25 [300/604] Loss: 0.5252, LR: 9.60e-05
+Epoch 25 [400/604] Loss: 0.9366, LR: 9.60e-05
+Epoch 25 [500/604] Loss: 0.7111, LR: 9.59e-05
+Epoch 25 [600/604] Loss: 1.1516, LR: 9.59e-05
+Epoch 25 Done. Train Loss: 0.7249 | Train Pearson: 0.5993 | Val MSE: 0.7686 | Val Pearson: 0.6006
+Epoch 26 [0/604] Loss: 0.9291, LR: 9.59e-05
+Epoch 26 [100/604] Loss: 0.9000, LR: 9.58e-05
+Epoch 26 [200/604] Loss: 0.6225, LR: 9.58e-05
+Epoch 26 [300/604] Loss: 0.6035, LR: 9.57e-05
+Epoch 26 [400/604] Loss: 0.5935, LR: 9.57e-05
+Epoch 26 [500/604] Loss: 0.6201, LR: 9.56e-05
+Epoch 26 [600/604] Loss: 0.5913, LR: 9.56e-05
+Epoch 26 Done. Train Loss: 0.7164 | Train Pearson: 0.6052 | Val MSE: 0.7493 | Val Pearson: 0.6182
+  ✓ New best val_pearson: 0.6182
+Epoch 27 [0/604] Loss: 0.7161, LR: 9.56e-05
+Epoch 27 [100/604] Loss: 0.4584, LR: 9.55e-05
+Epoch 27 [200/604] Loss: 0.7356, LR: 9.55e-05
+Epoch 27 [300/604] Loss: 0.7670, LR: 9.54e-05
+Epoch 27 [400/604] Loss: 0.6671, LR: 9.54e-05
+Epoch 27 [500/604] Loss: 0.9937, LR: 9.53e-05
+Epoch 27 [600/604] Loss: 0.7617, LR: 9.52e-05
+Epoch 27 Done. Train Loss: 0.7133 | Train Pearson: 0.6108 | Val MSE: 0.7921 | Val Pearson: 0.6007
+Epoch 28 [0/604] Loss: 0.9564, LR: 9.52e-05
+Epoch 28 [100/604] Loss: 0.7502, LR: 9.52e-05
+Epoch 28 [200/604] Loss: 0.5384, LR: 9.51e-05
+Epoch 28 [300/604] Loss: 0.5301, LR: 9.51e-05
+Epoch 28 [400/604] Loss: 0.5096, LR: 9.50e-05
+Epoch 28 [500/604] Loss: 1.0670, LR: 9.50e-05
+Epoch 28 [600/604] Loss: 0.4988, LR: 9.49e-05
+Epoch 28 Done. Train Loss: 0.7103 | Train Pearson: 0.6113 | Val MSE: 0.7578 | Val Pearson: 0.6069
+Epoch 29 [0/604] Loss: 0.9641, LR: 9.49e-05
+Epoch 29 [100/604] Loss: 0.7988, LR: 9.48e-05
+Epoch 29 [200/604] Loss: 0.9121, LR: 9.48e-05
+Epoch 29 [300/604] Loss: 0.7281, LR: 9.47e-05
+Epoch 29 [400/604] Loss: 0.5075, LR: 9.47e-05
+Epoch 29 [500/604] Loss: 0.6573, LR: 9.46e-05
+Epoch 29 [600/604] Loss: 0.8147, LR: 9.46e-05
+Epoch 29 Done. Train Loss: 0.7099 | Train Pearson: 0.6107 | Val MSE: 0.7379 | Val Pearson: 0.6168
+Epoch 30 [0/604] Loss: 1.1647, LR: 9.45e-05
+Epoch 30 [100/604] Loss: 0.5699, LR: 9.45e-05
+Epoch 30 [200/604] Loss: 0.6487, LR: 9.44e-05
+Epoch 30 [300/604] Loss: 0.6189, LR: 9.44e-05
+Epoch 30 [400/604] Loss: 0.8450, LR: 9.43e-05
+Epoch 30 [500/604] Loss: 0.9973, LR: 9.43e-05
+Epoch 30 [600/604] Loss: 0.7640, LR: 9.42e-05
+Epoch 30 Done. Train Loss: 0.6972 | Train Pearson: 0.6188 | Val MSE: 0.7385 | Val Pearson: 0.6208
+  ✓ New best val_pearson: 0.6208
+Epoch 31 [0/604] Loss: 0.8675, LR: 9.42e-05
+Epoch 31 [100/604] Loss: 0.6828, LR: 9.41e-05
+Epoch 31 [200/604] Loss: 0.6506, LR: 9.41e-05
+Epoch 31 [300/604] Loss: 0.8519, LR: 9.40e-05
+Epoch 31 [400/604] Loss: 1.0619, LR: 9.39e-05
+Epoch 31 [500/604] Loss: 1.3138, LR: 9.39e-05
+Epoch 31 [600/604] Loss: 0.6214, LR: 9.38e-05
+Epoch 31 Done. Train Loss: 0.6999 | Train Pearson: 0.6173 | Val MSE: 0.7353 | Val Pearson: 0.6216
+  ✓ New best val_pearson: 0.6216
+Epoch 32 [0/604] Loss: 0.8194, LR: 9.38e-05
+Epoch 32 [100/604] Loss: 0.7399, LR: 9.38e-05
+Epoch 32 [200/604] Loss: 0.3997, LR: 9.37e-05
+Epoch 32 [300/604] Loss: 0.5803, LR: 9.36e-05
+Epoch 32 [400/604] Loss: 0.5106, LR: 9.36e-05
+Epoch 32 [500/604] Loss: 0.7099, LR: 9.35e-05
+Epoch 32 [600/604] Loss: 0.5392, LR: 9.34e-05
+Epoch 32 Done. Train Loss: 0.6900 | Train Pearson: 0.6243 | Val MSE: 0.7315 | Val Pearson: 0.6250
+  ✓ New best val_pearson: 0.6250
+Epoch 33 [0/604] Loss: 0.5372, LR: 9.34e-05
+Epoch 33 [100/604] Loss: 0.7686, LR: 9.34e-05
+Epoch 33 [200/604] Loss: 0.4315, LR: 9.33e-05
+Epoch 33 [300/604] Loss: 0.7665, LR: 9.32e-05
+Epoch 33 [400/604] Loss: 0.6133, LR: 9.32e-05
+Epoch 33 [500/604] Loss: 0.8018, LR: 9.31e-05
+Epoch 33 [600/604] Loss: 0.6708, LR: 9.30e-05
+Epoch 33 Done. Train Loss: 0.6833 | Train Pearson: 0.6291 | Val MSE: 0.7373 | Val Pearson: 0.6261
+  ✓ New best val_pearson: 0.6261
+Epoch 34 [0/604] Loss: 0.8977, LR: 9.30e-05
+Epoch 34 [100/604] Loss: 0.8185, LR: 9.30e-05
+Epoch 34 [200/604] Loss: 0.5263, LR: 9.29e-05
+Epoch 34 [300/604] Loss: 0.2718, LR: 9.28e-05
+Epoch 34 [400/604] Loss: 0.5696, LR: 9.28e-05
+Epoch 34 [500/604] Loss: 0.4736, LR: 9.27e-05
+Epoch 34 [600/604] Loss: 0.5254, LR: 9.26e-05
+Epoch 34 Done. Train Loss: 0.6866 | Train Pearson: 0.6264 | Val MSE: 0.7392 | Val Pearson: 0.6164
+Epoch 35 [0/604] Loss: 0.5472, LR: 9.26e-05
+Epoch 35 [100/604] Loss: 0.6340, LR: 9.26e-05
+Epoch 35 [200/604] Loss: 0.5428, LR: 9.25e-05
+Epoch 35 [300/604] Loss: 0.4491, LR: 9.24e-05
+Epoch 35 [400/604] Loss: 0.8209, LR: 9.24e-05
+Epoch 35 [500/604] Loss: 0.5802, LR: 9.23e-05
+Epoch 35 [600/604] Loss: 0.7544, LR: 9.22e-05
+Epoch 35 Done. Train Loss: 0.6820 | Train Pearson: 0.6314 | Val MSE: 0.7326 | Val Pearson: 0.6247
+Epoch 36 [0/604] Loss: 0.6249, LR: 9.22e-05
+Epoch 36 [100/604] Loss: 0.6390, LR: 9.21e-05
+Epoch 36 [200/604] Loss: 0.8179, LR: 9.21e-05
+Epoch 36 [300/604] Loss: 0.8358, LR: 9.20e-05
+Epoch 36 [400/604] Loss: 0.7536, LR: 9.19e-05
+Epoch 36 [500/604] Loss: 0.7454, LR: 9.19e-05
+Epoch 36 [600/604] Loss: 0.5945, LR: 9.18e-05
+Epoch 36 Done. Train Loss: 0.6795 | Train Pearson: 0.6318 | Val MSE: 0.7228 | Val Pearson: 0.6299
+  ✓ New best val_pearson: 0.6299
+Epoch 37 [0/604] Loss: 0.6004, LR: 9.18e-05
+Epoch 37 [100/604] Loss: 0.5793, LR: 9.17e-05
+Epoch 37 [200/604] Loss: 0.6875, LR: 9.16e-05
+Epoch 37 [300/604] Loss: 0.4847, LR: 9.16e-05
+Epoch 37 [400/604] Loss: 0.6810, LR: 9.15e-05
+Epoch 37 [500/604] Loss: 0.5885, LR: 9.14e-05
+Epoch 37 [600/604] Loss: 0.7021, LR: 9.14e-05
+Epoch 37 Done. Train Loss: 0.6771 | Train Pearson: 0.6328 | Val MSE: 0.7178 | Val Pearson: 0.6344
+  ✓ New best val_pearson: 0.6344
+Epoch 38 [0/604] Loss: 0.7448, LR: 9.14e-05
+Epoch 38 [100/604] Loss: 0.4137, LR: 9.13e-05
+Epoch 38 [200/604] Loss: 0.7818, LR: 9.12e-05
+Epoch 38 [300/604] Loss: 0.4379, LR: 9.11e-05
+Epoch 38 [400/604] Loss: 0.6877, LR: 9.11e-05
+Epoch 38 [500/604] Loss: 0.3681, LR: 9.10e-05
+Epoch 38 [600/604] Loss: 0.6732, LR: 9.09e-05
+Epoch 38 Done. Train Loss: 0.6733 | Train Pearson: 0.6363 | Val MSE: 0.7141 | Val Pearson: 0.6339
+Epoch 39 [0/604] Loss: 0.7437, LR: 9.09e-05
+Epoch 39 [100/604] Loss: 0.8361, LR: 9.08e-05
+Epoch 39 [200/604] Loss: 0.5895, LR: 9.08e-05
+Epoch 39 [300/604] Loss: 0.5619, LR: 9.07e-05
+Epoch 39 [400/604] Loss: 0.6834, LR: 9.06e-05
+Epoch 39 [500/604] Loss: 0.5955, LR: 9.05e-05
+Epoch 39 [600/604] Loss: 0.6201, LR: 9.05e-05
+Epoch 39 Done. Train Loss: 0.6702 | Train Pearson: 0.6392 | Val MSE: 0.7197 | Val Pearson: 0.6296
+Epoch 40 [0/604] Loss: 0.4769, LR: 9.05e-05
+Epoch 40 [100/604] Loss: 0.8332, LR: 9.04e-05
+Epoch 40 [200/604] Loss: 0.5992, LR: 9.03e-05
+Epoch 40 [300/604] Loss: 0.6966, LR: 9.02e-05
+Epoch 40 [400/604] Loss: 0.6678, LR: 9.01e-05
+Epoch 40 [500/604] Loss: 0.5111, LR: 9.01e-05
+Epoch 40 [600/604] Loss: 0.8849, LR: 9.00e-05
+Epoch 40 Done. Train Loss: 0.6700 | Train Pearson: 0.6383 | Val MSE: 0.7116 | Val Pearson: 0.6365
+  ✓ New best val_pearson: 0.6365
+Epoch 41 [0/604] Loss: 0.5460, LR: 9.00e-05
+Epoch 41 [100/604] Loss: 0.6700, LR: 8.99e-05
+Epoch 41 [200/604] Loss: 0.7582, LR: 8.98e-05
+Epoch 41 [300/604] Loss: 0.4003, LR: 8.97e-05
+Epoch 41 [400/604] Loss: 0.5918, LR: 8.97e-05
+Epoch 41 [500/604] Loss: 0.5546, LR: 8.96e-05
+Epoch 41 [600/604] Loss: 0.8427, LR: 8.95e-05
+Epoch 41 Done. Train Loss: 0.6601 | Train Pearson: 0.6450 | Val MSE: 0.7225 | Val Pearson: 0.6274
+Epoch 42 [0/604] Loss: 0.6501, LR: 8.95e-05
+Epoch 42 [100/604] Loss: 0.5600, LR: 8.94e-05
+Epoch 42 [200/604] Loss: 0.5992, LR: 8.93e-05
+Epoch 42 [300/604] Loss: 0.6784, LR: 8.93e-05
+Epoch 42 [400/604] Loss: 0.6623, LR: 8.92e-05
+Epoch 42 [500/604] Loss: 0.9436, LR: 8.91e-05
+Epoch 42 [600/604] Loss: 0.6159, LR: 8.90e-05
+Epoch 42 Done. Train Loss: 0.6568 | Train Pearson: 0.6474 | Val MSE: 0.7187 | Val Pearson: 0.6328
+Epoch 43 [0/604] Loss: 0.5447, LR: 8.90e-05
+Epoch 43 [100/604] Loss: 1.0586, LR: 8.89e-05
+Epoch 43 [200/604] Loss: 0.7653, LR: 8.89e-05
+Epoch 43 [300/604] Loss: 0.6775, LR: 8.88e-05
+Epoch 43 [400/604] Loss: 0.4996, LR: 8.87e-05
+Epoch 43 [500/604] Loss: 0.7272, LR: 8.86e-05
+Epoch 43 [600/604] Loss: 0.7291, LR: 8.85e-05
+Epoch 43 Done. Train Loss: 0.6561 | Train Pearson: 0.6477 | Val MSE: 0.7021 | Val Pearson: 0.6505
+  ✓ New best val_pearson: 0.6505
+Epoch 44 [0/604] Loss: 0.4071, LR: 8.85e-05
+Epoch 44 [100/604] Loss: 0.8084, LR: 8.84e-05
+Epoch 44 [200/604] Loss: 0.6640, LR: 8.84e-05
+Epoch 44 [300/604] Loss: 0.3999, LR: 8.83e-05
+Epoch 44 [400/604] Loss: 0.4620, LR: 8.82e-05
+Epoch 44 [500/604] Loss: 0.3711, LR: 8.81e-05
+Epoch 44 [600/604] Loss: 0.6821, LR: 8.80e-05
+Epoch 44 Done. Train Loss: 0.6560 | Train Pearson: 0.6476 | Val MSE: 0.7025 | Val Pearson: 0.6455
+Epoch 45 [0/604] Loss: 0.4510, LR: 8.80e-05
+Epoch 45 [100/604] Loss: 0.4698, LR: 8.79e-05
+Epoch 45 [200/604] Loss: 0.8635, LR: 8.79e-05
+Epoch 45 [300/604] Loss: 0.6463, LR: 8.78e-05
+Epoch 45 [400/604] Loss: 1.0503, LR: 8.77e-05
+Epoch 45 [500/604] Loss: 0.6075, LR: 8.76e-05
+Epoch 45 [600/604] Loss: 0.9657, LR: 8.75e-05
+Epoch 45 Done. Train Loss: 0.6503 | Train Pearson: 0.6530 | Val MSE: 0.6938 | Val Pearson: 0.6461
+Epoch 46 [0/604] Loss: 0.3149, LR: 8.75e-05
+Epoch 46 [100/604] Loss: 0.5259, LR: 8.74e-05
+Epoch 46 [200/604] Loss: 0.3970, LR: 8.73e-05
+Epoch 46 [300/604] Loss: 0.5277, LR: 8.72e-05
+Epoch 46 [400/604] Loss: 0.6526, LR: 8.72e-05
+Epoch 46 [500/604] Loss: 0.6396, LR: 8.71e-05
+Epoch 46 [600/604] Loss: 0.5548, LR: 8.70e-05
+Epoch 46 Done. Train Loss: 0.6441 | Train Pearson: 0.6560 | Val MSE: 0.6850 | Val Pearson: 0.6521
+  ✓ New best val_pearson: 0.6521
+Epoch 47 [0/604] Loss: 0.4815, LR: 8.70e-05
+Epoch 47 [100/604] Loss: 0.5561, LR: 8.69e-05
+Epoch 47 [200/604] Loss: 0.3471, LR: 8.68e-05
+Epoch 47 [300/604] Loss: 0.7612, LR: 8.67e-05
+Epoch 47 [400/604] Loss: 0.4594, LR: 8.66e-05
+Epoch 47 [500/604] Loss: 0.7845, LR: 8.65e-05
+Epoch 47 [600/604] Loss: 0.5201, LR: 8.65e-05
+Epoch 47 Done. Train Loss: 0.6471 | Train Pearson: 0.6538 | Val MSE: 0.7106 | Val Pearson: 0.6355
+Epoch 48 [0/604] Loss: 0.6345, LR: 8.64e-05
+Epoch 48 [100/604] Loss: 0.5748, LR: 8.64e-05
+Epoch 48 [200/604] Loss: 0.7279, LR: 8.63e-05
+Epoch 48 [300/604] Loss: 0.5833, LR: 8.62e-05
+Epoch 48 [400/604] Loss: 0.3422, LR: 8.61e-05
+Epoch 48 [500/604] Loss: 0.6557, LR: 8.60e-05
+Epoch 48 [600/604] Loss: 0.3719, LR: 8.59e-05
+Epoch 48 Done. Train Loss: 0.6394 | Train Pearson: 0.6604 | Val MSE: 0.7311 | Val Pearson: 0.6313
+Epoch 49 [0/604] Loss: 0.8762, LR: 8.59e-05
+Epoch 49 [100/604] Loss: 0.3926, LR: 8.58e-05
+Epoch 49 [200/604] Loss: 0.7569, LR: 8.57e-05
+Epoch 49 [300/604] Loss: 0.6734, LR: 8.56e-05
+Epoch 49 [400/604] Loss: 0.7268, LR: 8.55e-05
+Epoch 49 [500/604] Loss: 0.7760, LR: 8.54e-05
+Epoch 49 [600/604] Loss: 0.5743, LR: 8.54e-05
+Epoch 49 Done. Train Loss: 0.6386 | Train Pearson: 0.6593 | Val MSE: 0.7031 | Val Pearson: 0.6400
+Epoch 50 [0/604] Loss: 0.4525, LR: 8.54e-05
+Epoch 50 [100/604] Loss: 0.9052, LR: 8.53e-05
+Epoch 50 [200/604] Loss: 0.5964, LR: 8.52e-05
+Epoch 50 [300/604] Loss: 0.6648, LR: 8.51e-05
+Epoch 50 [400/604] Loss: 0.5395, LR: 8.50e-05
+Epoch 50 [500/604] Loss: 0.6828, LR: 8.49e-05
+Epoch 50 [600/604] Loss: 0.7521, LR: 8.48e-05
+Epoch 50 Done. Train Loss: 0.6366 | Train Pearson: 0.6608 | Val MSE: 0.6919 | Val Pearson: 0.6484
+Epoch 51 [0/604] Loss: 0.6837, LR: 8.48e-05
+Epoch 51 [100/604] Loss: 0.4329, LR: 8.47e-05
+Epoch 51 [200/604] Loss: 0.7447, LR: 8.46e-05
+Epoch 51 [300/604] Loss: 0.7762, LR: 8.45e-05
+Epoch 51 [400/604] Loss: 0.7622, LR: 8.44e-05
+Epoch 51 [500/604] Loss: 0.4282, LR: 8.43e-05
+Epoch 51 [600/604] Loss: 0.4810, LR: 8.42e-05
+Epoch 51 Done. Train Loss: 0.6300 | Train Pearson: 0.6649 | Val MSE: 0.6811 | Val Pearson: 0.6548
+  ✓ New best val_pearson: 0.6548
+Epoch 52 [0/604] Loss: 0.6408, LR: 8.42e-05
+Epoch 52 [100/604] Loss: 0.6315, LR: 8.41e-05
+Epoch 52 [200/604] Loss: 0.5625, LR: 8.40e-05
+Epoch 52 [300/604] Loss: 0.3721, LR: 8.39e-05
+Epoch 52 [400/604] Loss: 0.5541, LR: 8.38e-05
+Epoch 52 [500/604] Loss: 0.5622, LR: 8.37e-05
+Epoch 52 [600/604] Loss: 0.5740, LR: 8.37e-05
+Epoch 52 Done. Train Loss: 0.6319 | Train Pearson: 0.6641 | Val MSE: 0.6984 | Val Pearson: 0.6463
+Epoch 53 [0/604] Loss: 0.4673, LR: 8.36e-05
+Epoch 53 [100/604] Loss: 0.7110, LR: 8.36e-05
+Epoch 53 [200/604] Loss: 0.6096, LR: 8.35e-05
+Epoch 53 [300/604] Loss: 0.4603, LR: 8.34e-05
+Epoch 53 [400/604] Loss: 0.4548, LR: 8.33e-05
+Epoch 53 [500/604] Loss: 0.5984, LR: 8.32e-05
+Epoch 53 [600/604] Loss: 0.6325, LR: 8.31e-05
+Epoch 53 Done. Train Loss: 0.6301 | Train Pearson: 0.6650 | Val MSE: 0.6809 | Val Pearson: 0.6587
+  ✓ New best val_pearson: 0.6587
+Epoch 54 [0/604] Loss: 0.4406, LR: 8.31e-05
+Epoch 54 [100/604] Loss: 0.5947, LR: 8.30e-05
+Epoch 54 [200/604] Loss: 0.5851, LR: 8.29e-05
+Epoch 54 [300/604] Loss: 0.5724, LR: 8.28e-05
+Epoch 54 [400/604] Loss: 0.7021, LR: 8.27e-05
+Epoch 54 [500/604] Loss: 0.6552, LR: 8.26e-05
+Epoch 54 [600/604] Loss: 0.6769, LR: 8.25e-05
+Epoch 54 Done. Train Loss: 0.6309 | Train Pearson: 0.6656 | Val MSE: 0.6832 | Val Pearson: 0.6529
+Epoch 55 [0/604] Loss: 0.6464, LR: 8.25e-05
+Epoch 55 [100/604] Loss: 0.3276, LR: 8.24e-05
+Epoch 55 [200/604] Loss: 0.9531, LR: 8.23e-05
+Epoch 55 [300/604] Loss: 0.7507, LR: 8.22e-05
+Epoch 55 [400/604] Loss: 0.4792, LR: 8.21e-05
+Epoch 55 [500/604] Loss: 0.6523, LR: 8.20e-05
+Epoch 55 [600/604] Loss: 0.6489, LR: 8.19e-05
+Epoch 55 Done. Train Loss: 0.6176 | Train Pearson: 0.6732 | Val MSE: 0.6964 | Val Pearson: 0.6516
+Epoch 56 [0/604] Loss: 0.5190, LR: 8.19e-05
+Epoch 56 [100/604] Loss: 0.5418, LR: 8.18e-05
+Epoch 56 [200/604] Loss: 0.8898, LR: 8.17e-05
+Epoch 56 [300/604] Loss: 0.4668, LR: 8.16e-05
+Epoch 56 [400/604] Loss: 0.5488, LR: 8.15e-05
+Epoch 56 [500/604] Loss: 0.6838, LR: 8.14e-05
+Epoch 56 [600/604] Loss: 0.2944, LR: 8.13e-05
+Epoch 56 Done. Train Loss: 0.6240 | Train Pearson: 0.6711 | Val MSE: 0.7001 | Val Pearson: 0.6429
+Epoch 57 [0/604] Loss: 0.7019, LR: 8.13e-05
+Epoch 57 [100/604] Loss: 0.6365, LR: 8.12e-05
+Epoch 57 [200/604] Loss: 0.6790, LR: 8.11e-05
+Epoch 57 [300/604] Loss: 0.5782, LR: 8.10e-05
+Epoch 57 [400/604] Loss: 0.6142, LR: 8.09e-05
+Epoch 57 [500/604] Loss: 0.6294, LR: 8.08e-05
+Epoch 57 [600/604] Loss: 0.7285, LR: 8.06e-05
+Epoch 57 Done. Train Loss: 0.6173 | Train Pearson: 0.6740 | Val MSE: 0.6954 | Val Pearson: 0.6483
+Epoch 58 [0/604] Loss: 0.6185, LR: 8.06e-05
+Epoch 58 [100/604] Loss: 0.7249, LR: 8.05e-05
+Epoch 58 [200/604] Loss: 0.4737, LR: 8.04e-05
+Epoch 58 [300/604] Loss: 0.4510, LR: 8.03e-05
+Epoch 58 [400/604] Loss: 0.4747, LR: 8.02e-05
+Epoch 58 [500/604] Loss: 0.7299, LR: 8.01e-05
+Epoch 58 [600/604] Loss: 0.5522, LR: 8.00e-05
+Epoch 58 Done. Train Loss: 0.6139 | Train Pearson: 0.6771 | Val MSE: 0.6853 | Val Pearson: 0.6543
+Epoch 59 [0/604] Loss: 0.5226, LR: 8.00e-05
+Epoch 59 [100/604] Loss: 0.5881, LR: 7.99e-05
+Epoch 59 [200/604] Loss: 1.0774, LR: 7.98e-05
+Epoch 59 [300/604] Loss: 0.6414, LR: 7.97e-05
+Epoch 59 [400/604] Loss: 0.6852, LR: 7.96e-05
+Epoch 59 [500/604] Loss: 0.5794, LR: 7.95e-05
+Epoch 59 [600/604] Loss: 0.4714, LR: 7.94e-05
+Epoch 59 Done. Train Loss: 0.6146 | Train Pearson: 0.6763 | Val MSE: 0.6943 | Val Pearson: 0.6562
+Epoch 60 [0/604] Loss: 0.5796, LR: 7.94e-05
+Epoch 60 [100/604] Loss: 0.3990, LR: 7.93e-05
+Epoch 60 [200/604] Loss: 0.5533, LR: 7.92e-05
+Epoch 60 [300/604] Loss: 0.4023, LR: 7.91e-05
+Epoch 60 [400/604] Loss: 0.7405, LR: 7.90e-05
+Epoch 60 [500/604] Loss: 0.7381, LR: 7.89e-05
+Epoch 60 [600/604] Loss: 0.7027, LR: 7.88e-05
+Epoch 60 Done. Train Loss: 0.6126 | Train Pearson: 0.6767 | Val MSE: 0.6853 | Val Pearson: 0.6537
+Epoch 61 [0/604] Loss: 0.6009, LR: 7.87e-05
+Epoch 61 [100/604] Loss: 0.8778, LR: 7.86e-05
+Epoch 61 [200/604] Loss: 0.4709, LR: 7.85e-05
+Epoch 61 [300/604] Loss: 0.6933, LR: 7.84e-05
+Epoch 61 [400/604] Loss: 1.0391, LR: 7.83e-05
+Epoch 61 [500/604] Loss: 0.8196, LR: 7.82e-05
+Epoch 61 [600/604] Loss: 0.6846, LR: 7.81e-05
+Epoch 61 Done. Train Loss: 0.6091 | Train Pearson: 0.6799 | Val MSE: 0.6694 | Val Pearson: 0.6628
+  ✓ New best val_pearson: 0.6628
+Epoch 62 [0/604] Loss: 0.9179, LR: 7.81e-05
+Epoch 62 [100/604] Loss: 0.7804, LR: 7.80e-05
+Epoch 62 [200/604] Loss: 0.4119, LR: 7.79e-05
+Epoch 62 [300/604] Loss: 0.9585, LR: 7.78e-05
+Epoch 62 [400/604] Loss: 0.7621, LR: 7.77e-05
+Epoch 62 [500/604] Loss: 0.6920, LR: 7.76e-05
+Epoch 62 [600/604] Loss: 0.5722, LR: 7.75e-05
+Epoch 62 Done. Train Loss: 0.6090 | Train Pearson: 0.6795 | Val MSE: 0.6838 | Val Pearson: 0.6597
+Epoch 63 [0/604] Loss: 0.4860, LR: 7.75e-05
+Epoch 63 [100/604] Loss: 0.6417, LR: 7.73e-05
+Epoch 63 [200/604] Loss: 0.3788, LR: 7.72e-05
+Epoch 63 [300/604] Loss: 0.6641, LR: 7.71e-05
+Epoch 63 [400/604] Loss: 0.7226, LR: 7.70e-05
+Epoch 63 [500/604] Loss: 0.6314, LR: 7.69e-05
+Epoch 63 [600/604] Loss: 0.8548, LR: 7.68e-05
+Epoch 63 Done. Train Loss: 0.6041 | Train Pearson: 0.6832 | Val MSE: 0.6744 | Val Pearson: 0.6606
+Epoch 64 [0/604] Loss: 0.4959, LR: 7.68e-05
+Epoch 64 [100/604] Loss: 0.3752, LR: 7.67e-05
+Epoch 64 [200/604] Loss: 0.7902, LR: 7.66e-05
+Epoch 64 [300/604] Loss: 0.6473, LR: 7.65e-05
+Epoch 64 [400/604] Loss: 0.6540, LR: 7.63e-05
+Epoch 64 [500/604] Loss: 0.6818, LR: 7.62e-05
+Epoch 64 [600/604] Loss: 0.7263, LR: 7.61e-05
+Epoch 64 Done. Train Loss: 0.6015 | Train Pearson: 0.6842 | Val MSE: 0.6685 | Val Pearson: 0.6623
+Epoch 65 [0/604] Loss: 0.5966, LR: 7.61e-05
+Epoch 65 [100/604] Loss: 0.7275, LR: 7.60e-05
+Epoch 65 [200/604] Loss: 1.2724, LR: 7.59e-05
+Epoch 65 [300/604] Loss: 0.5903, LR: 7.58e-05
+Epoch 65 [400/604] Loss: 0.5962, LR: 7.57e-05
+Epoch 65 [500/604] Loss: 0.5703, LR: 7.56e-05
+Epoch 65 [600/604] Loss: 0.6440, LR: 7.55e-05
+Epoch 65 Done. Train Loss: 0.6059 | Train Pearson: 0.6855 | Val MSE: 0.6700 | Val Pearson: 0.6648
+  ✓ New best val_pearson: 0.6648
+Epoch 66 [0/604] Loss: 0.5619, LR: 7.55e-05
+Epoch 66 [100/604] Loss: 0.7329, LR: 7.53e-05
+Epoch 66 [200/604] Loss: 0.7276, LR: 7.52e-05
+Epoch 66 [300/604] Loss: 0.6584, LR: 7.51e-05
+Epoch 66 [400/604] Loss: 0.7015, LR: 7.50e-05
+Epoch 66 [500/604] Loss: 0.5539, LR: 7.49e-05
+Epoch 66 [600/604] Loss: 0.7333, LR: 7.48e-05
+Epoch 66 Done. Train Loss: 0.5985 | Train Pearson: 0.6859 | Val MSE: 0.6740 | Val Pearson: 0.6600
+Epoch 67 [0/604] Loss: 0.4476, LR: 7.48e-05
+Epoch 67 [100/604] Loss: 0.7049, LR: 7.47e-05
+Epoch 67 [200/604] Loss: 0.4477, LR: 7.45e-05
+Epoch 67 [300/604] Loss: 0.3325, LR: 7.44e-05
+Epoch 67 [400/604] Loss: 0.5025, LR: 7.43e-05
+Epoch 67 [500/604] Loss: 0.5295, LR: 7.42e-05
+Epoch 67 [600/604] Loss: 0.5267, LR: 7.41e-05
+Epoch 67 Done. Train Loss: 0.5936 | Train Pearson: 0.6890 | Val MSE: 0.6723 | Val Pearson: 0.6602
+Epoch 68 [0/604] Loss: 0.3890, LR: 7.41e-05
+Epoch 68 [100/604] Loss: 0.4908, LR: 7.40e-05
+Epoch 68 [200/604] Loss: 0.7307, LR: 7.39e-05
+Epoch 68 [300/604] Loss: 0.4463, LR: 7.37e-05
+Epoch 68 [400/604] Loss: 0.3611, LR: 7.36e-05
+Epoch 68 [500/604] Loss: 0.2878, LR: 7.35e-05
+Epoch 68 [600/604] Loss: 0.5435, LR: 7.34e-05
+Epoch 68 Done. Train Loss: 0.5869 | Train Pearson: 0.6944 | Val MSE: 0.6727 | Val Pearson: 0.6612
+Epoch 69 [0/604] Loss: 0.5986, LR: 7.34e-05
+Epoch 69 [100/604] Loss: 0.4681, LR: 7.33e-05
+Epoch 69 [200/604] Loss: 0.5505, LR: 7.32e-05
+Epoch 69 [300/604] Loss: 0.3451, LR: 7.30e-05
+Epoch 69 [400/604] Loss: 0.7713, LR: 7.29e-05
+Epoch 69 [500/604] Loss: 0.4802, LR: 7.28e-05
+Epoch 69 [600/604] Loss: 0.4906, LR: 7.27e-05
+Epoch 69 Done. Train Loss: 0.5822 | Train Pearson: 0.6960 | Val MSE: 0.7163 | Val Pearson: 0.6551
+Epoch 70 [0/604] Loss: 0.7684, LR: 7.27e-05
+Epoch 70 [100/604] Loss: 0.5327, LR: 7.26e-05
+Epoch 70 [200/604] Loss: 0.5002, LR: 7.25e-05
+Epoch 70 [300/604] Loss: 0.7037, LR: 7.24e-05
+Epoch 70 [400/604] Loss: 0.5086, LR: 7.22e-05
+Epoch 70 [500/604] Loss: 0.7618, LR: 7.21e-05
+Epoch 70 [600/604] Loss: 0.6358, LR: 7.20e-05
+Epoch 70 Done. Train Loss: 0.5813 | Train Pearson: 0.6975 | Val MSE: 0.6778 | Val Pearson: 0.6578
+Epoch 71 [0/604] Loss: 0.5568, LR: 7.20e-05
+Epoch 71 [100/604] Loss: 0.6088, LR: 7.19e-05
+Epoch 71 [200/604] Loss: 0.6869, LR: 7.18e-05
+Epoch 71 [300/604] Loss: 0.6610, LR: 7.16e-05
+Epoch 71 [400/604] Loss: 0.6076, LR: 7.15e-05
+Epoch 71 [500/604] Loss: 0.5072, LR: 7.14e-05
+Epoch 71 [600/604] Loss: 0.6337, LR: 7.13e-05
+Epoch 71 Done. Train Loss: 0.5874 | Train Pearson: 0.6928 | Val MSE: 0.6745 | Val Pearson: 0.6588
+Epoch 72 [0/604] Loss: 0.7229, LR: 7.13e-05
+Epoch 72 [100/604] Loss: 0.5133, LR: 7.12e-05
+Epoch 72 [200/604] Loss: 0.5969, LR: 7.11e-05
+Epoch 72 [300/604] Loss: 0.6467, LR: 7.09e-05
+Epoch 72 [400/604] Loss: 0.8018, LR: 7.08e-05
+Epoch 72 [500/604] Loss: 0.8408, LR: 7.07e-05
+Epoch 72 [600/604] Loss: 0.6516, LR: 7.06e-05
+Epoch 72 Done. Train Loss: 0.5819 | Train Pearson: 0.6974 | Val MSE: 0.6766 | Val Pearson: 0.6585
+Epoch 73 [0/604] Loss: 0.8181, LR: 7.06e-05
+Epoch 73 [100/604] Loss: 0.6556, LR: 7.05e-05
+Epoch 73 [200/604] Loss: 0.4181, LR: 7.03e-05
+Epoch 73 [300/604] Loss: 0.4747, LR: 7.02e-05
+Epoch 73 [400/604] Loss: 0.6477, LR: 7.01e-05
+Epoch 73 [500/604] Loss: 0.4266, LR: 7.00e-05
+Epoch 73 [600/604] Loss: 0.5743, LR: 6.99e-05
+Epoch 73 Done. Train Loss: 0.5739 | Train Pearson: 0.7014 | Val MSE: 0.6578 | Val Pearson: 0.6694
+  ✓ New best val_pearson: 0.6694
+Epoch 74 [0/604] Loss: 0.5054, LR: 6.99e-05
+Epoch 74 [100/604] Loss: 0.7714, LR: 6.97e-05
+Epoch 74 [200/604] Loss: 0.7551, LR: 6.96e-05
+Epoch 74 [300/604] Loss: 0.3672, LR: 6.95e-05
+Epoch 74 [400/604] Loss: 0.5453, LR: 6.94e-05
+Epoch 74 [500/604] Loss: 0.6999, LR: 6.93e-05
+Epoch 74 [600/604] Loss: 0.6817, LR: 6.91e-05
+Epoch 74 Done. Train Loss: 0.5789 | Train Pearson: 0.7002 | Val MSE: 0.6679 | Val Pearson: 0.6657
+Epoch 75 [0/604] Loss: 0.4616, LR: 6.91e-05
+Epoch 75 [100/604] Loss: 0.6567, LR: 6.90e-05
+Epoch 75 [200/604] Loss: 0.5161, LR: 6.89e-05
+Epoch 75 [300/604] Loss: 0.6689, LR: 6.88e-05
+Epoch 75 [400/604] Loss: 0.6973, LR: 6.87e-05
+Epoch 75 [500/604] Loss: 0.3982, LR: 6.85e-05
+Epoch 75 [600/604] Loss: 0.3803, LR: 6.84e-05
+Epoch 75 Done. Train Loss: 0.5711 | Train Pearson: 0.7035 | Val MSE: 0.6861 | Val Pearson: 0.6567
+Epoch 76 [0/604] Loss: 0.4694, LR: 6.84e-05
+Epoch 76 [100/604] Loss: 0.4610, LR: 6.83e-05
+Epoch 76 [200/604] Loss: 0.3746, LR: 6.82e-05
+Epoch 76 [300/604] Loss: 0.5910, LR: 6.80e-05
+Epoch 76 [400/604] Loss: 0.4715, LR: 6.79e-05
+Epoch 76 [500/604] Loss: 0.5057, LR: 6.78e-05
+Epoch 76 [600/604] Loss: 0.5543, LR: 6.77e-05
+Epoch 76 Done. Train Loss: 0.5704 | Train Pearson: 0.7058 | Val MSE: 0.6792 | Val Pearson: 0.6596
+Epoch 77 [0/604] Loss: 0.8524, LR: 6.77e-05
+Epoch 77 [100/604] Loss: 0.5348, LR: 6.76e-05
+Epoch 77 [200/604] Loss: 0.4439, LR: 6.74e-05
+Epoch 77 [300/604] Loss: 0.5253, LR: 6.73e-05
+Epoch 77 [400/604] Loss: 0.3989, LR: 6.72e-05
+Epoch 77 [500/604] Loss: 0.5238, LR: 6.71e-05
+Epoch 77 [600/604] Loss: 0.3590, LR: 6.69e-05
+Epoch 77 Done. Train Loss: 0.5723 | Train Pearson: 0.7032 | Val MSE: 0.6623 | Val Pearson: 0.6687
+Epoch 78 [0/604] Loss: 0.4180, LR: 6.69e-05
+Epoch 78 [100/604] Loss: 0.8980, LR: 6.68e-05
+Epoch 78 [200/604] Loss: 0.4590, LR: 6.67e-05
+Epoch 78 [300/604] Loss: 0.6542, LR: 6.66e-05
+Epoch 78 [400/604] Loss: 0.6433, LR: 6.64e-05
+Epoch 78 [500/604] Loss: 0.3673, LR: 6.63e-05
+Epoch 78 [600/604] Loss: 0.4240, LR: 6.62e-05
+Epoch 78 Done. Train Loss: 0.5641 | Train Pearson: 0.7078 | Val MSE: 0.6794 | Val Pearson: 0.6557
+Epoch 79 [0/604] Loss: 0.6057, LR: 6.62e-05
+Epoch 79 [100/604] Loss: 0.7970, LR: 6.61e-05
+Epoch 79 [200/604] Loss: 0.8156, LR: 6.59e-05
+Epoch 79 [300/604] Loss: 0.6064, LR: 6.58e-05
+Epoch 79 [400/604] Loss: 0.4722, LR: 6.57e-05
+Epoch 79 [500/604] Loss: 0.5613, LR: 6.56e-05
+Epoch 79 [600/604] Loss: 0.7289, LR: 6.55e-05
+Epoch 79 Done. Train Loss: 0.5615 | Train Pearson: 0.7100 | Val MSE: 0.6530 | Val Pearson: 0.6764
+  ✓ New best val_pearson: 0.6764
+Epoch 80 [0/604] Loss: 0.5325, LR: 6.54e-05
+Epoch 80 [100/604] Loss: 0.5497, LR: 6.53e-05
+Epoch 80 [200/604] Loss: 0.3077, LR: 6.52e-05
+Epoch 80 [300/604] Loss: 0.2784, LR: 6.51e-05
+Epoch 80 [400/604] Loss: 0.5530, LR: 6.50e-05
+Epoch 80 [500/604] Loss: 0.4345, LR: 6.48e-05
+Epoch 80 [600/604] Loss: 0.5481, LR: 6.47e-05
+Epoch 80 Done. Train Loss: 0.5553 | Train Pearson: 0.7134 | Val MSE: 0.6764 | Val Pearson: 0.6670
+Epoch 81 [0/604] Loss: 0.4649, LR: 6.47e-05
+Epoch 81 [100/604] Loss: 0.6992, LR: 6.46e-05
+Epoch 81 [200/604] Loss: 0.5303, LR: 6.45e-05
+Epoch 81 [300/604] Loss: 0.6726, LR: 6.43e-05
+Epoch 81 [400/604] Loss: 0.6010, LR: 6.42e-05
+Epoch 81 [500/604] Loss: 0.6329, LR: 6.41e-05
+Epoch 81 [600/604] Loss: 0.6476, LR: 6.40e-05
+Epoch 81 Done. Train Loss: 0.5563 | Train Pearson: 0.7144 | Val MSE: 0.6590 | Val Pearson: 0.6692
+Epoch 82 [0/604] Loss: 0.4165, LR: 6.39e-05
+Epoch 82 [100/604] Loss: 0.4710, LR: 6.38e-05
+Epoch 82 [200/604] Loss: 0.5525, LR: 6.37e-05
+Epoch 82 [300/604] Loss: 0.7892, LR: 6.36e-05
+Epoch 82 [400/604] Loss: 0.6131, LR: 6.34e-05
+Epoch 82 [500/604] Loss: 0.8683, LR: 6.33e-05
+Epoch 82 [600/604] Loss: 0.6727, LR: 6.32e-05
+Epoch 82 Done. Train Loss: 0.5596 | Train Pearson: 0.7113 | Val MSE: 0.6676 | Val Pearson: 0.6667
+Epoch 83 [0/604] Loss: 0.5598, LR: 6.32e-05
+Epoch 83 [100/604] Loss: 0.4581, LR: 6.31e-05
+Epoch 83 [200/604] Loss: 0.3582, LR: 6.29e-05
+Epoch 83 [300/604] Loss: 0.5498, LR: 6.28e-05
+Epoch 83 [400/604] Loss: 0.4250, LR: 6.27e-05
+Epoch 83 [500/604] Loss: 0.3821, LR: 6.26e-05
+Epoch 83 [600/604] Loss: 0.4978, LR: 6.24e-05
+Epoch 83 Done. Train Loss: 0.5498 | Train Pearson: 0.7175 | Val MSE: 0.6569 | Val Pearson: 0.6721
+Epoch 84 [0/604] Loss: 0.8217, LR: 6.24e-05
+Epoch 84 [100/604] Loss: 0.6244, LR: 6.23e-05
+Epoch 84 [200/604] Loss: 0.6620, LR: 6.22e-05
+Epoch 84 [300/604] Loss: 0.4412, LR: 6.21e-05
+Epoch 84 [400/604] Loss: 0.4367, LR: 6.19e-05
+Epoch 84 [500/604] Loss: 0.5502, LR: 6.18e-05
+Epoch 84 [600/604] Loss: 0.6449, LR: 6.17e-05
+Epoch 84 Done. Train Loss: 0.5492 | Train Pearson: 0.7177 | Val MSE: 0.6609 | Val Pearson: 0.6679
+Epoch 85 [0/604] Loss: 0.5217, LR: 6.17e-05
+Epoch 85 [100/604] Loss: 0.3820, LR: 6.15e-05
+Epoch 85 [200/604] Loss: 0.5638, LR: 6.14e-05
+Epoch 85 [300/604] Loss: 0.5501, LR: 6.13e-05
+Epoch 85 [400/604] Loss: 0.7062, LR: 6.12e-05
+Epoch 85 [500/604] Loss: 0.7173, LR: 6.10e-05
+Epoch 85 [600/604] Loss: 0.4011, LR: 6.09e-05
+Epoch 85 Done. Train Loss: 0.5478 | Train Pearson: 0.7178 | Val MSE: 0.6580 | Val Pearson: 0.6724
+Epoch 86 [0/604] Loss: 1.0699, LR: 6.09e-05
+Epoch 86 [100/604] Loss: 0.6440, LR: 6.08e-05
+Epoch 86 [200/604] Loss: 0.5475, LR: 6.07e-05
+Epoch 86 [300/604] Loss: 0.3621, LR: 6.05e-05
+Epoch 86 [400/604] Loss: 0.5728, LR: 6.04e-05
+Epoch 86 [500/604] Loss: 0.3825, LR: 6.03e-05
+Epoch 86 [600/604] Loss: 0.5861, LR: 6.01e-05
+Epoch 86 Done. Train Loss: 0.5432 | Train Pearson: 0.7207 | Val MSE: 0.6615 | Val Pearson: 0.6694
+Epoch 87 [0/604] Loss: 0.8019, LR: 6.01e-05
+Epoch 87 [100/604] Loss: 0.5395, LR: 6.00e-05
+Epoch 87 [200/604] Loss: 0.7053, LR: 5.99e-05
+Epoch 87 [300/604] Loss: 0.6307, LR: 5.98e-05
+Epoch 87 [400/604] Loss: 0.5938, LR: 5.96e-05
+Epoch 87 [500/604] Loss: 0.4428, LR: 5.95e-05
+Epoch 87 [600/604] Loss: 0.7966, LR: 5.94e-05
+Epoch 87 Done. Train Loss: 0.5426 | Train Pearson: 0.7210 | Val MSE: 0.6595 | Val Pearson: 0.6732
+Epoch 88 [0/604] Loss: 0.7769, LR: 5.94e-05
+Epoch 88 [100/604] Loss: 0.4284, LR: 5.92e-05
+Epoch 88 [200/604] Loss: 0.6388, LR: 5.91e-05
+Epoch 88 [300/604] Loss: 0.5585, LR: 5.90e-05
+Epoch 88 [400/604] Loss: 0.4200, LR: 5.89e-05
+Epoch 88 [500/604] Loss: 0.4472, LR: 5.87e-05
+Epoch 88 [600/604] Loss: 0.6772, LR: 5.86e-05
+Epoch 88 Done. Train Loss: 0.5404 | Train Pearson: 0.7230 | Val MSE: 0.6545 | Val Pearson: 0.6754
+Epoch 89 [0/604] Loss: 0.4732, LR: 5.86e-05
+Epoch 89 [100/604] Loss: 0.4653, LR: 5.85e-05
+Epoch 89 [200/604] Loss: 0.5463, LR: 5.83e-05
+Epoch 89 [300/604] Loss: 0.3992, LR: 5.82e-05
+Epoch 89 [400/604] Loss: 0.4876, LR: 5.81e-05
+Epoch 89 [500/604] Loss: 0.5991, LR: 5.80e-05
+Epoch 89 [600/604] Loss: 0.5226, LR: 5.78e-05
+Epoch 89 Done. Train Loss: 0.5431 | Train Pearson: 0.7208 | Val MSE: 0.6571 | Val Pearson: 0.6714
+Epoch 90 [0/604] Loss: 0.6155, LR: 5.78e-05
+Epoch 90 [100/604] Loss: 0.5610, LR: 5.77e-05
+Epoch 90 [200/604] Loss: 0.5869, LR: 5.76e-05
+Epoch 90 [300/604] Loss: 0.6805, LR: 5.74e-05
+Epoch 90 [400/604] Loss: 0.7921, LR: 5.73e-05
+Epoch 90 [500/604] Loss: 0.5710, LR: 5.72e-05
+Epoch 90 [600/604] Loss: 0.7921, LR: 5.70e-05
+Epoch 90 Done. Train Loss: 0.5369 | Train Pearson: 0.7252 | Val MSE: 0.6531 | Val Pearson: 0.6766
+  ✓ New best val_pearson: 0.6766
+Epoch 91 [0/604] Loss: 0.5978, LR: 5.70e-05
+Epoch 91 [100/604] Loss: 0.3213, LR: 5.69e-05
+Epoch 91 [200/604] Loss: 0.6422, LR: 5.68e-05
+Epoch 91 [300/604] Loss: 0.5238, LR: 5.67e-05
+Epoch 91 [400/604] Loss: 0.6055, LR: 5.65e-05
+Epoch 91 [500/604] Loss: 0.4121, LR: 5.64e-05
+Epoch 91 [600/604] Loss: 0.4652, LR: 5.63e-05
+Epoch 91 Done. Train Loss: 0.5333 | Train Pearson: 0.7267 | Val MSE: 0.6640 | Val Pearson: 0.6682
+Epoch 92 [0/604] Loss: 0.4261, LR: 5.63e-05
+Epoch 92 [100/604] Loss: 0.3690, LR: 5.61e-05
+Epoch 92 [200/604] Loss: 0.5105, LR: 5.60e-05
+Epoch 92 [300/604] Loss: 0.4008, LR: 5.59e-05
+Epoch 92 [400/604] Loss: 0.5185, LR: 5.57e-05
+Epoch 92 [500/604] Loss: 0.6050, LR: 5.56e-05
+Epoch 92 [600/604] Loss: 0.3373, LR: 5.55e-05
+Epoch 92 Done. Train Loss: 0.5339 | Train Pearson: 0.7268 | Val MSE: 0.6518 | Val Pearson: 0.6745
+Epoch 93 [0/604] Loss: 0.2554, LR: 5.55e-05
+Epoch 93 [100/604] Loss: 0.5746, LR: 5.54e-05
+Epoch 93 [200/604] Loss: 0.5110, LR: 5.52e-05
+Epoch 93 [300/604] Loss: 0.6723, LR: 5.51e-05
+Epoch 93 [400/604] Loss: 0.6198, LR: 5.50e-05
+Epoch 93 [500/604] Loss: 0.5994, LR: 5.48e-05
+Epoch 93 [600/604] Loss: 0.5858, LR: 5.47e-05
+Epoch 93 Done. Train Loss: 0.5244 | Train Pearson: 0.7327 | Val MSE: 0.6577 | Val Pearson: 0.6723
+Epoch 94 [0/604] Loss: 0.4479, LR: 5.47e-05
+Epoch 94 [100/604] Loss: 0.6022, LR: 5.46e-05
+Epoch 94 [200/604] Loss: 0.4837, LR: 5.44e-05
+Epoch 94 [300/604] Loss: 0.6118, LR: 5.43e-05
+Epoch 94 [400/604] Loss: 0.6252, LR: 5.42e-05
+Epoch 94 [500/604] Loss: 0.6566, LR: 5.41e-05
+Epoch 94 [600/604] Loss: 0.5486, LR: 5.39e-05
+Epoch 94 Done. Train Loss: 0.5345 | Train Pearson: 0.7284 | Val MSE: 0.6596 | Val Pearson: 0.6705
+Epoch 95 [0/604] Loss: 0.5141, LR: 5.39e-05
+Epoch 95 [100/604] Loss: 0.5164, LR: 5.38e-05
+Epoch 95 [200/604] Loss: 0.5478, LR: 5.37e-05
+Epoch 95 [300/604] Loss: 0.5053, LR: 5.35e-05
+Epoch 95 [400/604] Loss: 0.6091, LR: 5.34e-05
+Epoch 95 [500/604] Loss: 0.5192, LR: 5.33e-05
+Epoch 95 [600/604] Loss: 0.5844, LR: 5.31e-05
+Epoch 95 Done. Train Loss: 0.5230 | Train Pearson: 0.7330 | Val MSE: 0.6469 | Val Pearson: 0.6775
+  ✓ New best val_pearson: 0.6775
+Epoch 96 [0/604] Loss: 0.5111, LR: 5.31e-05
+Epoch 96 [100/604] Loss: 0.6693, LR: 5.30e-05
+Epoch 96 [200/604] Loss: 0.4686, LR: 5.29e-05
+Epoch 96 [300/604] Loss: 0.3829, LR: 5.27e-05
+Epoch 96 [400/604] Loss: 0.6152, LR: 5.26e-05
+Epoch 96 [500/604] Loss: 0.4251, LR: 5.25e-05
+Epoch 96 [600/604] Loss: 0.7240, LR: 5.24e-05
+Epoch 96 Done. Train Loss: 0.5190 | Train Pearson: 0.7352 | Val MSE: 0.6392 | Val Pearson: 0.6842
+  ✓ New best val_pearson: 0.6842
+Epoch 97 [0/604] Loss: 0.4280, LR: 5.24e-05
+Epoch 97 [100/604] Loss: 0.3132, LR: 5.22e-05
+Epoch 97 [200/604] Loss: 0.4927, LR: 5.21e-05
+Epoch 97 [300/604] Loss: 0.4954, LR: 5.20e-05
+Epoch 97 [400/604] Loss: 0.5205, LR: 5.18e-05
+Epoch 97 [500/604] Loss: 0.4604, LR: 5.17e-05
+Epoch 97 [600/604] Loss: 0.4811, LR: 5.16e-05
+Epoch 97 Done. Train Loss: 0.5180 | Train Pearson: 0.7359 | Val MSE: 0.6669 | Val Pearson: 0.6741
+Epoch 98 [0/604] Loss: 0.3814, LR: 5.16e-05
+Epoch 98 [100/604] Loss: 0.6901, LR: 5.14e-05
+Epoch 98 [200/604] Loss: 0.4650, LR: 5.13e-05
+Epoch 98 [300/604] Loss: 0.4803, LR: 5.12e-05
+Epoch 98 [400/604] Loss: 0.5148, LR: 5.10e-05
+Epoch 98 [500/604] Loss: 0.4937, LR: 5.09e-05
+Epoch 98 [600/604] Loss: 0.6403, LR: 5.08e-05
+Epoch 98 Done. Train Loss: 0.5170 | Train Pearson: 0.7363 | Val MSE: 0.6662 | Val Pearson: 0.6683
+Epoch 99 [0/604] Loss: 0.4678, LR: 5.08e-05
+Epoch 99 [100/604] Loss: 0.7492, LR: 5.07e-05
+Epoch 99 [200/604] Loss: 0.4791, LR: 5.05e-05
+Epoch 99 [300/604] Loss: 0.4942, LR: 5.04e-05
+Epoch 99 [400/604] Loss: 0.3386, LR: 5.03e-05
+Epoch 99 [500/604] Loss: 0.5286, LR: 5.01e-05
+Epoch 99 [600/604] Loss: 0.5456, LR: 5.00e-05
+Epoch 99 Done. Train Loss: 0.5188 | Train Pearson: 0.7370 | Val MSE: 0.6798 | Val Pearson: 0.6718
+Epoch 100 [0/604] Loss: 0.6061, LR: 5.00e-05
+Epoch 100 [100/604] Loss: 0.4631, LR: 4.99e-05
+Epoch 100 [200/604] Loss: 0.5641, LR: 4.97e-05
+Epoch 100 [300/604] Loss: 0.3939, LR: 4.96e-05
+Epoch 100 [400/604] Loss: 0.5297, LR: 4.95e-05
+Epoch 100 [500/604] Loss: 0.6707, LR: 4.93e-05
+Epoch 100 [600/604] Loss: 0.4939, LR: 4.92e-05
+Epoch 100 Done. Train Loss: 0.5125 | Train Pearson: 0.7404 | Val MSE: 0.6452 | Val Pearson: 0.6783
+Epoch 101 [0/604] Loss: 0.4349, LR: 4.92e-05
+Epoch 101 [100/604] Loss: 0.4192, LR: 4.91e-05
+Epoch 101 [200/604] Loss: 0.4998, LR: 4.90e-05
+Epoch 101 [300/604] Loss: 0.5489, LR: 4.88e-05
+Epoch 101 [400/604] Loss: 0.6432, LR: 4.87e-05
+Epoch 101 [500/604] Loss: 0.5287, LR: 4.86e-05
+Epoch 101 [600/604] Loss: 0.6025, LR: 4.84e-05
+Epoch 101 Done. Train Loss: 0.5078 | Train Pearson: 0.7421 | Val MSE: 0.6580 | Val Pearson: 0.6731
+Epoch 102 [0/604] Loss: 0.4684, LR: 4.84e-05
+Epoch 102 [100/604] Loss: 0.4796, LR: 4.83e-05
+Epoch 102 [200/604] Loss: 0.4943, LR: 4.82e-05
+Epoch 102 [300/604] Loss: 0.5355, LR: 4.80e-05
+Epoch 102 [400/604] Loss: 0.5117, LR: 4.79e-05
+Epoch 102 [500/604] Loss: 0.5202, LR: 4.78e-05
+Epoch 102 [600/604] Loss: 0.5993, LR: 4.76e-05
+Epoch 102 Done. Train Loss: 0.5088 | Train Pearson: 0.7426 | Val MSE: 0.6446 | Val Pearson: 0.6784
+Epoch 103 [0/604] Loss: 0.3748, LR: 4.76e-05
+Epoch 103 [100/604] Loss: 0.5612, LR: 4.75e-05
+Epoch 103 [200/604] Loss: 0.6669, LR: 4.74e-05
+Epoch 103 [300/604] Loss: 0.5197, LR: 4.73e-05
+Epoch 103 [400/604] Loss: 0.6072, LR: 4.71e-05
+Epoch 103 [500/604] Loss: 0.2995, LR: 4.70e-05
+Epoch 103 [600/604] Loss: 0.5339, LR: 4.69e-05
+Epoch 103 Done. Train Loss: 0.5125 | Train Pearson: 0.7392 | Val MSE: 0.6617 | Val Pearson: 0.6785
+Epoch 104 [0/604] Loss: 0.4585, LR: 4.69e-05
+Epoch 104 [100/604] Loss: 0.3418, LR: 4.67e-05
+Epoch 104 [200/604] Loss: 0.3029, LR: 4.66e-05
+Epoch 104 [300/604] Loss: 0.5568, LR: 4.65e-05
+Epoch 104 [400/604] Loss: 0.3194, LR: 4.63e-05
+Epoch 104 [500/604] Loss: 0.3589, LR: 4.62e-05
+Epoch 104 [600/604] Loss: 0.6337, LR: 4.61e-05
+Epoch 104 Done. Train Loss: 0.5022 | Train Pearson: 0.7458 | Val MSE: 0.6396 | Val Pearson: 0.6844
+  ✓ New best val_pearson: 0.6844
+Epoch 105 [0/604] Loss: 0.5877, LR: 4.61e-05
+Epoch 105 [100/604] Loss: 0.4039, LR: 4.59e-05
+Epoch 105 [200/604] Loss: 0.5735, LR: 4.58e-05
+Epoch 105 [300/604] Loss: 0.6302, LR: 4.57e-05
+Epoch 105 [400/604] Loss: 0.4002, LR: 4.56e-05
+Epoch 105 [500/604] Loss: 0.8741, LR: 4.54e-05
+Epoch 105 [600/604] Loss: 0.4962, LR: 4.53e-05
+Epoch 105 Done. Train Loss: 0.5032 | Train Pearson: 0.7448 | Val MSE: 0.6536 | Val Pearson: 0.6738
+Epoch 106 [0/604] Loss: 0.7585, LR: 4.53e-05
+Epoch 106 [100/604] Loss: 0.3044, LR: 4.52e-05
+Epoch 106 [200/604] Loss: 0.6251, LR: 4.50e-05
+Epoch 106 [300/604] Loss: 0.5094, LR: 4.49e-05
+Epoch 106 [400/604] Loss: 0.5008, LR: 4.48e-05
+Epoch 106 [500/604] Loss: 0.5024, LR: 4.46e-05
+Epoch 106 [600/604] Loss: 0.4795, LR: 4.45e-05
+Epoch 106 Done. Train Loss: 0.4999 | Train Pearson: 0.7467 | Val MSE: 0.6418 | Val Pearson: 0.6845
+  ✓ New best val_pearson: 0.6845
+Epoch 107 [0/604] Loss: 0.3268, LR: 4.45e-05
+Epoch 107 [100/604] Loss: 0.4808, LR: 4.44e-05
+Epoch 107 [200/604] Loss: 0.4234, LR: 4.43e-05
+Epoch 107 [300/604] Loss: 0.5449, LR: 4.41e-05
+Epoch 107 [400/604] Loss: 0.4746, LR: 4.40e-05
+Epoch 107 [500/604] Loss: 0.4927, LR: 4.39e-05
+Epoch 107 [600/604] Loss: 0.4481, LR: 4.37e-05
+Epoch 107 Done. Train Loss: 0.4973 | Train Pearson: 0.7480 | Val MSE: 0.6661 | Val Pearson: 0.6793
+Epoch 108 [0/604] Loss: 0.6082, LR: 4.37e-05
+Epoch 108 [100/604] Loss: 0.4048, LR: 4.36e-05
+Epoch 108 [200/604] Loss: 0.3498, LR: 4.35e-05
+Epoch 108 [300/604] Loss: 0.8007, LR: 4.33e-05
+Epoch 108 [400/604] Loss: 0.4625, LR: 4.32e-05
+Epoch 108 [500/604] Loss: 0.4703, LR: 4.31e-05
+Epoch 108 [600/604] Loss: 0.6132, LR: 4.30e-05
+Epoch 108 Done. Train Loss: 0.4961 | Train Pearson: 0.7490 | Val MSE: 0.6535 | Val Pearson: 0.6766
+Epoch 109 [0/604] Loss: 0.2753, LR: 4.30e-05
+Epoch 109 [100/604] Loss: 0.8183, LR: 4.28e-05
+Epoch 109 [200/604] Loss: 0.5375, LR: 4.27e-05
+Epoch 109 [300/604] Loss: 0.4633, LR: 4.26e-05
+Epoch 109 [400/604] Loss: 0.3834, LR: 4.24e-05
+Epoch 109 [500/604] Loss: 0.3832, LR: 4.23e-05
+Epoch 109 [600/604] Loss: 0.4859, LR: 4.22e-05
+Epoch 109 Done. Train Loss: 0.4968 | Train Pearson: 0.7499 | Val MSE: 0.6469 | Val Pearson: 0.6819
+Epoch 110 [0/604] Loss: 0.5145, LR: 4.22e-05
+Epoch 110 [100/604] Loss: 0.4539, LR: 4.20e-05
+Epoch 110 [200/604] Loss: 0.3396, LR: 4.19e-05
+Epoch 110 [300/604] Loss: 0.4405, LR: 4.18e-05
+Epoch 110 [400/604] Loss: 0.4936, LR: 4.17e-05
+Epoch 110 [500/604] Loss: 0.4647, LR: 4.15e-05
+Epoch 110 [600/604] Loss: 0.6603, LR: 4.14e-05
+Epoch 110 Done. Train Loss: 0.4898 | Train Pearson: 0.7525 | Val MSE: 0.6578 | Val Pearson: 0.6706
+Epoch 111 [0/604] Loss: 0.4971, LR: 4.14e-05
+Epoch 111 [100/604] Loss: 0.4079, LR: 4.13e-05
+Epoch 111 [200/604] Loss: 0.4397, LR: 4.11e-05
+Epoch 111 [300/604] Loss: 0.6340, LR: 4.10e-05
+Epoch 111 [400/604] Loss: 0.4400, LR: 4.09e-05
+Epoch 111 [500/604] Loss: 0.6590, LR: 4.08e-05
+Epoch 111 [600/604] Loss: 0.5260, LR: 4.06e-05
+Epoch 111 Done. Train Loss: 0.4863 | Train Pearson: 0.7549 | Val MSE: 0.6486 | Val Pearson: 0.6837
+Epoch 112 [0/604] Loss: 0.4212, LR: 4.06e-05
+Epoch 112 [100/604] Loss: 0.3051, LR: 4.05e-05
+Epoch 112 [200/604] Loss: 0.7912, LR: 4.04e-05
+Epoch 112 [300/604] Loss: 0.4834, LR: 4.02e-05
+Epoch 112 [400/604] Loss: 0.3563, LR: 4.01e-05
+Epoch 112 [500/604] Loss: 0.4166, LR: 4.00e-05
+Epoch 112 [600/604] Loss: 0.3880, LR: 3.99e-05
+Epoch 112 Done. Train Loss: 0.4813 | Train Pearson: 0.7575 | Val MSE: 0.6634 | Val Pearson: 0.6799
+Epoch 113 [0/604] Loss: 0.4171, LR: 3.99e-05
+Epoch 113 [100/604] Loss: 0.4376, LR: 3.97e-05
+Epoch 113 [200/604] Loss: 0.4905, LR: 3.96e-05
+Epoch 113 [300/604] Loss: 0.4875, LR: 3.95e-05
+Epoch 113 [400/604] Loss: 0.7090, LR: 3.94e-05
+Epoch 113 [500/604] Loss: 0.3591, LR: 3.92e-05
+Epoch 113 [600/604] Loss: 0.4677, LR: 3.91e-05
+Epoch 113 Done. Train Loss: 0.4833 | Train Pearson: 0.7566 | Val MSE: 0.6435 | Val Pearson: 0.6811
+Epoch 114 [0/604] Loss: 0.4402, LR: 3.91e-05
+Epoch 114 [100/604] Loss: 0.4961, LR: 3.90e-05
+Epoch 114 [200/604] Loss: 0.4998, LR: 3.88e-05
+Epoch 114 [300/604] Loss: 0.4202, LR: 3.87e-05
+Epoch 114 [400/604] Loss: 0.5117, LR: 3.86e-05
+Epoch 114 [500/604] Loss: 0.5190, LR: 3.85e-05
+Epoch 114 [600/604] Loss: 0.4076, LR: 3.83e-05
+Epoch 114 Done. Train Loss: 0.4871 | Train Pearson: 0.7547 | Val MSE: 0.6482 | Val Pearson: 0.6808
+Epoch 115 [0/604] Loss: 0.2520, LR: 3.83e-05
+Epoch 115 [100/604] Loss: 0.4098, LR: 3.82e-05
+Epoch 115 [200/604] Loss: 0.5570, LR: 3.81e-05
+Epoch 115 [300/604] Loss: 0.6263, LR: 3.79e-05
+Epoch 115 [400/604] Loss: 0.7319, LR: 3.78e-05
+Epoch 115 [500/604] Loss: 0.7839, LR: 3.77e-05
+Epoch 115 [600/604] Loss: 0.4801, LR: 3.76e-05
+Epoch 115 Done. Train Loss: 0.4823 | Train Pearson: 0.7576 | Val MSE: 0.6687 | Val Pearson: 0.6744
+Epoch 116 [0/604] Loss: 0.4589, LR: 3.76e-05
+Epoch 116 [100/604] Loss: 0.3233, LR: 3.74e-05
+Epoch 116 [200/604] Loss: 0.3719, LR: 3.73e-05
+Epoch 116 [300/604] Loss: 0.5823, LR: 3.72e-05
+Epoch 116 [400/604] Loss: 0.3544, LR: 3.71e-05
+Epoch 116 [500/604] Loss: 0.5323, LR: 3.69e-05
+Epoch 116 [600/604] Loss: 0.5491, LR: 3.68e-05
+Epoch 116 Done. Train Loss: 0.4817 | Train Pearson: 0.7574 | Val MSE: 0.6543 | Val Pearson: 0.6791
+Epoch 117 [0/604] Loss: 0.5100, LR: 3.68e-05
+Epoch 117 [100/604] Loss: 0.6486, LR: 3.67e-05
+Epoch 117 [200/604] Loss: 0.4294, LR: 3.66e-05
+Epoch 117 [300/604] Loss: 0.4086, LR: 3.64e-05
+Epoch 117 [400/604] Loss: 0.5070, LR: 3.63e-05
+Epoch 117 [500/604] Loss: 0.5623, LR: 3.62e-05
+Epoch 117 [600/604] Loss: 0.3853, LR: 3.61e-05
+Epoch 117 Done. Train Loss: 0.4754 | Train Pearson: 0.7610 | Val MSE: 0.6579 | Val Pearson: 0.6758
+Epoch 118 [0/604] Loss: 0.5669, LR: 3.60e-05
+Epoch 118 [100/604] Loss: 0.4526, LR: 3.59e-05
+Epoch 118 [200/604] Loss: 0.3557, LR: 3.58e-05
+Epoch 118 [300/604] Loss: 0.4059, LR: 3.57e-05
+Epoch 118 [400/604] Loss: 0.3331, LR: 3.56e-05
+Epoch 118 [500/604] Loss: 0.4068, LR: 3.54e-05
+Epoch 118 [600/604] Loss: 0.8446, LR: 3.53e-05
+Epoch 118 Done. Train Loss: 0.4722 | Train Pearson: 0.7628 | Val MSE: 0.6411 | Val Pearson: 0.6802
+Epoch 119 [0/604] Loss: 0.3604, LR: 3.53e-05
+Epoch 119 [100/604] Loss: 0.3335, LR: 3.52e-05
+Epoch 119 [200/604] Loss: 0.5277, LR: 3.50e-05
+Epoch 119 [300/604] Loss: 0.3709, LR: 3.49e-05
+Epoch 119 [400/604] Loss: 0.5778, LR: 3.48e-05
+Epoch 119 [500/604] Loss: 0.5729, LR: 3.47e-05
+Epoch 119 [600/604] Loss: 0.2705, LR: 3.46e-05
+Epoch 119 Done. Train Loss: 0.4683 | Train Pearson: 0.7652 | Val MSE: 0.6483 | Val Pearson: 0.6781
+Epoch 120 [0/604] Loss: 0.3267, LR: 3.45e-05
+Epoch 120 [100/604] Loss: 0.5050, LR: 3.44e-05
+Epoch 120 [200/604] Loss: 0.4272, LR: 3.43e-05
+Epoch 120 [300/604] Loss: 0.3717, LR: 3.42e-05
+Epoch 120 [400/604] Loss: 0.3207, LR: 3.41e-05
+Epoch 120 [500/604] Loss: 0.4728, LR: 3.39e-05
+Epoch 120 [600/604] Loss: 0.4703, LR: 3.38e-05
+Epoch 120 Done. Train Loss: 0.4727 | Train Pearson: 0.7632 | Val MSE: 0.6431 | Val Pearson: 0.6834
+Epoch 121 [0/604] Loss: 0.4617, LR: 3.38e-05
+Epoch 121 [100/604] Loss: 0.2577, LR: 3.37e-05
+Epoch 121 [200/604] Loss: 0.2723, LR: 3.36e-05
+Epoch 121 [300/604] Loss: 0.4397, LR: 3.34e-05
+Epoch 121 [400/604] Loss: 0.4187, LR: 3.33e-05
+Epoch 121 [500/604] Loss: 0.4711, LR: 3.32e-05
+Epoch 121 [600/604] Loss: 0.5716, LR: 3.31e-05
+Epoch 121 Done. Train Loss: 0.4679 | Train Pearson: 0.7664 | Val MSE: 0.6787 | Val Pearson: 0.6700
+Epoch 122 [0/604] Loss: 0.5073, LR: 3.31e-05
+Epoch 122 [100/604] Loss: 0.2500, LR: 3.29e-05
+Epoch 122 [200/604] Loss: 0.6168, LR: 3.28e-05
+Epoch 122 [300/604] Loss: 0.4639, LR: 3.27e-05
+Epoch 122 [400/604] Loss: 0.3989, LR: 3.26e-05
+Epoch 122 [500/604] Loss: 0.6210, LR: 3.25e-05
+Epoch 122 [600/604] Loss: 0.2793, LR: 3.23e-05
+Epoch 122 Done. Train Loss: 0.4688 | Train Pearson: 0.7651 | Val MSE: 0.6521 | Val Pearson: 0.6797
+Epoch 123 [0/604] Loss: 0.4020, LR: 3.23e-05
+Epoch 123 [100/604] Loss: 0.4629, LR: 3.22e-05
+Epoch 123 [200/604] Loss: 0.5372, LR: 3.21e-05
+Epoch 123 [300/604] Loss: 0.4011, LR: 3.20e-05
+Epoch 123 [400/604] Loss: 0.4370, LR: 3.18e-05
+Epoch 123 [500/604] Loss: 0.5701, LR: 3.17e-05
+Epoch 123 [600/604] Loss: 0.4472, LR: 3.16e-05
+Epoch 123 Done. Train Loss: 0.4686 | Train Pearson: 0.7654 | Val MSE: 0.6442 | Val Pearson: 0.6797
+Epoch 124 [0/604] Loss: 0.3508, LR: 3.16e-05
+Epoch 124 [100/604] Loss: 0.4646, LR: 3.15e-05
+Epoch 124 [200/604] Loss: 0.3587, LR: 3.14e-05
+Epoch 124 [300/604] Loss: 0.7639, LR: 3.12e-05
+Epoch 124 [400/604] Loss: 0.4062, LR: 3.11e-05
+Epoch 124 [500/604] Loss: 0.3666, LR: 3.10e-05
+Epoch 124 [600/604] Loss: 0.4275, LR: 3.09e-05
+Epoch 124 Done. Train Loss: 0.4596 | Train Pearson: 0.7700 | Val MSE: 0.6439 | Val Pearson: 0.6808
+Epoch 125 [0/604] Loss: 0.2661, LR: 3.09e-05
+Epoch 125 [100/604] Loss: 0.7235, LR: 3.07e-05
+Epoch 125 [200/604] Loss: 0.4493, LR: 3.06e-05
+Epoch 125 [300/604] Loss: 0.3911, LR: 3.05e-05
+Epoch 125 [400/604] Loss: 0.6972, LR: 3.04e-05
+Epoch 125 [500/604] Loss: 0.2757, LR: 3.03e-05
+Epoch 125 [600/604] Loss: 0.7489, LR: 3.01e-05
+Epoch 125 Done. Train Loss: 0.4617 | Train Pearson: 0.7690 | Val MSE: 0.6623 | Val Pearson: 0.6755
+Epoch 126 [0/604] Loss: 0.7420, LR: 3.01e-05
+Epoch 126 [100/604] Loss: 0.4913, LR: 3.00e-05
+Epoch 126 [200/604] Loss: 0.3757, LR: 2.99e-05
+Epoch 126 [300/604] Loss: 0.6753, LR: 2.98e-05
+Epoch 126 [400/604] Loss: 0.4019, LR: 2.97e-05
+Epoch 126 [500/604] Loss: 0.4070, LR: 2.95e-05
+Epoch 126 [600/604] Loss: 0.3303, LR: 2.94e-05
+Epoch 126 Done. Train Loss: 0.4568 | Train Pearson: 0.7724 | Val MSE: 0.6555 | Val Pearson: 0.6835
+Epoch 127 [0/604] Loss: 0.5938, LR: 2.94e-05
+Epoch 127 [100/604] Loss: 0.3711, LR: 2.93e-05
+Epoch 127 [200/604] Loss: 0.4444, LR: 2.92e-05
+Epoch 127 [300/604] Loss: 0.4333, LR: 2.91e-05
+Epoch 127 [400/604] Loss: 0.4469, LR: 2.90e-05
+Epoch 127 [500/604] Loss: 0.4785, LR: 2.88e-05
+Epoch 127 [600/604] Loss: 0.4138, LR: 2.87e-05
+Epoch 127 Done. Train Loss: 0.4537 | Train Pearson: 0.7736 | Val MSE: 0.6579 | Val Pearson: 0.6766
+Epoch 128 [0/604] Loss: 0.4989, LR: 2.87e-05
+Epoch 128 [100/604] Loss: 0.5054, LR: 2.86e-05
+Epoch 128 [200/604] Loss: 0.2562, LR: 2.85e-05
+Epoch 128 [300/604] Loss: 0.5278, LR: 2.84e-05
+Epoch 128 [400/604] Loss: 0.6552, LR: 2.82e-05
+Epoch 128 [500/604] Loss: 0.4521, LR: 2.81e-05
+Epoch 128 [600/604] Loss: 0.3365, LR: 2.80e-05
+Epoch 128 Done. Train Loss: 0.4590 | Train Pearson: 0.7707 | Val MSE: 0.6657 | Val Pearson: 0.6722
+Epoch 129 [0/604] Loss: 0.3267, LR: 2.80e-05
+Epoch 129 [100/604] Loss: 0.5366, LR: 2.79e-05
+Epoch 129 [200/604] Loss: 0.3033, LR: 2.78e-05
+Epoch 129 [300/604] Loss: 0.3851, LR: 2.77e-05
+Epoch 129 [400/604] Loss: 0.2382, LR: 2.75e-05
+Epoch 129 [500/604] Loss: 0.4761, LR: 2.74e-05
+Epoch 129 [600/604] Loss: 0.3486, LR: 2.73e-05
+Epoch 129 Done. Train Loss: 0.4512 | Train Pearson: 0.7751 | Val MSE: 0.6554 | Val Pearson: 0.6796
+Epoch 130 [0/604] Loss: 0.4865, LR: 2.73e-05
+Epoch 130 [100/604] Loss: 0.3565, LR: 2.72e-05
+Epoch 130 [200/604] Loss: 0.4484, LR: 2.71e-05
+Epoch 130 [300/604] Loss: 0.5026, LR: 2.70e-05
+Epoch 130 [400/604] Loss: 0.4324, LR: 2.68e-05
+Epoch 130 [500/604] Loss: 0.5069, LR: 2.67e-05
+Epoch 130 [600/604] Loss: 0.3699, LR: 2.66e-05
+Epoch 130 Done. Train Loss: 0.4509 | Train Pearson: 0.7756 | Val MSE: 0.6698 | Val Pearson: 0.6753
+Epoch 131 [0/604] Loss: 0.3410, LR: 2.66e-05
+Epoch 131 [100/604] Loss: 0.4192, LR: 2.65e-05
+Epoch 131 [200/604] Loss: 0.4222, LR: 2.64e-05
+Epoch 131 [300/604] Loss: 0.3182, LR: 2.63e-05
+Epoch 131 [400/604] Loss: 0.3771, LR: 2.61e-05
+Epoch 131 [500/604] Loss: 0.4601, LR: 2.60e-05
+Epoch 131 [600/604] Loss: 0.3993, LR: 2.59e-05
+Epoch 131 Done. Train Loss: 0.4472 | Train Pearson: 0.7778 | Val MSE: 0.6526 | Val Pearson: 0.6784
+Epoch 132 [0/604] Loss: 0.3873, LR: 2.59e-05
+Epoch 132 [100/604] Loss: 0.4085, LR: 2.58e-05
+Epoch 132 [200/604] Loss: 0.3026, LR: 2.57e-05
+Epoch 132 [300/604] Loss: 0.5718, LR: 2.56e-05
+Epoch 132 [400/604] Loss: 0.4455, LR: 2.55e-05
+Epoch 132 [500/604] Loss: 0.4400, LR: 2.53e-05
+Epoch 132 [600/604] Loss: 0.4110, LR: 2.52e-05
+Epoch 132 Done. Train Loss: 0.4492 | Train Pearson: 0.7772 | Val MSE: 0.6439 | Val Pearson: 0.6837
+Epoch 133 [0/604] Loss: 0.3174, LR: 2.52e-05
+Epoch 133 [100/604] Loss: 0.4025, LR: 2.51e-05
+Epoch 133 [200/604] Loss: 0.3083, LR: 2.50e-05
+Epoch 133 [300/604] Loss: 0.4070, LR: 2.49e-05
+Epoch 133 [400/604] Loss: 0.5141, LR: 2.48e-05
+Epoch 133 [500/604] Loss: 0.3848, LR: 2.47e-05
+Epoch 133 [600/604] Loss: 0.3748, LR: 2.46e-05
+Epoch 133 Done. Train Loss: 0.4470 | Train Pearson: 0.7775 | Val MSE: 0.6591 | Val Pearson: 0.6789
+Epoch 134 [0/604] Loss: 0.3493, LR: 2.45e-05
+Epoch 134 [100/604] Loss: 0.3027, LR: 2.44e-05
+Epoch 134 [200/604] Loss: 0.4182, LR: 2.43e-05
+Epoch 134 [300/604] Loss: 0.3720, LR: 2.42e-05
+Epoch 134 [400/604] Loss: 0.5793, LR: 2.41e-05
+Epoch 134 [500/604] Loss: 0.4005, LR: 2.40e-05
+Epoch 134 [600/604] Loss: 0.5824, LR: 2.39e-05
+Epoch 134 Done. Train Loss: 0.4412 | Train Pearson: 0.7814 | Val MSE: 0.6600 | Val Pearson: 0.6782
+Epoch 135 [0/604] Loss: 0.3927, LR: 2.39e-05
+Epoch 135 [100/604] Loss: 0.6454, LR: 2.38e-05
+Epoch 135 [200/604] Loss: 0.3481, LR: 2.37e-05
+Epoch 135 [300/604] Loss: 0.3648, LR: 2.35e-05
+Epoch 135 [400/604] Loss: 0.5131, LR: 2.34e-05
+Epoch 135 [500/604] Loss: 0.3987, LR: 2.33e-05
+Epoch 135 [600/604] Loss: 0.5867, LR: 2.32e-05
+Epoch 135 Done. Train Loss: 0.4405 | Train Pearson: 0.7809 | Val MSE: 0.6562 | Val Pearson: 0.6789
+Epoch 136 [0/604] Loss: 0.6314, LR: 2.32e-05
+Epoch 136 [100/604] Loss: 0.3528, LR: 2.31e-05
+Epoch 136 [200/604] Loss: 0.5449, LR: 2.30e-05
+Epoch 136 [300/604] Loss: 0.1925, LR: 2.29e-05
+Epoch 136 [400/604] Loss: 0.4650, LR: 2.28e-05
+Epoch 136 [500/604] Loss: 0.6014, LR: 2.27e-05
+Epoch 136 [600/604] Loss: 0.4634, LR: 2.26e-05
+Epoch 136 Done. Train Loss: 0.4429 | Train Pearson: 0.7799 | Val MSE: 0.6507 | Val Pearson: 0.6793
+
+Early stopping triggered after 137 epochs!
+Best val_pearson: 0.6845
+
+============================================================
+Training complete!
+=== Experiment 8: Combined Best ===
+Loading scores from data/scores.json...
+Total samples found: 21300. Training on 19300, Val on 2000
+Using Huber Loss (delta=0.5)
+Using ReduceLROnPlateau Scheduler
+Starting training...
+Epoch 0 [0/604] Loss: 0.7745, LR: 8.00e-05
+Epoch 0 [100/604] Loss: 0.3093, LR: 8.00e-05
+Epoch 0 [200/604] Loss: 0.4122, LR: 8.00e-05
+Epoch 0 [300/604] Loss: 0.2677, LR: 8.00e-05
+Epoch 0 [400/604] Loss: 0.2823, LR: 8.00e-05
+Epoch 0 [500/604] Loss: 0.4338, LR: 8.00e-05
+Epoch 0 [600/604] Loss: 0.3963, LR: 8.00e-05
+Epoch 0 Done. Train Loss: 0.3502 | Train Pearson: 0.2616 | Val MSE: 1.0941 | Val Pearson: 0.3850
+  ✓ New best val_pearson: 0.3850
+Epoch 1 [0/604] Loss: 0.2022, LR: 8.00e-05
+Epoch 1 [100/604] Loss: 0.2880, LR: 8.00e-05
+Epoch 1 [200/604] Loss: 0.2823, LR: 8.00e-05
+Epoch 1 [300/604] Loss: 0.3089, LR: 8.00e-05
+Epoch 1 [400/604] Loss: 0.2622, LR: 8.00e-05
+Epoch 1 [500/604] Loss: 0.2866, LR: 8.00e-05
+Epoch 1 [600/604] Loss: 0.3367, LR: 8.00e-05
+Epoch 1 Done. Train Loss: 0.2971 | Train Pearson: 0.3732 | Val MSE: 1.0384 | Val Pearson: 0.4182
+  ✓ New best val_pearson: 0.4182
+Epoch 2 [0/604] Loss: 0.2129, LR: 8.00e-05
+Epoch 2 [100/604] Loss: 0.2305, LR: 8.00e-05
+Epoch 2 [200/604] Loss: 0.2683, LR: 8.00e-05
+Epoch 2 [300/604] Loss: 0.2748, LR: 8.00e-05
+Epoch 2 [400/604] Loss: 0.2305, LR: 8.00e-05
+Epoch 2 [500/604] Loss: 0.2755, LR: 8.00e-05
+Epoch 2 [600/604] Loss: 0.2813, LR: 8.00e-05
+Epoch 2 Done. Train Loss: 0.2860 | Train Pearson: 0.4031 | Val MSE: 1.0274 | Val Pearson: 0.4168
+Epoch 3 [0/604] Loss: 0.2436, LR: 8.00e-05
+Epoch 3 [100/604] Loss: 0.2834, LR: 8.00e-05
+Epoch 3 [200/604] Loss: 0.3084, LR: 8.00e-05
+Epoch 3 [300/604] Loss: 0.2366, LR: 8.00e-05
+Epoch 3 [400/604] Loss: 0.2889, LR: 8.00e-05
+Epoch 3 [500/604] Loss: 0.3870, LR: 8.00e-05
+Epoch 3 [600/604] Loss: 0.2569, LR: 8.00e-05
+Epoch 3 Done. Train Loss: 0.2787 | Train Pearson: 0.4303 | Val MSE: 1.1523 | Val Pearson: 0.3994
+Epoch 4 [0/604] Loss: 0.4319, LR: 8.00e-05
+Epoch 4 [100/604] Loss: 0.4370, LR: 8.00e-05
+Epoch 4 [200/604] Loss: 0.2100, LR: 8.00e-05
+Epoch 4 [300/604] Loss: 0.2287, LR: 8.00e-05
+Epoch 4 [400/604] Loss: 0.3211, LR: 8.00e-05
+Epoch 4 [500/604] Loss: 0.3604, LR: 8.00e-05
+Epoch 4 [600/604] Loss: 0.3250, LR: 8.00e-05
+Epoch 4 Done. Train Loss: 0.2766 | Train Pearson: 0.4396 | Val MSE: 1.0275 | Val Pearson: 0.4415
+  ✓ New best val_pearson: 0.4415
+Epoch 5 [0/604] Loss: 0.3641, LR: 8.00e-05
+Epoch 5 [100/604] Loss: 0.2219, LR: 8.00e-05
+Epoch 5 [200/604] Loss: 0.2676, LR: 8.00e-05
+Epoch 5 [300/604] Loss: 0.2750, LR: 8.00e-05
+Epoch 5 [400/604] Loss: 0.2274, LR: 8.00e-05
+Epoch 5 [500/604] Loss: 0.2660, LR: 8.00e-05
+Epoch 5 [600/604] Loss: 0.3724, LR: 8.00e-05
+Epoch 5 Done. Train Loss: 0.2718 | Train Pearson: 0.4569 | Val MSE: 0.9559 | Val Pearson: 0.4635
+  ✓ New best val_pearson: 0.4635
+Epoch 6 [0/604] Loss: 0.3841, LR: 8.00e-05
+Epoch 6 [100/604] Loss: 0.2052, LR: 8.00e-05
+Epoch 6 [200/604] Loss: 0.2605, LR: 8.00e-05
+Epoch 6 [300/604] Loss: 0.3102, LR: 8.00e-05
+Epoch 6 [400/604] Loss: 0.1911, LR: 8.00e-05
+Epoch 6 [500/604] Loss: 0.2838, LR: 8.00e-05
+Epoch 6 [600/604] Loss: 0.3162, LR: 8.00e-05
+Epoch 6 Done. Train Loss: 0.2677 | Train Pearson: 0.4767 | Val MSE: 0.9464 | Val Pearson: 0.4687
+  ✓ New best val_pearson: 0.4687
+Epoch 7 [0/604] Loss: 0.2675, LR: 8.00e-05
+Epoch 7 [100/604] Loss: 0.2281, LR: 8.00e-05
+Epoch 7 [200/604] Loss: 0.1815, LR: 8.00e-05
+Epoch 7 [300/604] Loss: 0.3446, LR: 8.00e-05
+Epoch 7 [400/604] Loss: 0.2873, LR: 8.00e-05
+Epoch 7 [500/604] Loss: 0.2922, LR: 8.00e-05
+Epoch 7 [600/604] Loss: 0.2770, LR: 8.00e-05
+Epoch 7 Done. Train Loss: 0.2641 | Train Pearson: 0.4848 | Val MSE: 0.9044 | Val Pearson: 0.5147
+  ✓ New best val_pearson: 0.5147
+Epoch 8 [0/604] Loss: 0.2899, LR: 8.00e-05
+Epoch 8 [100/604] Loss: 0.2664, LR: 8.00e-05
+Epoch 8 [200/604] Loss: 0.3182, LR: 8.00e-05
+Epoch 8 [300/604] Loss: 0.2080, LR: 8.00e-05
+Epoch 8 [400/604] Loss: 0.2801, LR: 8.00e-05
+Epoch 8 [500/604] Loss: 0.2526, LR: 8.00e-05
+Epoch 8 [600/604] Loss: 0.3107, LR: 8.00e-05
+Epoch 8 Done. Train Loss: 0.2632 | Train Pearson: 0.4888 | Val MSE: 0.9681 | Val Pearson: 0.4809
+Epoch 9 [0/604] Loss: 0.3573, LR: 8.00e-05
+Epoch 9 [100/604] Loss: 0.3179, LR: 8.00e-05
+Epoch 9 [200/604] Loss: 0.3129, LR: 8.00e-05
+Epoch 9 [300/604] Loss: 0.2935, LR: 8.00e-05
+Epoch 9 [400/604] Loss: 0.1717, LR: 8.00e-05
+Epoch 9 [500/604] Loss: 0.2749, LR: 8.00e-05
+Epoch 9 [600/604] Loss: 0.2065, LR: 8.00e-05
+Epoch 9 Done. Train Loss: 0.2610 | Train Pearson: 0.4990 | Val MSE: 0.8586 | Val Pearson: 0.5294
+  ✓ New best val_pearson: 0.5294
+Epoch 10 [0/604] Loss: 0.2022, LR: 8.00e-05
+Epoch 10 [100/604] Loss: 0.2622, LR: 8.00e-05
+Epoch 10 [200/604] Loss: 0.2732, LR: 8.00e-05
+Epoch 10 [300/604] Loss: 0.1677, LR: 8.00e-05
+Epoch 10 [400/604] Loss: 0.2286, LR: 8.00e-05
+Epoch 10 [500/604] Loss: 0.2709, LR: 8.00e-05
+Epoch 10 [600/604] Loss: 0.1589, LR: 8.00e-05
+Epoch 10 Done. Train Loss: 0.2571 | Train Pearson: 0.5129 | Val MSE: 0.8712 | Val Pearson: 0.5269
+Epoch 11 [0/604] Loss: 0.1973, LR: 8.00e-05
+Epoch 11 [100/604] Loss: 0.2236, LR: 8.00e-05
+Epoch 11 [200/604] Loss: 0.2328, LR: 8.00e-05
+Epoch 11 [300/604] Loss: 0.2556, LR: 8.00e-05
+Epoch 11 [400/604] Loss: 0.2432, LR: 8.00e-05
+Epoch 11 [500/604] Loss: 0.2288, LR: 8.00e-05
+Epoch 11 [600/604] Loss: 0.3301, LR: 8.00e-05
+Epoch 11 Done. Train Loss: 0.2543 | Train Pearson: 0.5252 | Val MSE: 0.9108 | Val Pearson: 0.4994
+Epoch 12 [0/604] Loss: 0.2134, LR: 8.00e-05
+Epoch 12 [100/604] Loss: 0.2928, LR: 8.00e-05
+Epoch 12 [200/604] Loss: 0.2744, LR: 8.00e-05
+Epoch 12 [300/604] Loss: 0.2968, LR: 8.00e-05
+Epoch 12 [400/604] Loss: 0.1775, LR: 8.00e-05
+Epoch 12 [500/604] Loss: 0.2443, LR: 8.00e-05
+Epoch 12 [600/604] Loss: 0.2545, LR: 8.00e-05
+Epoch 12 Done. Train Loss: 0.2535 | Train Pearson: 0.5249 | Val MSE: 0.8184 | Val Pearson: 0.5620
+  ✓ New best val_pearson: 0.5620
+Epoch 13 [0/604] Loss: 0.2998, LR: 8.00e-05
+Epoch 13 [100/604] Loss: 0.3374, LR: 8.00e-05
+Epoch 13 [200/604] Loss: 0.3440, LR: 8.00e-05
+Epoch 13 [300/604] Loss: 0.2942, LR: 8.00e-05
+Epoch 13 [400/604] Loss: 0.1960, LR: 8.00e-05
+Epoch 13 [500/604] Loss: 0.2136, LR: 8.00e-05
+Epoch 13 [600/604] Loss: 0.2167, LR: 8.00e-05
+Epoch 13 Done. Train Loss: 0.2489 | Train Pearson: 0.5418 | Val MSE: 0.8634 | Val Pearson: 0.5338
+Epoch 14 [0/604] Loss: 0.3330, LR: 8.00e-05
+Epoch 14 [100/604] Loss: 0.2156, LR: 8.00e-05
+Epoch 14 [200/604] Loss: 0.2341, LR: 8.00e-05
+Epoch 14 [300/604] Loss: 0.2866, LR: 8.00e-05
+Epoch 14 [400/604] Loss: 0.2286, LR: 8.00e-05
+Epoch 14 [500/604] Loss: 0.2613, LR: 8.00e-05
+Epoch 14 [600/604] Loss: 0.2386, LR: 8.00e-05
+Epoch 14 Done. Train Loss: 0.2467 | Train Pearson: 0.5482 | Val MSE: 0.8569 | Val Pearson: 0.5297
+Epoch 15 [0/604] Loss: 0.2536, LR: 8.00e-05
+Epoch 15 [100/604] Loss: 0.2426, LR: 8.00e-05
+Epoch 15 [200/604] Loss: 0.1539, LR: 8.00e-05
+Epoch 15 [300/604] Loss: 0.2374, LR: 8.00e-05
+Epoch 15 [400/604] Loss: 0.2371, LR: 8.00e-05
+Epoch 15 [500/604] Loss: 0.1977, LR: 8.00e-05
+Epoch 15 [600/604] Loss: 0.2085, LR: 8.00e-05
+Epoch 15 Done. Train Loss: 0.2482 | Train Pearson: 0.5479 | Val MSE: 0.8070 | Val Pearson: 0.5705
+  ✓ New best val_pearson: 0.5705
+Epoch 16 [0/604] Loss: 0.2819, LR: 8.00e-05
+Epoch 16 [100/604] Loss: 0.2929, LR: 8.00e-05
+Epoch 16 [200/604] Loss: 0.2288, LR: 8.00e-05
+Epoch 16 [300/604] Loss: 0.2538, LR: 8.00e-05
+Epoch 16 [400/604] Loss: 0.2628, LR: 8.00e-05
+Epoch 16 [500/604] Loss: 0.2254, LR: 8.00e-05
+Epoch 16 [600/604] Loss: 0.2416, LR: 8.00e-05
+Epoch 16 Done. Train Loss: 0.2438 | Train Pearson: 0.5584 | Val MSE: 0.8097 | Val Pearson: 0.5671
+Epoch 17 [0/604] Loss: 0.2445, LR: 8.00e-05
+Epoch 17 [100/604] Loss: 0.2328, LR: 8.00e-05
+Epoch 17 [200/604] Loss: 0.2933, LR: 8.00e-05
+Epoch 17 [300/604] Loss: 0.2223, LR: 8.00e-05
+Epoch 17 [400/604] Loss: 0.2340, LR: 8.00e-05
+Epoch 17 [500/604] Loss: 0.2114, LR: 8.00e-05
+Epoch 17 [600/604] Loss: 0.2983, LR: 8.00e-05
+Epoch 17 Done. Train Loss: 0.2426 | Train Pearson: 0.5623 | Val MSE: 0.7954 | Val Pearson: 0.5820
+  ✓ New best val_pearson: 0.5820
+Epoch 18 [0/604] Loss: 0.1943, LR: 8.00e-05
+Epoch 18 [100/604] Loss: 0.2744, LR: 8.00e-05
+Epoch 18 [200/604] Loss: 0.2630, LR: 8.00e-05
+Epoch 18 [300/604] Loss: 0.2307, LR: 8.00e-05
+Epoch 18 [400/604] Loss: 0.2313, LR: 8.00e-05
+Epoch 18 [500/604] Loss: 0.2939, LR: 8.00e-05
+Epoch 18 [600/604] Loss: 0.2748, LR: 8.00e-05
+Epoch 18 Done. Train Loss: 0.2414 | Train Pearson: 0.5662 | Val MSE: 0.7664 | Val Pearson: 0.5971
+  ✓ New best val_pearson: 0.5971
+Epoch 19 [0/604] Loss: 0.1919, LR: 8.00e-05
+Epoch 19 [100/604] Loss: 0.2445, LR: 8.00e-05
+Epoch 19 [200/604] Loss: 0.3029, LR: 8.00e-05
+Epoch 19 [300/604] Loss: 0.2546, LR: 8.00e-05
+Epoch 19 [400/604] Loss: 0.2210, LR: 8.00e-05
+Epoch 19 [500/604] Loss: 0.2468, LR: 8.00e-05
+Epoch 19 [600/604] Loss: 0.2954, LR: 8.00e-05
+Epoch 19 Done. Train Loss: 0.2405 | Train Pearson: 0.5710 | Val MSE: 0.7994 | Val Pearson: 0.5797
+Epoch 20 [0/604] Loss: 0.1275, LR: 8.00e-05
+Epoch 20 [100/604] Loss: 0.1901, LR: 8.00e-05
+Epoch 20 [200/604] Loss: 0.2521, LR: 8.00e-05
+Epoch 20 [300/604] Loss: 0.2225, LR: 8.00e-05
+Epoch 20 [400/604] Loss: 0.2617, LR: 8.00e-05
+Epoch 20 [500/604] Loss: 0.2586, LR: 8.00e-05
+Epoch 20 [600/604] Loss: 0.2052, LR: 8.00e-05
+Epoch 20 Done. Train Loss: 0.2387 | Train Pearson: 0.5763 | Val MSE: 0.7763 | Val Pearson: 0.5944
+Epoch 21 [0/604] Loss: 0.2503, LR: 8.00e-05
+Epoch 21 [100/604] Loss: 0.2607, LR: 8.00e-05
+Epoch 21 [200/604] Loss: 0.2269, LR: 8.00e-05
+Epoch 21 [300/604] Loss: 0.2590, LR: 8.00e-05
+Epoch 21 [400/604] Loss: 0.2303, LR: 8.00e-05
+Epoch 21 [500/604] Loss: 0.2151, LR: 8.00e-05
+Epoch 21 [600/604] Loss: 0.2517, LR: 8.00e-05
+Epoch 21 Done. Train Loss: 0.2367 | Train Pearson: 0.5840 | Val MSE: 0.7679 | Val Pearson: 0.5969
+Epoch 22 [0/604] Loss: 0.2091, LR: 8.00e-05
+Epoch 22 [100/604] Loss: 0.2273, LR: 8.00e-05
+Epoch 22 [200/604] Loss: 0.2200, LR: 8.00e-05
+Epoch 22 [300/604] Loss: 0.2912, LR: 8.00e-05
+Epoch 22 [400/604] Loss: 0.2190, LR: 8.00e-05
+Epoch 22 [500/604] Loss: 0.2203, LR: 8.00e-05
+Epoch 22 [600/604] Loss: 0.2363, LR: 8.00e-05
+Epoch 22 Done. Train Loss: 0.2375 | Train Pearson: 0.5793 | Val MSE: 0.7961 | Val Pearson: 0.5796
+Epoch 23 [0/604] Loss: 0.1902, LR: 8.00e-05
+Epoch 23 [100/604] Loss: 0.2602, LR: 8.00e-05
+Epoch 23 [200/604] Loss: 0.1889, LR: 8.00e-05
+Epoch 23 [300/604] Loss: 0.2587, LR: 8.00e-05
+Epoch 23 [400/604] Loss: 0.2431, LR: 8.00e-05
+Epoch 23 [500/604] Loss: 0.1725, LR: 8.00e-05
+Epoch 23 [600/604] Loss: 0.1680, LR: 8.00e-05
+Epoch 23 Done. Train Loss: 0.2358 | Train Pearson: 0.5865 | Val MSE: 0.7711 | Val Pearson: 0.6075
+  ✓ New best val_pearson: 0.6075
+Epoch 24 [0/604] Loss: 0.2371, LR: 8.00e-05
+Epoch 24 [100/604] Loss: 0.2208, LR: 8.00e-05
+Epoch 24 [200/604] Loss: 0.2399, LR: 8.00e-05
+Epoch 24 [300/604] Loss: 0.2194, LR: 8.00e-05
+Epoch 24 [400/604] Loss: 0.1475, LR: 8.00e-05
+Epoch 24 [500/604] Loss: 0.2679, LR: 8.00e-05
+Epoch 24 [600/604] Loss: 0.2629, LR: 8.00e-05
+Epoch 24 Done. Train Loss: 0.2337 | Train Pearson: 0.5903 | Val MSE: 0.7406 | Val Pearson: 0.6173
+  ✓ New best val_pearson: 0.6173
+Epoch 25 [0/604] Loss: 0.2751, LR: 8.00e-05
+Epoch 25 [100/604] Loss: 0.2881, LR: 8.00e-05
+Epoch 25 [200/604] Loss: 0.2690, LR: 8.00e-05
+Epoch 25 [300/604] Loss: 0.2207, LR: 8.00e-05
+Epoch 25 [400/604] Loss: 0.2479, LR: 8.00e-05
+Epoch 25 [500/604] Loss: 0.2832, LR: 8.00e-05
+Epoch 25 [600/604] Loss: 0.3536, LR: 8.00e-05
+Epoch 25 Done. Train Loss: 0.2315 | Train Pearson: 0.5962 | Val MSE: 0.7989 | Val Pearson: 0.5862
+Epoch 26 [0/604] Loss: 0.2596, LR: 8.00e-05
+Epoch 26 [100/604] Loss: 0.2664, LR: 8.00e-05
+Epoch 26 [200/604] Loss: 0.2159, LR: 8.00e-05
+Epoch 26 [300/604] Loss: 0.2119, LR: 8.00e-05
+Epoch 26 [400/604] Loss: 0.2190, LR: 8.00e-05
+Epoch 26 [500/604] Loss: 0.2346, LR: 8.00e-05
+Epoch 26 [600/604] Loss: 0.2261, LR: 8.00e-05
+Epoch 26 Done. Train Loss: 0.2307 | Train Pearson: 0.6009 | Val MSE: 0.7518 | Val Pearson: 0.6138
+Epoch 27 [0/604] Loss: 0.2358, LR: 8.00e-05
+Epoch 27 [100/604] Loss: 0.1823, LR: 8.00e-05
+Epoch 27 [200/604] Loss: 0.2236, LR: 8.00e-05
+Epoch 27 [300/604] Loss: 0.2527, LR: 8.00e-05
+Epoch 27 [400/604] Loss: 0.2107, LR: 8.00e-05
+Epoch 27 [500/604] Loss: 0.2571, LR: 8.00e-05
+Epoch 27 [600/604] Loss: 0.2805, LR: 8.00e-05
+Epoch 27 Done. Train Loss: 0.2309 | Train Pearson: 0.6038 | Val MSE: 0.7966 | Val Pearson: 0.5975
+Epoch 28 [0/604] Loss: 0.2730, LR: 8.00e-05
+Epoch 28 [100/604] Loss: 0.2402, LR: 8.00e-05
+Epoch 28 [200/604] Loss: 0.1883, LR: 8.00e-05
+Epoch 28 [300/604] Loss: 0.1737, LR: 8.00e-05
+Epoch 28 [400/604] Loss: 0.1815, LR: 8.00e-05
+Epoch 28 [500/604] Loss: 0.2795, LR: 8.00e-05
+Epoch 28 [600/604] Loss: 0.1905, LR: 8.00e-05
+Epoch 28 Done. Train Loss: 0.2298 | Train Pearson: 0.6046 | Val MSE: 0.7416 | Val Pearson: 0.6150
+Epoch 29 [0/604] Loss: 0.2875, LR: 8.00e-05
+Epoch 29 [100/604] Loss: 0.2039, LR: 8.00e-05
+Epoch 29 [200/604] Loss: 0.2489, LR: 8.00e-05
+Epoch 29 [300/604] Loss: 0.2153, LR: 8.00e-05
+Epoch 29 [400/604] Loss: 0.1847, LR: 8.00e-05
+Epoch 29 [500/604] Loss: 0.2103, LR: 8.00e-05
+Epoch 29 [600/604] Loss: 0.2498, LR: 8.00e-05
+Epoch 29 Done. Train Loss: 0.2286 | Train Pearson: 0.6062 | Val MSE: 0.7373 | Val Pearson: 0.6206
+  ✓ New best val_pearson: 0.6206

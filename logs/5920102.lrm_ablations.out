@@ -1,0 +1,105 @@
+=== Experiment 1: Baseline ===
+Loading scores from data/scores.json...
+Total samples found: 21300. Training on 19300, Val on 2000
+Using MSE Loss
+Using Cosine Annealing LR Scheduler
+Starting training...
+Epoch 0 [0/604] Loss: 5.0034, LR: 1.00e-04
+Epoch 0 [100/604] Loss: 0.8113, LR: 1.00e-04
+Epoch 0 [200/604] Loss: 1.0477, LR: 1.00e-04
+Epoch 0 [300/604] Loss: 0.7577, LR: 1.00e-04
+Epoch 0 [400/604] Loss: 1.0177, LR: 1.00e-04
+Epoch 0 [500/604] Loss: 1.6713, LR: 1.00e-04
+Epoch 0 [600/604] Loss: 1.2767, LR: 1.00e-04
+=== Experiment 2: Dropout Regularization ===
+Loading scores from data/scores.json...
+Total samples found: 21300. Training on 19300, Val on 2000
+Using MSE Loss
+Using Cosine Annealing LR Scheduler
+Starting training...
+Epoch 0 [0/604] Loss: 5.3545, LR: 1.00e-04
+Epoch 0 [100/604] Loss: 0.8798, LR: 1.00e-04
+Epoch 0 [200/604] Loss: 1.3793, LR: 1.00e-04
+Epoch 0 [300/604] Loss: 0.7564, LR: 1.00e-04
+Epoch 0 [400/604] Loss: 1.0538, LR: 1.00e-04
+Epoch 0 [500/604] Loss: 1.4495, LR: 1.00e-04
+Epoch 0 [600/604] Loss: 1.6681, LR: 1.00e-04
+=== Experiment 3: Huber Loss ===
+Loading scores from data/scores.json...
+Total samples found: 21300. Training on 19300, Val on 2000
+Using Huber Loss (delta=1.0)
+Using Cosine Annealing LR Scheduler
+Starting training...
+Epoch 0 [0/604] Loss: 1.5503, LR: 1.00e-04
+Epoch 0 [100/604] Loss: 0.4899, LR: 1.00e-04
+Epoch 0 [200/604] Loss: 0.5677, LR: 1.00e-04
+Epoch 0 [300/604] Loss: 0.3779, LR: 1.00e-04
+Epoch 0 [400/604] Loss: 0.4197, LR: 1.00e-04
+Epoch 0 [500/604] Loss: 0.6122, LR: 1.00e-04
+Epoch 0 [600/604] Loss: 0.6553, LR: 1.00e-04
+=== Experiment 4: Smooth L1 Loss ===
+Loading scores from data/scores.json...
+Total samples found: 21300. Training on 19300, Val on 2000
+Using Smooth L1 Loss (default delta=1.0)
+Using Cosine Annealing LR Scheduler
+Starting training...
+Epoch 0 [0/604] Loss: 1.5503, LR: 1.00e-04
+Epoch 0 [100/604] Loss: 0.4899, LR: 1.00e-04
+Epoch 0 [200/604] Loss: 0.5677, LR: 1.00e-04
+Epoch 0 [300/604] Loss: 0.3779, LR: 1.00e-04
+Epoch 0 [400/604] Loss: 0.4197, LR: 1.00e-04
+Epoch 0 [500/604] Loss: 0.6122, LR: 1.00e-04
+Epoch 0 [600/604] Loss: 0.6553, LR: 1.00e-04
+=== Experiment 5: Latent Augmentation ===
+Loading scores from data/scores.json...
+Total samples found: 21300. Training on 19300, Val on 2000
+Using MSE Loss
+Using Cosine Annealing LR Scheduler
+Starting training...
+Epoch 0 [0/604] Loss: 5.2514, LR: 1.00e-04
+Epoch 0 [100/604] Loss: 0.8657, LR: 1.00e-04
+Epoch 0 [200/604] Loss: 1.1373, LR: 1.00e-04
+Epoch 0 [300/604] Loss: 0.7903, LR: 1.00e-04
+Epoch 0 [400/604] Loss: 0.9207, LR: 1.00e-04
+Epoch 0 [500/604] Loss: 1.4892, LR: 1.00e-04
+Epoch 0 [600/604] Loss: 1.3909, LR: 1.00e-04
+=== Experiment 6: Lower LR + Plateau Scheduler ===
+Loading scores from data/scores.json...
+Total samples found: 21300. Training on 19300, Val on 2000
+Using MSE Loss
+Using ReduceLROnPlateau Scheduler
+Starting training...
+Epoch 0 [0/604] Loss: 5.3545, LR: 5.00e-05
+Epoch 0 [100/604] Loss: 1.0968, LR: 5.00e-05
+Epoch 0 [200/604] Loss: 1.4053, LR: 5.00e-05
+Epoch 0 [300/604] Loss: 0.9675, LR: 5.00e-05
+Epoch 0 [400/604] Loss: 0.9786, LR: 5.00e-05
+Epoch 0 [500/604] Loss: 1.4755, LR: 5.00e-05
+Epoch 0 [600/604] Loss: 1.6565, LR: 5.00e-05
+=== Experiment 7: Higher Weight Decay ===
+Loading scores from data/scores.json...
+Total samples found: 21300. Training on 19300, Val on 2000
+Using MSE Loss
+Using Cosine Annealing LR Scheduler
+Starting training...
+Epoch 0 [0/604] Loss: 5.0230, LR: 1.00e-04
+Epoch 0 [100/604] Loss: 1.1911, LR: 1.00e-04
+Epoch 0 [200/604] Loss: 1.3459, LR: 1.00e-04
+Epoch 0 [300/604] Loss: 0.7525, LR: 1.00e-04
+Epoch 0 [400/604] Loss: 1.1676, LR: 1.00e-04
+Epoch 0 [500/604] Loss: 1.5832, LR: 1.00e-04
+Epoch 0 [600/604] Loss: 1.6173, LR: 1.00e-04
+=== Experiment 8: Combined Best ===
+Loading scores from data/scores.json...
+Total samples found: 21300. Training on 19300, Val on 2000
+Using Huber Loss (delta=0.5)
+Using ReduceLROnPlateau Scheduler
+Starting training...
+Epoch 0 [0/604] Loss: 0.7745, LR: 8.00e-05
+Epoch 0 [100/604] Loss: 0.3093, LR: 8.00e-05
+Epoch 0 [200/604] Loss: 0.4122, LR: 8.00e-05
+Epoch 0 [300/604] Loss: 0.2677, LR: 8.00e-05
+Epoch 0 [400/604] Loss: 0.2823, LR: 8.00e-05
+Epoch 0 [500/604] Loss: 0.4338, LR: 8.00e-05
+Epoch 0 [600/604] Loss: 0.3963, LR: 8.00e-05
+All experiments completed!
