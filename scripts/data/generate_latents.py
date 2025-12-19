@@ -1,41 +1,38 @@
+import argparse
 import os
 
 import torch
-import torchvision
 from PIL import Image
 from torchvision import transforms
 
 from wan.modules.vae import WanVAE
 
-INPUTDIR = "data/inputs"
-CHECKPOINT = "./Wan2.1-T2V-1.3B/Wan2.1_VAE.pth"
 
-vae = WanVAE(vae_pth=CHECKPOINT, device="cuda")
-for filename in os.listdir(INPUTDIR):
-    input_path = os.path.join(INPUTDIR, filename)
-    latent_path = os.path.join("data/latents", filename.split(".")[0] + ".pt")
-    recon_path = os.path.join("data/reconstructions", filename)
-    input_img = Image.open(input_path).convert("RGB").resize((1280, 720))
+def main() -> None:
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--images_dir", type=str, required=True)
+    parser.add_argument("--latents_dir", type=str, required=True)
+    parser.add_argument("--wan_model", type=str, required=True)
+    args = parser.parse_args()
 
-    img_transforms = transforms.Compose([
-        transforms.ToTensor(),
-        transforms.Normalize([0.5], [0.5])
-    ])
+    vae = WanVAE(vae_pth=args.wan_model, device="cuda")
+    for filename in os.listdir(args.images_dir):
+        input_path = os.path.join(args.images_dir, filename)
+        latent_path = os.path.join(args.latents_dir, filename.split(".")[0] + ".pt")
+        input_img = Image.open(input_path).convert("RGB").resize((1280, 720))
 
-    input_data = img_transforms(input_img).to(torch.float32).cuda()
-    input_data = input_data.unsqueeze(1)
+        img_transforms = transforms.Compose(
+            [transforms.ToTensor(), transforms.Normalize([0.5], [0.5])]
+        )
 
-    latents = vae.encode([input_data])
-    torch.save(latents[0], latent_path)
+        input_data = img_transforms(input_img).to(torch.float32).cuda()
+        input_data = input_data.unsqueeze(1)
 
-    orig = vae.decode(latents)[0].squeeze(1)
+        latents = vae.encode([input_data])
+        torch.save(latents[0], latent_path)
 
-    value_range = (-1, 1)
-    orig = orig.clamp(min(value_range), max(value_range))
-    torchvision.utils.save_image(
-        orig, recon_path, nrow=8, normalize=True, value_range=value_range
-    )
+        print(f"Processed {filename}, saved latents to {latent_path}")
 
-    print(
-        f"Processed {filename}, saved latents to {latent_path} and reconstruction to {recon_path}"
-    )
+
+if __name__ == "__main__":
+    main()

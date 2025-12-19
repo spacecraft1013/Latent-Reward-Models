@@ -3,3 +3,4 @@
 data/
 log/
 checkpoints_lrm/
+**/__pycache__/

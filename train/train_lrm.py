@@ -1,16 +1,15 @@
-# train_lrm.py (Revised and complete with Logging/Plotting)
 import argparse
+import csv
 import json
-import os
 from pathlib import Path
 from typing import Dict, Iterable, List, Tuple
+
+import matplotlib.pyplot as plt
 import numpy as np
 import torch
 import torch.nn as nn
-from torch.utils.data import DataLoader, Dataset
 from scipy.stats import spearmanr
-import csv  # <--- ADDED
-import matplotlib.pyplot as plt  # <--- ADDED
+from torch.utils.data import DataLoader, Dataset
 
 # Assuming 'rewards.latent_aesthetic' is available
 from rewards.latent_aesthetic import LatentAestheticViaLAION
@@ -141,7 +140,6 @@ def plot_metrics(save_dir: Path) -> None:
     if not data:
         return
 
-    # THE FIX: 'epoch' is now guaranteed to be in the dictionaries in 'data'
     epochs = [row["epoch"] for row in data]
 
     exp_name = save_dir.name  # Use the experiment folder name for the title
@@ -454,9 +452,11 @@ def main() -> None:
     elif args.scheduler == "plateau":
         scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(
             optim,
-            mode="max"
-            if "pearson" in args.best_metric or "r2" in args.best_metric
-            else "min",
+            mode=(
+                "max"
+                if "pearson" in args.best_metric or "r2" in args.best_metric
+                else "min"
+            ),
             patience=10,
             factor=0.5,
         )
@@ -615,6 +615,7 @@ def main() -> None:
 
     print("\n" + "=" * 60)
     print("Training complete!")
+
 
 if __name__ == "__main__":
     main()

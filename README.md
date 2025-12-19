@@ -1,4 +1,8 @@
-## Latent Reward Model (LRM) Aesthetic Consistency Training
+# Latent Reward Models
+
+This repository implements Latent Reward Models, a novel method leveraging efficient latent space representations of generative models (such as Diffusion models and VAEs) to compute reward scores. By operating in the latent space rather than the pixel space, this method improves efficiency by reducing the computation wasted on decoding for poor seeds.
+
+## Usage
 
 ### Setup
 - Install: `pip install -r scripts/requirements.txt`
@@ -16,27 +20,16 @@ python scripts/data/precompute_scores.py \
   --batch_size 64 --num_workers 8 --image_size 224
 ```
 
-### 2) Train latent aesthetic model with MSE(og_pred, latent_pred)
+### 2) Precompute image latents
 ```bash
-python -m train.train_lrm \
+python scripts/data/generate_latents.py \
+  --images_dir images \
   --latents_dir latents \
-  --scores_json og_scores.json \
-  --in_channels 16 \
-  --clip_model vit_l_14 \
-  --batch_size 128 --lr 1e-4 --epochs 10 \
-  --mixed_precision bf16 \
-  --save_dir checkpoints
+  --wan_model Wan2.1-T2V-1.3B/Wan2.1_VAE.pth
 ```
 
-### Notes
-- Uses official LAION aesthetic predictor weights with OpenCLIP embeddings.
-- Latent model learns adapter from latents to CLIP embedding space, then applies frozen LAION linear head.
-- Dataloader yields `(image_id, latent_tensor)`; trainer maps `image_id -> og_pred` for targets.
-- Logging prints avg loss every 50 steps; checkpoints saved per epoch.
-
-
-
-
+### 3) Train latent aesthetic model with MSE(og_pred, latent_pred)
+```bash
 python -m train.train_lrm \
   --latents_dir latents \
   --scores_json og_scores.json \
@@ -49,3 +42,11 @@ python -m train.train_lrm \
   --val_size 100 \
   --split_seed 123 \
   --best_metric val_pearson
+```
+
+### Notes
+- Uses official LAION aesthetic predictor weights with OpenCLIP embeddings.
+- Latent model learns adapter from latents to CLIP embedding space, then applies frozen LAION linear head.
+- Dataloader yields `(image_id, latent_tensor)`; trainer maps `image_id -> og_pred` for targets.
+- Logging prints avg loss every 50 steps; checkpoints saved per epoch.
+
